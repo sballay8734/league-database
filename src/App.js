@@ -32,19 +32,19 @@ function App() {
 export default App
 
 // "regularSeason": {
-//   "weekOne": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekTwo": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekThree": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekFour": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekFive": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekSix": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekSeven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekEight": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekNine": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekTen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekEleven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekTwelve": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//   "weekThirteen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" }
+//            "weekOne": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekTwo": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekThree": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekFour": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekFive": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekSix": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekSeven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekEight": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekNine": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekTen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekEleven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekTwelve": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+//            "weekThirteen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" }
 // },
 
 // npm start
