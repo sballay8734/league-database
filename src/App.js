@@ -1,8 +1,16 @@
 import "./styles.css"
+import { useEffect, useState } from "react"
+import OwnerCard from "./components/OwnerCard/OwnerCard"
 
 const API_URL = "http://127.0.0.1:3001/teamOwners"
 
 function App() {
+  const [owners, setOwners] = useState([])
+
+  useEffect(() => {
+    dataFetch()
+  }, [])
+
   async function dataFetch() {
     const response = await fetch(API_URL, {
       method: "GET",
@@ -11,20 +19,13 @@ function App() {
       }
     })
     const data = await response.json()
-    const dataToReturn = data.map((item) => {
-      const ownerName = item.ownerName
-      return {
-        ownerName,
-        wins2014: item[2014].wins
-      }
-    })
-    console.log(dataToReturn)
+    setOwners(data)
   }
   return (
-    <div className="App">
-      <button onClick={dataFetch} className="fetch">
-        Fetch Data
-      </button>
+    <div className="App flex flex-wrap bg-blue-500 gap-2">
+      {owners.map((owner) => {
+        return <OwnerCard key={owner.id} owner={owner} />
+      })}
     </div>
   )
 }
