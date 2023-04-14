@@ -1,40 +1,8 @@
 import { AiFillCaretDown } from "react-icons/ai"
+import { totalWinsBySeason } from "../../statFunctions/statFunction"
 import "../../styles.css"
 
 function OwnerCard({ owner }) {
-  // Change name of function since it now returns 4 things
-  function totalWinsBySeason(year) {
-    const keysArray = Object.keys(owner[year].regularSeason)
-    let wins = 0
-    let losses = 0
-    let ties = 0
-
-    keysArray.forEach((key) => {
-      if (
-        owner[year].regularSeason[key].pointsFor >
-        owner[year].regularSeason[key].pointsAgainst
-      ) {
-        wins++
-      } else if (
-        owner[year].regularSeason[key].pointsFor <
-        owner[year].regularSeason[key].pointsAgainst
-      ) {
-        losses++
-      } else {
-        ties++
-      }
-    })
-
-    const winningPercentage = ((wins / (wins + losses + ties)) * 100).toFixed(2)
-
-    return {
-      wins,
-      losses,
-      ties,
-      winningPercentage
-    }
-  }
-
   return (
     // Card
     <div className="font-montserrat card border-2 border-black w-96 h-56 bg-white flex justify-around items-center p-4 flex-col justify-between h-full rounded-xl bg-orange-100 shadow-lg">
@@ -74,8 +42,12 @@ function OwnerCard({ owner }) {
           <div className="stat text-xs">Average PP Loss: </div>
         </div>
         <div className="flex flex-col min-h-full justify-around gap-4">
-          <div className="stat text-xs">Wins: </div>
-          <div className="stat text-xs">Losses: </div>
+          <div className="stat text-xs">
+            Wins: {totalWinsBySeason("2014", owner).wins}
+          </div>
+          <div className="stat text-xs">
+            Losses: {totalWinsBySeason("2014", owner).losses}
+          </div>
           <div className="stat text-xs">Last: </div>
           <div className="stat text-xs">Finals Apps: </div>
         </div>
