@@ -2,7 +2,49 @@ import { AiFillCaretDown } from "react-icons/ai"
 import { totalWinsBySeason } from "../../statFunctions/statFunction"
 import "../../styles.css"
 
+// On 2016 for donnie
+
 function OwnerCard({ owner }) {
+  function totalWins() {
+    const seasonYears = [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ]
+    let totalWins = 0
+    let totalLosses = 0
+    let totalTies = 0
+    let winningPercentage = 0
+
+    seasonYears.forEach((year) => {
+      if (!owner[year].participated) return
+
+      totalWins += totalWinsBySeason(year, owner).wins
+      totalLosses += totalWinsBySeason(year, owner).losses
+      totalTies += totalWinsBySeason(year, owner).ties
+    })
+
+    winningPercentage = (
+      (totalWins / (totalWins + totalLosses + totalTies)) *
+      100
+    ).toFixed(1)
+
+    return {
+      totalWins,
+      totalLosses,
+      totalTies,
+      winningPercentage
+    }
+  }
+
+  console.log(totalWins().totalWins)
+
   return (
     // Card
     <div className="font-montserrat card border-2 border-black w-96 h-56 bg-white flex justify-around items-center p-4 flex-col justify-between h-full rounded-xl bg-orange-100 shadow-lg">
@@ -29,7 +71,9 @@ function OwnerCard({ owner }) {
           </div>
           <div>
             <p className="text-xs font-medium">Championships: </p>
-            <p className="text-xs text-muted text-slate-600">Winning Pct: </p>
+            <p className="text-xs text-muted text-slate-600">
+              Winning Pct: {totalWins(owner).winningPercentage}%
+            </p>
           </div>
         </div>
       </div>
@@ -42,11 +86,9 @@ function OwnerCard({ owner }) {
           <div className="stat text-xs">Average PP Loss: </div>
         </div>
         <div className="flex flex-col min-h-full justify-around gap-4">
+          <div className="stat text-xs">Wins: {totalWins(owner).totalWins}</div>
           <div className="stat text-xs">
-            Wins: {totalWinsBySeason("2014", owner).wins}
-          </div>
-          <div className="stat text-xs">
-            Losses: {totalWinsBySeason("2014", owner).losses}
+            Losses: {totalWins(owner).totalLosses}
           </div>
           <div className="stat text-xs">Last: </div>
           <div className="stat text-xs">Finals Apps: </div>
