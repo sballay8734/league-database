@@ -5,7 +5,7 @@ import "../../styles.css"
 // On 2016 for donnie
 
 function OwnerCard({ owner }) {
-  function totalWins() {
+  function totalStats() {
     const seasonYears = [
       "2014",
       "2015",
@@ -43,8 +43,6 @@ function OwnerCard({ owner }) {
     }
   }
 
-  console.log(totalWins().totalWins)
-
   return (
     // Card
     <div className="font-montserrat card border-2 border-black w-96 h-56 bg-white flex justify-around items-center p-4 flex-col justify-between h-full rounded-xl bg-orange-100 shadow-lg">
@@ -72,7 +70,7 @@ function OwnerCard({ owner }) {
           <div>
             <p className="text-xs font-medium">Championships: </p>
             <p className="text-xs text-muted text-slate-600">
-              Winning Pct: {totalWins(owner).winningPercentage}%
+              Winning Pct: {totalStats(owner).winningPercentage}%
             </p>
           </div>
         </div>
@@ -86,9 +84,11 @@ function OwnerCard({ owner }) {
           <div className="stat text-xs">Average PP Loss: </div>
         </div>
         <div className="flex flex-col min-h-full justify-around gap-4">
-          <div className="stat text-xs">Wins: {totalWins(owner).totalWins}</div>
           <div className="stat text-xs">
-            Losses: {totalWins(owner).totalLosses}
+            Wins: {totalStats(owner).totalWins}
+          </div>
+          <div className="stat text-xs">
+            Losses: {totalStats(owner).totalLosses}
           </div>
           <div className="stat text-xs">Last: </div>
           <div className="stat text-xs">Finals Apps: </div>
