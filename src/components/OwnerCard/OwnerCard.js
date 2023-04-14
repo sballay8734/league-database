@@ -10,7 +10,7 @@ function OwnerCard({ owner }) {
       <div className="flex w-full items-center justify-between">
         <h1 className="font-semibold">{owner.ownerName}</h1>
         <p className="font-medium text-xs text-slate-600">Seasons: 10</p>
-        <div class="button-wrapper flex">
+        <div className="button-wrapper flex">
           <button className="font-medium text-xs border-r-0 border-2 border-blue-900 px-2 py-[2px] hover:bg-blue-900 hover:text-white rounded-l">
             All-Time
           </button>
