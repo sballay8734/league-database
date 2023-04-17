@@ -9,6 +9,34 @@ import "../../styles.css"
 // On 2016 for donnie
 
 function OwnerCard({ owner }) {
+  // MOVE TO statFunctions
+  function finalsStats(owner) {
+    let finalsAppearances = 0
+    let finalsWins = 0
+    let finalsLosses = 0
+    const keys = Object.keys(owner)
+    keys.forEach((key) => {
+      if (key === "id" || key === "ownerName") return
+      if (!owner[key].participated) return
+
+      if (owner[key].playoffs.finalRound.participated) {
+        if (
+          owner[key].playoffs.finalRound.pointsFor >
+          owner[key].playoffs.finalRound.pointsAgainst
+        ) {
+          finalsWins++
+        } else {
+          finalsLosses++
+        }
+
+        finalsAppearances++
+      } else {
+        console.log(key, "dnp or did not make")
+      }
+    })
+    return { finalsAppearances, finalsWins, finalsLosses }
+  }
+
   return (
     // Card
     <div className="font-montserrat card border-2 border-black w-96 h-56 bg-white flex justify-around items-center p-4 flex-col justify-between h-full rounded-xl bg-orange-100 shadow-lg">
@@ -44,7 +72,9 @@ function OwnerCard({ owner }) {
             </p>
           </div>
           <div>
-            <p className="text-xs font-medium">Championships: </p>
+            <p className="text-xs font-medium">
+              Championships: <span>{finalsStats(owner).finalsWins}</span>
+            </p>
             <p className="text-xs text-muted text-slate-600">
               Winning Pct:{" "}
               <span className="font-semibold">
@@ -71,7 +101,9 @@ function OwnerCard({ owner }) {
             Losses: {totalStats(owner).totalLosses}
           </div>
           <div className="stat text-xs">Last: </div>
-          <div className="stat text-xs">Finals Apps: </div>
+          <div className="stat text-xs">
+            Finals Apps: <span>{finalsStats(owner).finalsAppearances}</span>
+          </div>
         </div>
         <div className="flex flex-col min-h-full justify-around gap-4">
           <div className="stat text-xs">Close Wins: </div>
