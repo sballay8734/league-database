@@ -112,4 +112,31 @@ export function playOffStats(owner) {
   return { totalYears, totalAppearances, playoffMakePercentage }
 }
 
-// AVERAGE MARGIN OF VICTORY/DEFEAT ????
+export function finalsStats(owner) {
+  let finalsAppearances = 0
+  let finalsWins = 0
+  let finalsLosses = 0
+  const keys = Object.keys(owner)
+  keys.forEach((key) => {
+    if (key === "id" || key === "ownerName") return
+    if (!owner[key].participated) return
+
+    if (owner[key].playoffs.finalRound.participated) {
+      if (
+        owner[key].playoffs.finalRound.pointsFor >
+        owner[key].playoffs.finalRound.pointsAgainst
+      ) {
+        finalsWins++
+      } else {
+        finalsLosses++
+      }
+
+      finalsAppearances++
+    } else {
+      return
+    }
+  })
+  return { finalsAppearances, finalsWins, finalsLosses }
+}
+
+// AVERAGE MARGIN OF VICTORY/DEFEAT ??

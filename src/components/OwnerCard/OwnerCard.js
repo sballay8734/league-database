@@ -2,39 +2,67 @@ import { AiFillCaretDown } from "react-icons/ai"
 import {
   totalStatsBySeason,
   totalStats,
-  playOffStats
+  playOffStats,
+  finalsStats
 } from "../../statFunctions/statFunction"
 import "../../styles.css"
 
 // On 2016 for donnie
 
 function OwnerCard({ owner }) {
-  // MOVE TO statFunctions
-  function finalsStats(owner) {
-    let finalsAppearances = 0
-    let finalsWins = 0
-    let finalsLosses = 0
-    const keys = Object.keys(owner)
-    keys.forEach((key) => {
-      if (key === "id" || key === "ownerName") return
-      if (!owner[key].participated) return
+  // SOMETHING IS NOT RIGHT HERE, Stats are not correct
+  function allTimeStats(owner) {
+    let closeWins = 0
+    let closeLosses = 0
+    let totalPointsFor = 0
+    let totalPointsAgainst = 0
+    let totalWeeks = 0
 
-      if (owner[key].playoffs.finalRound.participated) {
-        if (
-          owner[key].playoffs.finalRound.pointsFor >
-          owner[key].playoffs.finalRound.pointsAgainst
-        ) {
-          finalsWins++
+    let averagePointsFor = 0
+    let averagePointsAgainst = 0
+
+    const yearKeys = Object.keys(owner)
+    yearKeys.forEach((year) => {
+      if (year === "id" || year === "ownerName") return
+      if (!owner[year].participated) return
+
+      const matchupKeys = Object.keys(owner[year].regularSeason)
+      matchupKeys.forEach((key) => {
+        const ownerPoints = owner[year].regularSeason[key].pointsFor
+        const opponentPoints = owner[year].regularSeason[key].pointsAgainst
+        let closeGame = true
+
+        const difference = ownerPoints - opponentPoints
+
+        if (difference > 0 && difference <= 3) {
+          closeWins++
+        } else if (difference < 0 && difference >= -3) {
+          closeLosses++
         } else {
-          finalsLosses++
+          closeGame = false
         }
 
-        finalsAppearances++
-      } else {
-        console.log(key, "dnp or did not make")
-      }
+        totalPointsFor += owner[year].regularSeason[key].pointsFor
+        totalPointsAgainst += owner[year].regularSeason[key].pointsAgainst
+        totalWeeks++
+        console.log(year, closeGame, owner[year].regularSeason[key].pointsFor)
+      })
     })
-    return { finalsAppearances, finalsWins, finalsLosses }
+
+    averagePointsFor = (totalPointsFor / totalWeeks).toFixed(2)
+    averagePointsAgainst = (totalPointsAgainst / totalWeeks).toFixed(2)
+
+    return {
+      totalPointsFor,
+      totalPointsAgainst,
+      totalWeeks,
+      closeWins,
+      closeLosses,
+      averagePointsAgainst,
+      averagePointsFor
+    }
+
+    // return AVG PF and PA at end as well
   }
 
   return (
@@ -88,8 +116,12 @@ function OwnerCard({ owner }) {
       {/* Bulk Stats */}
       <div className="stats flex w-full items-center justify-between text-sm">
         <div className="flex flex-col min-h-full justify-around gap-4">
-          <div className="stat text-xs">Average PF: </div>
-          <div className="stat text-xs">Average PA: </div>
+          <div className="stat text-xs">
+            Average PF: <span>{allTimeStats(owner).averagePointsFor}</span>
+          </div>
+          <div className="stat text-xs">
+            Average PA: <span>{allTimeStats(owner).averagePointsAgainst}</span>{" "}
+          </div>
           <div className="stat text-xs">Average PP Win: </div>
           <div className="stat text-xs">Average PP Loss: </div>
         </div>
