@@ -111,3 +111,5 @@ export function playOffStats(owner) {
 
   return { totalYears, totalAppearances, playoffMakePercentage }
 }
+
+// AVERAGE MARGIN OF VICTORY/DEFEAT ????
