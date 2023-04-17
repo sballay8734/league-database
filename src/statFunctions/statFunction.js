@@ -139,4 +139,76 @@ export function finalsStats(owner) {
   return { finalsAppearances, finalsWins, finalsLosses }
 }
 
+export function allTimeStats(owner) {
+  let closeWins = 0
+  let closeLosses = 0
+  let totalPointsFor = 0
+
+  let totalPointsOnWins = 0
+  let totalPointsOnLosses = 0
+
+  let totalPointsAgainst = 0
+  let totalWeeks = 0
+
+  let averagePointsFor = 0
+  let averagePointsAgainst = 0
+
+  const yearKeys = Object.keys(owner)
+  yearKeys.forEach((year) => {
+    if (year === "id" || year === "ownerName") return
+    if (!owner[year].participated) return
+
+    const matchupKeys = Object.keys(owner[year].regularSeason)
+    matchupKeys.forEach((key) => {
+      const ownerPoints = owner[year].regularSeason[key].pointsFor
+      const opponentPoints = owner[year].regularSeason[key].pointsAgainst
+      let closeGame = true
+
+      const difference = ownerPoints - opponentPoints
+
+      if (difference > 0 && difference <= 3) {
+        closeWins++
+      } else if (difference < 0 && difference >= -3) {
+        closeLosses++
+      } else {
+        closeGame = false
+      }
+
+      if (difference > 0) {
+        totalPointsOnWins += ownerPoints
+      } else if (difference < 0) {
+        totalPointsOnLosses += ownerPoints
+      } else {
+        // console.log("tie")
+      }
+
+      totalPointsFor += owner[year].regularSeason[key].pointsFor
+      totalPointsAgainst += owner[year].regularSeason[key].pointsAgainst
+      totalWeeks++
+    })
+  })
+
+  averagePointsFor = (totalPointsFor / totalWeeks).toFixed(2)
+  averagePointsAgainst = (totalPointsAgainst / totalWeeks).toFixed(2)
+  const averagePointsPerWin = (
+    totalPointsOnWins / totalStats(owner).totalWins
+  ).toFixed(2)
+  const averagePointsPerLoss = (
+    totalPointsOnLosses / totalStats(owner).totalLosses
+  ).toFixed(2)
+
+  return {
+    totalPointsFor,
+    totalPointsAgainst,
+    totalWeeks,
+    closeWins,
+    closeLosses,
+    averagePointsAgainst,
+    averagePointsFor,
+    averagePointsPerLoss,
+    averagePointsPerWin
+  }
+
+  // return AVG PF and PA at end as well
+}
 // AVERAGE MARGIN OF VICTORY/DEFEAT ??

@@ -21,6 +21,23 @@ function App() {
     const data = await response.json()
     setOwners(data)
   }
+
+  // Mostly working, just need to add all owner data to check
+  function leagueAvgPointsPerWeek(owner, year, weekKey) {
+    let ownerTotal = 0
+    let weekTotalPoints = 0
+
+    owners.forEach((item) => {
+      console.log(item[year].regularSeason[weekKey].pointsFor)
+      ownerTotal += 1
+      weekTotalPoints += item[year].regularSeason[weekKey].pointsFor
+    })
+
+    return { ownerTotal, weekTotalPoints }
+  }
+
+  console.log(leagueAvgPointsPerWeek("Shawn Ballay", "2014", "weekOne"))
+
   return (
     <div className="App flex flex-wrap bg-white gap-2">
       {owners.map((owner) => {
