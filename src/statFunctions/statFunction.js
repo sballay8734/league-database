@@ -1,4 +1,5 @@
-export function totalWinsBySeason(year, owner) {
+// returns YEARLY wins, losses, ties, and winning percentage
+export function totalStatsBySeason(year, owner) {
   const keysArray = Object.keys(owner[year].regularSeason)
   let wins = 0
   let losses = 0
@@ -28,4 +29,85 @@ export function totalWinsBySeason(year, owner) {
     ties,
     winningPercentage
   }
+}
+
+// return LIFETIME wins, losses, ties, and winning percentage
+export function totalStats(owner) {
+  let totalWins = 0
+  let totalLosses = 0
+  let totalTies = 0
+  let winningPercentage = 0
+
+  const yearKeys = Object.keys(owner)
+
+  yearKeys.forEach((year) => {
+    if (!owner[year].participated) return
+
+    totalWins += totalStatsBySeason(year, owner).wins
+    totalLosses += totalStatsBySeason(year, owner).losses
+    totalTies += totalStatsBySeason(year, owner).ties
+  })
+
+  winningPercentage = (
+    (totalWins / (totalWins + totalLosses + totalTies)) *
+    100
+  ).toFixed(1)
+
+  return {
+    totalWins,
+    totalLosses,
+    totalTies,
+    winningPercentage
+  }
+}
+
+// determine if owner made playoffs for a given year
+export function playoffsMade(owner, year) {
+  if (!owner[year].participated) return
+  const playoffKey = owner[year].playoffs.roundOne
+
+  let madePlayoffs = false
+
+  if (playoffKey.participated === true) {
+    madePlayoffs = true
+  } else {
+    madePlayoffs = false
+  }
+  return madePlayoffs
+}
+
+// calculate how many years owner has made playoffs
+export function totalPlayoffAppearances(owner) {
+  const keys = Object.keys(owner)
+  let totalAppearances = 0
+  keys.forEach((key) => {
+    if (key === "id" || key === "ownerName") return
+
+    if (playoffsMade(owner, key)) {
+      totalAppearances++
+    }
+  })
+  return totalAppearances
+}
+
+// calculate total years owner has been in league
+export function totalYearsInLeague(owner) {
+  let totalYears = 0
+  const yearKeys = Object.keys(owner)
+  yearKeys.forEach((key) => {
+    if (key === "id" || key === "ownerName") return
+
+    if (owner[key].participated) {
+      totalYears++
+    }
+  })
+  return totalYears
+}
+
+export function playOffStats(owner) {
+  const totalYears = totalYearsInLeague(owner)
+  const totalAppearances = totalPlayoffAppearances(owner)
+  const playoffMakePercentage = totalAppearances / totalYears
+
+  return { totalYears, totalAppearances, playoffMakePercentage }
 }

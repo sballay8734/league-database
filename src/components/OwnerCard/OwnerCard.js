@@ -1,55 +1,26 @@
 import { AiFillCaretDown } from "react-icons/ai"
-import { totalWinsBySeason } from "../../statFunctions/statFunction"
+import {
+  totalStatsBySeason,
+  totalStats,
+  playOffStats
+} from "../../statFunctions/statFunction"
 import "../../styles.css"
 
 // On 2016 for donnie
 
 function OwnerCard({ owner }) {
-  function totalStats() {
-    const seasonYears = [
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018",
-      "2019",
-      "2020",
-      "2021",
-      "2022"
-    ]
-    let totalWins = 0
-    let totalLosses = 0
-    let totalTies = 0
-    let winningPercentage = 0
-
-    seasonYears.forEach((year) => {
-      if (!owner[year].participated) return
-
-      totalWins += totalWinsBySeason(year, owner).wins
-      totalLosses += totalWinsBySeason(year, owner).losses
-      totalTies += totalWinsBySeason(year, owner).ties
-    })
-
-    winningPercentage = (
-      (totalWins / (totalWins + totalLosses + totalTies)) *
-      100
-    ).toFixed(1)
-
-    return {
-      totalWins,
-      totalLosses,
-      totalTies,
-      winningPercentage
-    }
-  }
-
   return (
     // Card
     <div className="font-montserrat card border-2 border-black w-96 h-56 bg-white flex justify-around items-center p-4 flex-col justify-between h-full rounded-xl bg-orange-100 shadow-lg">
       {/* Header */}
       <div className="flex w-full items-center justify-between">
         <h1 className="font-semibold">{owner.ownerName}</h1>
-        <p className="font-medium text-xs text-slate-600">Seasons: 10</p>
+        <p className="font-medium text-xs text-slate-600">
+          Seasons:{" "}
+          <span className="font-semibold">
+            {playOffStats(owner).totalYears}
+          </span>
+        </p>
         <div className="button-wrapper flex">
           <button className="font-medium text-xs border-r-0 border-2 border-blue-900 px-2 py-[2px] hover:bg-blue-900 hover:text-white rounded-l">
             All-Time
@@ -62,15 +33,24 @@ function OwnerCard({ owner }) {
       {/* Featured Stats */}
       <div className="main-stats flex w-full items-center py-4 gap-4">
         <div className="border-2 border-black p-6 rounded-full relative"></div>
-        <div className="flex gap-2">
+        <div className="flex gap-6">
           <div>
             <p className="text-xs font-medium">Koth Victories: </p>
-            <p className="text-xs text-slate-600">Playoff Apps: </p>
+            <p className="text-xs text-slate-600">
+              Playoff Apps:{" "}
+              <span className="font-semibold">
+                {playOffStats(owner).totalAppearances}
+              </span>
+            </p>
           </div>
           <div>
             <p className="text-xs font-medium">Championships: </p>
             <p className="text-xs text-muted text-slate-600">
-              Winning Pct: {totalStats(owner).winningPercentage}%
+              Winning Pct:{" "}
+              <span className="font-semibold">
+                {totalStats(owner).winningPercentage}
+              </span>
+              %
             </p>
           </div>
         </div>
