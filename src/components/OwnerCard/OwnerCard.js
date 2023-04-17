@@ -10,11 +10,15 @@ import "../../styles.css"
 // On 2016 for donnie
 
 function OwnerCard({ owner }) {
-  // SOMETHING IS NOT RIGHT HERE, Stats are not correct
+  // SOMETHING IS WRONG WITH TIES.
   function allTimeStats(owner) {
     let closeWins = 0
     let closeLosses = 0
     let totalPointsFor = 0
+
+    let totalPointsOnWins = 0
+    let totalPointsOnLosses = 0
+
     let totalPointsAgainst = 0
     let totalWeeks = 0
 
@@ -42,15 +46,29 @@ function OwnerCard({ owner }) {
           closeGame = false
         }
 
+        if (difference > 0) {
+          totalPointsOnWins += ownerPoints
+        } else if (difference < 0) {
+          totalPointsOnLosses += ownerPoints
+        } else {
+          console.log(owner.ownerName, year, key, "tie")
+        }
+
         totalPointsFor += owner[year].regularSeason[key].pointsFor
         totalPointsAgainst += owner[year].regularSeason[key].pointsAgainst
         totalWeeks++
-        console.log(year, closeGame, owner[year].regularSeason[key].pointsFor)
+        // console.log(year, closeGame, owner[year].regularSeason[key].pointsFor)
       })
     })
 
     averagePointsFor = (totalPointsFor / totalWeeks).toFixed(2)
     averagePointsAgainst = (totalPointsAgainst / totalWeeks).toFixed(2)
+    const averagePointsPerWin = (
+      totalPointsOnWins / totalStats(owner).totalWins
+    ).toFixed(2)
+    const averagePointsPerLoss = (
+      totalPointsOnLosses / totalStats(owner).totalLosses
+    ).toFixed(2)
 
     return {
       totalPointsFor,
@@ -59,7 +77,9 @@ function OwnerCard({ owner }) {
       closeWins,
       closeLosses,
       averagePointsAgainst,
-      averagePointsFor
+      averagePointsFor,
+      averagePointsPerLoss,
+      averagePointsPerWin
     }
 
     // return AVG PF and PA at end as well
@@ -122,8 +142,14 @@ function OwnerCard({ owner }) {
           <div className="stat text-xs">
             Average PA: <span>{allTimeStats(owner).averagePointsAgainst}</span>{" "}
           </div>
-          <div className="stat text-xs">Average PP Win: </div>
-          <div className="stat text-xs">Average PP Loss: </div>
+          <div className="stat text-xs">
+            Average PP Win:{" "}
+            <span>{allTimeStats(owner).averagePointsPerWin}</span>
+          </div>
+          <div className="stat text-xs">
+            Average PP Loss:{" "}
+            <span>{allTimeStats(owner).averagePointsPerLoss}</span>
+          </div>
         </div>
         <div className="flex flex-col min-h-full justify-around gap-4">
           <div className="stat text-xs">
@@ -138,8 +164,12 @@ function OwnerCard({ owner }) {
           </div>
         </div>
         <div className="flex flex-col min-h-full justify-around gap-4">
-          <div className="stat text-xs">Close Wins: </div>
-          <div className="stat text-xs">Close Losses: </div>
+          <div className="stat text-xs">
+            Close Wins: <span>{allTimeStats(owner).closeWins}</span>
+          </div>
+          <div className="stat text-xs">
+            Close Losses: {allTimeStats(owner).closeLosses}
+          </div>
           <div className="stat text-xs">Lucky Ws: </div>
           <div className="stat text-xs">Unlucky Ls: </div>
         </div>
