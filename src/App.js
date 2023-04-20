@@ -6,6 +6,17 @@ const API_URL = "http://127.0.0.1:3001/teamOwners"
 
 function App() {
   const [owners, setOwners] = useState([])
+  const yearsList = [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+  ]
 
   useEffect(() => {
     dataFetch()
@@ -22,22 +33,59 @@ function App() {
     setOwners(data)
   }
 
+  // WORKING ON THESE **********************************************************
   // Mostly working, just need to add all owner data to check
+  function kingOfTheHillLogic(year) {
+    // TEMPORARY HARD CODE OF OWNER LIST FOR TESTING ****
+    const ownerList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    // TEMPORARY HARD CODE OF OWNER LIST FOR TESTING ****
+    let totalStrikes = 0
+    let strikesPerWeek = 0
+    // need some way to calculate strikes per week (DO NOT HARD-CODE)
+    owners.forEach((owner) => {
+      const keys = Object.keys(owner[year].regularSeason)
+      totalStrikes = ownerList.length * 3 - 1
+      strikesPerWeek = totalStrikes / keys.length
+      console.log(strikesPerWeek)
+      console.log(totalStrikes)
+
+      // Might be easiest to say if (14gameSeason) else if (13gameSeason) etc...
+    })
+
+    // for each week, determine who gets strikes
+    // how to determine who gets strikes?
+  }
+  // kingOfTheHillLogic("2014")
+
   function leagueAvgPointsPerWeek(owner, year, weekKey) {
     let ownerTotal = 0
     let weekTotalPoints = 0
 
     owners.forEach((item) => {
-      console.log(item[year].regularSeason[weekKey].pointsFor)
+      // console.log(item[year].regularSeason[weekKey].pointsFor)
       ownerTotal += 1
       weekTotalPoints += item[year].regularSeason[weekKey].pointsFor
     })
 
     return { ownerTotal, weekTotalPoints }
   }
+  // console.log(leagueAvgPointsPerWeek("Shawn Ballay", "2014", "weekOne"))
 
-  console.log(leagueAvgPointsPerWeek("Shawn Ballay", "2014", "weekOne"))
+  // MISSING TIE BREAKER LOGIC
+  function lastPlaceFinishes(year) {
+    let currentLast = null
+    owners.forEach((owner) => {
+      if (currentLast === null || owner[year].wins < currentLast.wins) {
+        currentLast = { owner: owner.ownerName, wins: owner[year].wins }
+      } else if (currentLast.wins === owner[year].wins) {
+        // this is where you need to put tiebreaker logic
+      }
+    })
+    console.log(currentLast)
+  }
+  // lastPlaceFinishes("2019")
 
+  // WORKING ON THESE **********************************************************
   return (
     <div className="App flex flex-wrap bg-white gap-2">
       {owners.map((owner) => {
@@ -48,22 +96,6 @@ function App() {
 }
 
 export default App
-
-// "regularSeason": {
-//            "weekOne": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekTwo": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekThree": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekFour": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekFive": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekSix": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekSeven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekEight": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekNine": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekTen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekEleven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekTwelve": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-//            "weekThirteen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" }
-// },
 
 // npm start
 // npm run server
