@@ -872,27 +872,27 @@
         "weekFour": { "pointsFor": 95, "pointsAgainst": 121, "opponent": "domF" },
         "weekFive": { "pointsFor": 110, "pointsAgainst": 144, "opponent": "aaronM" },
         "weekSix": { "pointsFor": 106, "pointsAgainst": 135, "opponent": "Steve Smith" },
-        "weekSeven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekEight": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekNine": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekTen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekEleven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekTwelve": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekThirteen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" }
+        "weekSeven": { "pointsFor": 135, "pointsAgainst": 90, "opponent": "steveL" },
+        "weekEight": { "pointsFor": 107, "pointsAgainst": 83, "opponent": "billD" },
+        "weekNine": { "pointsFor": 83, "pointsAgainst": 124, "opponent": "domN" },
+        "weekTen": { "pointsFor": 116, "pointsAgainst": 101, "opponent": "codyZ" },
+        "weekEleven": { "pointsFor": 157, "pointsAgainst": 165, "opponent": "danG" },
+        "weekTwelve": { "pointsFor": 123, "pointsAgainst": 99, "opponent": "joeK" },
+        "weekThirteen": { "pointsFor": 92, "pointsAgainst": 90, "opponent": "xxxx" }
       },
       "playoffs": {
         "roundOne": {
           "participated": true,
-          "bye": true,
+          "bye": false,
+          "pointsFor": 96,
+          "pointsAgainst": 173,
+          "opponent": "codyZ"
+        },
+        "roundTwo": {
+          "participated": false,
           "pointsFor": null,
           "pointsAgainst": null,
           "opponent": null
-        },
-        "roundTwo": {
-          "participated": true,
-          "pointsFor": 88,
-          "pointsAgainst": 105,
-          "opponent": "codyZ"
         },
         "finalRound": {
           "participated": false,
