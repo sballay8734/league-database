@@ -1,4 +1,5 @@
 import { AiFillCaretDown } from "react-icons/ai"
+import { AiTwotoneTrophy } from "react-icons/ai"
 import {
   totalStatsBySeason,
   totalStats,
@@ -9,7 +10,8 @@ import {
 import "../../styles.css"
 import logo from "../../images/profileImg.png"
 
-// On 2016 for donnie
+// "leading" tailwind property messing with spacing in "Featured Stats"
+// Include playoffs in these stats (Most/least points in a week, highest/lowest combined total, winning streak, etc...)
 
 function OwnerCard({ owner }) {
   // function luckyAndUnlucky(owner) {
@@ -22,10 +24,10 @@ function OwnerCard({ owner }) {
       {/* Header */}
       <div className="flex w-full items-center justify-between py-3 px-4 text-2xl bg-blue-200">
         <h1 className="font-semibold">{owner.ownerName}</h1>
-        {/* <p className="font-medium text-sm text-slate-600 bg-red-300 py-1 rounded px-1">
+        <p className="font-medium text-xs text-white bg-blue-800 py-1 rounded px-1">
           Seasons:{" "}
           <span className="font-bold">{playOffStats(owner).totalYears}</span>
-        </p> */}
+        </p>
         <div className="button-wrapper flex">
           <button className="font-semibold text-base border-r-0 border-2 border-blue-900 px-2 py-[2px] hover:bg-blue-900 hover:text-white rounded-l">
             All-Time
@@ -40,28 +42,70 @@ function OwnerCard({ owner }) {
         <div className="border-4 border-slate-700 rounded-full relative">
           <img className="h-16" src={logo} alt="profile"></img>
         </div>
-        <div className="flex gap-6">
-          <div className="flex flex-col gap-1">
-            <p className="text-base font-medium">Koth Victories: </p>
-            <p className="text-[.8rem] text-slate-600">
-              Playoff Apps:{" "}
-              <span className="font-bold">
-                {playOffStats(owner).totalAppearances}
-              </span>
-            </p>
+        <div className="flex gap-8">
+          <div className="flex flex-col gap-2">
+            <div>
+              <p className="text-base font-medium">Koth Victories: </p>
+              <div className="text-[.6rem] leading-[4px] italic flex justify-between py-[1px] w-10/12">
+                <p className="text-slate-600">
+                  Lg Avg: <span className="font-semibold">115.2</span>
+                </p>
+                <p className="text-green-700">
+                  <span className="text-green-700 font-semibold">+9.8</span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <p className="text-[.8rem] text-slate-600">
+                Playoff Apps:{" "}
+                <span className="font-bold">
+                  {playOffStats(owner).totalAppearances}
+                </span>
+              </p>
+              <div className="text-[.6rem] leading-[4px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+                <p className="text-slate-600">
+                  Lg Avg: <span className="font-semibold">115.2</span>
+                </p>
+                <p className="text-green-700">
+                  <span className="text-green-700 font-semibold">+9.8</span>
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col gap-1">
-            <p className="text-base font-medium">
-              Championships:{" "}
-              <span className="font-bold">{finalsStats(owner).finalsWins}</span>
-            </p>
-            <p className="text-[.8rem] text-muted text-slate-600">
-              Winning Pct:{" "}
-              <span className="font-bold">
-                {totalStats(owner).winningPercentage}
-              </span>
-              %
-            </p>
+          <div className="flex flex-col gap-2">
+            <div>
+              <p className="text-base font-medium">
+                Championships:{" "}
+                <span className="font-bold">
+                  {finalsStats(owner).finalsWins}
+                </span>
+              </p>
+              <div className="text-[.6rem] leading-[4px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+                <p className="text-slate-600">
+                  Lg Avg: <span className="font-semibold">115.2</span>
+                </p>
+                <p className="text-green-700">
+                  <span className="text-green-700 font-semibold">+9.8</span>
+                </p>
+              </div>
+            </div>
+            <div>
+              <p className="text-[.8rem] text-muted text-slate-600">
+                Winning Pct:
+                <span className="font-bold">
+                  {totalStats(owner).winningPercentage}
+                </span>
+                %
+              </p>
+              <div className="text-[.6rem] leading-[4px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+                <p className="text-slate-600">
+                  Lg Avg: <span className="font-semibold">115.2</span>
+                </p>
+                <p className="text-green-700">
+                  <span className="text-green-700 font-semibold">+9.8%</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +124,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">115.2</span>
               </p>
               <p className="text-green-700">
-                + <span className="text-green-700 font-semibold">9.8</span>
+                <span className="text-green-700 font-semibold">+9.8</span>
               </p>
             </div>
           </div>
@@ -96,7 +140,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">111.2</span>
               </p>
               <p>
-                - <span className="text-red-700 font-semibold">2.3</span>
+                <span className="text-red-700 font-semibold">-2.3</span>
               </p>
             </div>
           </div>
@@ -112,7 +156,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">111.2</span>
               </p>
               <p>
-                - <span className="text-red-700 font-semibold">2.3</span>
+                <span className="text-red-700 font-semibold">-2.3</span>
               </p>
             </div>
           </div>
@@ -128,7 +172,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">111.2</span>
               </p>
               <p>
-                - <span className="text-red-700 font-semibold">2.3</span>
+                <span className="text-red-700 font-semibold">-2.3</span>
               </p>
             </div>
           </div>
@@ -148,7 +192,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">111.2</span>
               </p>
               <p>
-                - <span className="text-red-700 font-semibold">2.3</span>
+                <span className="text-red-700 font-semibold">-2.3</span>
               </p>
             </div>
           </div>
@@ -164,7 +208,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">111.2</span>
               </p>
               <p>
-                - <span className="text-red-700 font-semibold">2.3</span>
+                <span className="text-red-700 font-semibold">-2.3</span>
               </p>
             </div>
           </div>
@@ -177,7 +221,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">111.2</span>
               </p>
               <p>
-                - <span className="text-red-700 font-semibold">2.3</span>
+                <span className="text-red-700 font-semibold">-2.3</span>
               </p>
             </div>
           </div>
@@ -193,7 +237,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">111.2</span>
               </p>
               <p>
-                - <span className="text-red-700 font-semibold">2.3</span>
+                <span className="text-red-700 font-semibold">-2.3</span>
               </p>
             </div>
           </div>
@@ -213,7 +257,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">111.2</span>
               </p>
               <p>
-                - <span className="text-red-700 font-semibold">2.3</span>
+                <span className="text-red-700 font-semibold">-2.3</span>
               </p>
             </div>
           </div>
@@ -229,7 +273,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">111.2</span>
               </p>
               <p>
-                - <span className="text-red-700 font-semibold">2.3</span>
+                <span className="text-red-700 font-semibold">-2.3</span>
               </p>
             </div>
           </div>
@@ -242,7 +286,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">111.2</span>
               </p>
               <p>
-                - <span className="text-red-700 font-semibold">2.3</span>
+                <span className="text-red-700 font-semibold">-2.3</span>
               </p>
             </div>
           </div>
@@ -255,7 +299,7 @@ function OwnerCard({ owner }) {
                 Lg Avg: <span className="font-semibold">111.2</span>
               </p>
               <p>
-                - <span className="text-red-700 font-semibold">2.3</span>
+                <span className="text-red-700 font-semibold">-2.3</span>
               </p>
             </div>
           </div>
