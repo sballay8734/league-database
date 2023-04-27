@@ -87,7 +87,7 @@ function App() {
 
   // WORKING ON THESE **********************************************************
   return (
-    <div className="App flex flex-wrap bg-white gap-2">
+    <div className="App flex flex-wrap gap-2 bg-[#A5D7E8]">
       {owners.map((owner) => {
         return <OwnerCard key={owner.id} owner={owner} />
       })}

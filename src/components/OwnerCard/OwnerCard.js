@@ -7,6 +7,7 @@ import {
   allTimeStats
 } from "../../statFunctions/statFunction"
 import "../../styles.css"
+import logo from "../../images/profileImg.png"
 
 // On 2016 for donnie
 
@@ -17,45 +18,46 @@ function OwnerCard({ owner }) {
 
   return (
     // Card
-    <div className="font-montserrat card border-2 border-black w-96 h-56 bg-white flex justify-around items-center p-4 flex-col justify-between h-full rounded-xl bg-orange-100 shadow-lg">
+    <div className="font-montserrat card w-[28rem] h-56 flex justify-around items-center pb-4 flex-col justify-between h-full rounded-xl bg-white overflow-hidden">
       {/* Header */}
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full items-center justify-between py-3 px-4 text-2xl bg-blue-200">
         <h1 className="font-semibold">{owner.ownerName}</h1>
-        <p className="font-medium text-xs text-slate-600">
+        {/* <p className="font-medium text-sm text-slate-600 bg-red-300 py-1 rounded px-1">
           Seasons:{" "}
-          <span className="font-semibold">
-            {playOffStats(owner).totalYears}
-          </span>
-        </p>
+          <span className="font-bold">{playOffStats(owner).totalYears}</span>
+        </p> */}
         <div className="button-wrapper flex">
-          <button className="font-medium text-xs border-r-0 border-2 border-blue-900 px-2 py-[2px] hover:bg-blue-900 hover:text-white rounded-l">
+          <button className="font-semibold text-base border-r-0 border-2 border-blue-900 px-2 py-[2px] hover:bg-blue-900 hover:text-white rounded-l">
             All-Time
           </button>
-          <button className="font-medium text-xs border-2 border-blue-900 px-2 py-[2px] hover:bg-blue-900 hover:text-white rounded-r flex items-center gap-1">
+          <button className="font-semibold text-base border-2 border-blue-900 px-2 py-[2px] hover:bg-blue-900 hover:text-white rounded-r flex items-center gap-1">
             2023 <span>{<AiFillCaretDown />}</span>
           </button>
         </div>
       </div>
       {/* Featured Stats */}
-      <div className="main-stats flex w-full items-center py-4 gap-4">
-        <div className="border-2 border-black p-6 rounded-full relative"></div>
+      <div className="main-stats flex w-full items-center gap-8 px-4 py-2 bg-slate-100">
+        <div className="border-4 border-slate-700 rounded-full relative">
+          <img className="h-16" src={logo} alt="profile"></img>
+        </div>
         <div className="flex gap-6">
-          <div>
-            <p className="text-xs font-medium">Koth Victories: </p>
-            <p className="text-xs text-slate-600">
+          <div className="flex flex-col gap-1">
+            <p className="text-base font-medium">Koth Victories: </p>
+            <p className="text-[.8rem] text-slate-600">
               Playoff Apps:{" "}
-              <span className="font-semibold">
+              <span className="font-bold">
                 {playOffStats(owner).totalAppearances}
               </span>
             </p>
           </div>
-          <div>
-            <p className="text-xs font-medium">
-              Championships: <span>{finalsStats(owner).finalsWins}</span>
+          <div className="flex flex-col gap-1">
+            <p className="text-base font-medium">
+              Championships:{" "}
+              <span className="font-bold">{finalsStats(owner).finalsWins}</span>
             </p>
-            <p className="text-xs text-muted text-slate-600">
+            <p className="text-[.8rem] text-muted text-slate-600">
               Winning Pct:{" "}
-              <span className="font-semibold">
+              <span className="font-bold">
                 {totalStats(owner).winningPercentage}
               </span>
               %
@@ -64,44 +66,199 @@ function OwnerCard({ owner }) {
         </div>
       </div>
       {/* Bulk Stats */}
-      <div className="stats flex w-full items-center justify-between text-sm">
-        <div className="flex flex-col min-h-full justify-around gap-4">
-          <div className="stat text-xs">
-            Average PF: <span>{allTimeStats(owner).averagePointsFor}</span>
+      <div className="stats flex w-full items-center justify-between text-sm px-4 pt-2">
+        <div className="flex flex-col min-h-full justify-around gap-2">
+          <div>
+            <div className="stat text-sm">
+              Avg. PF:{" "}
+              <span className="font-semibold">
+                {allTimeStats(owner).averagePointsFor}
+              </span>
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">115.2</span>
+              </p>
+              <p className="text-green-700">
+                + <span className="text-green-700 font-semibold">9.8</span>
+              </p>
+            </div>
           </div>
-          <div className="stat text-xs">
-            Average PA: <span>{allTimeStats(owner).averagePointsAgainst}</span>{" "}
+          <div>
+            <div className="stat text-sm">
+              Avg. PA:{" "}
+              <span className="font-semibold">
+                {allTimeStats(owner).averagePointsAgainst}
+              </span>{" "}
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">111.2</span>
+              </p>
+              <p>
+                - <span className="text-red-700 font-semibold">2.3</span>
+              </p>
+            </div>
           </div>
-          <div className="stat text-xs">
-            Average PP Win:{" "}
-            <span>{allTimeStats(owner).averagePointsPerWin}</span>
+          <div>
+            <div className="stat text-sm">
+              Avg. PP Win:{" "}
+              <span className="font-semibold">
+                {allTimeStats(owner).averagePointsPerWin}
+              </span>
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">111.2</span>
+              </p>
+              <p>
+                - <span className="text-red-700 font-semibold">2.3</span>
+              </p>
+            </div>
           </div>
-          <div className="stat text-xs">
-            Average PP Loss:{" "}
-            <span>{allTimeStats(owner).averagePointsPerLoss}</span>
+          <div>
+            <div className="stat text-sm">
+              Avg. PP Loss:{" "}
+              <span className="font-semibold">
+                {allTimeStats(owner).averagePointsPerLoss}
+              </span>
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">111.2</span>
+              </p>
+              <p>
+                - <span className="text-red-700 font-semibold">2.3</span>
+              </p>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col min-h-full justify-around gap-4">
-          <div className="stat text-xs">
-            Wins: {totalStats(owner).totalWins}
+        {/* divider */}
+        <div className="border border-black rounded-full h-28"></div>
+        <div className="flex flex-col min-h-full justify-around gap-2">
+          <div>
+            <div className="stat text-sm">
+              Wins:{" "}
+              <span className="font-semibold">
+                {totalStats(owner).totalWins}
+              </span>
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">111.2</span>
+              </p>
+              <p>
+                - <span className="text-red-700 font-semibold">2.3</span>
+              </p>
+            </div>
           </div>
-          <div className="stat text-xs">
-            Losses: {totalStats(owner).totalLosses}
+          <div>
+            <div className="stat text-sm">
+              Losses:{" "}
+              <span className="font-semibold">
+                {totalStats(owner).totalLosses}
+              </span>
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">111.2</span>
+              </p>
+              <p>
+                - <span className="text-red-700 font-semibold">2.3</span>
+              </p>
+            </div>
           </div>
-          <div className="stat text-xs">Last: </div>
-          <div className="stat text-xs">
-            Finals Apps: <span>{finalsStats(owner).finalsAppearances}</span>
+          <div>
+            <div className="stat text-sm">
+              Last: <span className="font-semibold"></span>
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">111.2</span>
+              </p>
+              <p>
+                - <span className="text-red-700 font-semibold">2.3</span>
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="stat text-sm">
+              Finals Apps:{" "}
+              <span className="font-semibold">
+                {finalsStats(owner).finalsAppearances}
+              </span>
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">111.2</span>
+              </p>
+              <p>
+                - <span className="text-red-700 font-semibold">2.3</span>
+              </p>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col min-h-full justify-around gap-4">
-          <div className="stat text-xs">
-            Close Wins: <span>{allTimeStats(owner).closeWins}</span>
+        {/* divider */}
+        <div className="border border-black rounded-full h-28"></div>
+        <div className="flex flex-col min-h-full justify-around gap-2">
+          <div>
+            <div className="stat text-sm">
+              Close Wins:{" "}
+              <span className="font-semibold">
+                {allTimeStats(owner).closeWins}
+              </span>
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">111.2</span>
+              </p>
+              <p>
+                - <span className="text-red-700 font-semibold">2.3</span>
+              </p>
+            </div>
           </div>
-          <div className="stat text-xs">
-            Close Losses: {allTimeStats(owner).closeLosses}
+          <div>
+            <div className="stat text-sm">
+              Close Losses:{" "}
+              <span className="font-semibold">
+                {allTimeStats(owner).closeLosses}
+              </span>
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">111.2</span>
+              </p>
+              <p>
+                - <span className="text-red-700 font-semibold">2.3</span>
+              </p>
+            </div>
           </div>
-          <div className="stat text-xs">Lucky Ws: </div>
-          <div className="stat text-xs">Unlucky Ls: </div>
+          <div>
+            <div className="stat text-sm">
+              Lucky Ws: <span className="font-semibold"></span>
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">111.2</span>
+              </p>
+              <p>
+                - <span className="text-red-700 font-semibold">2.3</span>
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="stat text-sm">
+              Unlucky Ls: <span className="font-semibold"></span>
+            </div>
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+              <p className="text-slate-600">
+                Lg Avg: <span className="font-semibold">111.2</span>
+              </p>
+              <p>
+                - <span className="text-red-700 font-semibold">2.3</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
