@@ -878,7 +878,7 @@
         "weekTen": { "pointsFor": 116, "pointsAgainst": 101, "opponent": "codyZ" },
         "weekEleven": { "pointsFor": 157, "pointsAgainst": 165, "opponent": "danG" },
         "weekTwelve": { "pointsFor": 123, "pointsAgainst": 99, "opponent": "joeK" },
-        "weekThirteen": { "pointsFor": 92, "pointsAgainst": 90, "opponent": "xxxx" }
+        "weekThirteen": { "pointsFor": 92, "pointsAgainst": 90, "opponent": "domF" }
       },
       "playoffs": {
         "roundOne": {
@@ -1034,28 +1034,28 @@
       "losses": 9,
       "ties": 0,
       "regularSeason": {
-        "weekOne": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekTwo": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekThree": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekFour": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekFive": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekSix": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekSeven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekEight": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekNine": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekTen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekEleven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekTwelve": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekThirteen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
-        "weekFourteen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" }
+        "weekOne": { "pointsFor": 99.66, "pointsAgainst": 137.76, "opponent": "jimmyW" },
+        "weekTwo": { "pointsFor": 135.7, "pointsAgainst": 137.52, "opponent": "Steve Smith" },
+        "weekThree": { "pointsFor": 155.44, "pointsAgainst": 111.74, "opponent": "carter" },
+        "weekFour": { "pointsFor": 131.68, "pointsAgainst": 132.58, "opponent": "domN" },
+        "weekFive": { "pointsFor": 129.28, "pointsAgainst": 190, "opponent": "codyZ" },
+        "weekSix": { "pointsFor": 150.6, "pointsAgainst": 141.6, "opponent": "danteN" },
+        "weekSeven": { "pointsFor": 147.64, "pointsAgainst": 149.54, "opponent": "joeK" },
+        "weekEight": { "pointsFor": 66.72, "pointsAgainst": 134.24, "opponent": "Shawn Ballay" },
+        "weekNine": { "pointsFor": 102.98, "pointsAgainst": 142.74, "opponent": "steveL" },
+        "weekTen": { "pointsFor": 105.72, "pointsAgainst": 90.38, "opponent": "danG" },
+        "weekEleven": { "pointsFor": 114.58, "pointsAgainst": 125.86, "opponent": "aaronM" },
+        "weekTwelve": { "pointsFor": 63.56, "pointsAgainst": 94, "opponent": "jimmyW" },
+        "weekThirteen": { "pointsFor": 113.98, "pointsAgainst": 85.26, "opponent": "Steve Smith" },
+        "weekFourteen": { "pointsFor": 110.12, "pointsAgainst": 61.14, "opponent": "carter" }
       },
       "playoffs": {
         "roundOne": {
-          "participated": true,
+          "participated": false,
           "bye": false,
-          "pointsFor": 95.4,
-          "pointsAgainst": 103.28,
-          "opponent": "danG"
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
         },
         "roundTwo": {
           "participated": false,
@@ -1073,24 +1073,77 @@
     },
     "2022": {
       "participated": true,
-      "wins": 8,
-      "losses": 6,
+      "wins": 5,
+      "losses": 9,
       "ties": 0,
       "regularSeason": {
-        "weekOne": { "pointsFor": 135.32, "pointsAgainst": 140.48, "opponent": "Shawn Ballay" },
-        "weekTwo": { "pointsFor": 103.52, "pointsAgainst": 150.16, "opponent": "Don Irons" },
-        "weekThree": { "pointsFor": 114.9, "pointsAgainst": 109.38, "opponent": "danG" },
-        "weekFour": { "pointsFor": 129.26, "pointsAgainst": 98.26, "opponent": "aaronM" },
-        "weekFive": { "pointsFor": 167.26, "pointsAgainst": 94.5, "opponent": "jimmyW" },
-        "weekSix": { "pointsFor": 135.3, "pointsAgainst": 110.5, "opponent": "steveL" },
-        "weekSeven": { "pointsFor": 96.12, "pointsAgainst": 141.64, "opponent": "domF" },
-        "weekEight": { "pointsFor": 151.8, "pointsAgainst": 107.38, "opponent": "domN" },
-        "weekNine": { "pointsFor": 121.62, "pointsAgainst": 102.8, "opponent": "codyZ" },
-        "weekTen": { "pointsFor": 123.1, "pointsAgainst": 125.1, "opponent": "danteN" },
-        "weekEleven": { "pointsFor": 175.2, "pointsAgainst": 110.66, "opponent": "joeK" },
-        "weekTwelve": { "pointsFor": 113.22, "pointsAgainst": 129.82, "opponent": "Shawn Ballay" },
-        "weekThirteen": { "pointsFor": 122.4, "pointsAgainst": 136.98, "opponent": "Don Irons" },
-        "weekFourteen": { "pointsFor": 114.98, "pointsAgainst": 94.18, "opponent": "danG" }
+        "weekOne": { "pointsFor": 117.3, "pointsAgainst": 119.92, "opponent": "jimmyW" },
+        "weekTwo": { "pointsFor": 150.16, "pointsAgainst": 103.52, "opponent": "Steve Smith" },
+        "weekThree": { "pointsFor": 86.1, "pointsAgainst": 124.32, "opponent": "domF" },
+        "weekFour": { "pointsFor": 127.04, "pointsAgainst": 140.98, "opponent": "domN" },
+        "weekFive": { "pointsFor": 123.38, "pointsAgainst": 130.84, "opponent": "codyZ" },
+        "weekSix": { "pointsFor": 100.44, "pointsAgainst": 125.2, "opponent": "danteN" },
+        "weekSeven": { "pointsFor": 81.56, "pointsAgainst": 105.62, "opponent": "joeK" },
+        "weekEight": { "pointsFor": 97.64, "pointsAgainst": 113.36, "opponent": "Shawn Ballay" },
+        "weekNine": { "pointsFor": 118.44, "pointsAgainst": 99.92, "opponent": "steveL" },
+        "weekTen": { "pointsFor": 145.46, "pointsAgainst": 73.14, "opponent": "danG" },
+        "weekEleven": { "pointsFor": 71.38, "pointsAgainst": 87.04, "opponent": "aaronM" },
+        "weekTwelve": { "pointsFor": 117.92, "pointsAgainst": 111.04, "opponent": "jimmyW" },
+        "weekThirteen": { "pointsFor": 136.98, "pointsAgainst": 122.4, "opponent": "Steve Smith" },
+        "weekFourteen": { "pointsFor": 93.82, "pointsAgainst": 99.48, "opponent": "domF" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "ownerName": "Steve Lloyd",
+    "2014": {
+      "participated": false,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "regularSeason": null,
+      "playoffs": null
+    },
+    "2015": {
+      "participated": true,
+      "wins": 9,
+      "losses": 3,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 143, "pointsAgainst": 121, "opponent": "codyZ" },
+        "weekTwo": { "pointsFor": 162, "pointsAgainst": 138, "opponent": "domF" },
+        "weekThree": { "pointsFor": 145, "pointsAgainst": 150, "opponent": "aaronM" },
+        "weekFour": { "pointsFor": 121, "pointsAgainst": 53, "opponent": "chrisB" },
+        "weekFive": { "pointsFor": 155, "pointsAgainst": 109, "opponent": "Shawn Ballay" },
+        "weekSix": { "pointsFor": 136, "pointsAgainst": 102, "opponent": "Steve Smith" },
+        "weekSeven": { "pointsFor": 128, "pointsAgainst": 125, "opponent": "Don Irons" },
+        "weekEight": { "pointsFor": 148, "pointsAgainst": 95, "opponent": "ericL" },
+        "weekNine": { "pointsFor": 127, "pointsAgainst": 127, "opponent": "domN" },
+        "weekTen": { "pointsFor": 106, "pointsAgainst": 100, "opponent": "codyZ" },
+        "weekEleven": { "pointsFor": 92, "pointsAgainst": 124, "opponent": "domF" },
+        "weekTwelve": { "pointsFor": 121, "pointsAgainst": 109, "opponent": "aaronM" }
       },
       "playoffs": {
         "roundOne": {
@@ -1102,9 +1155,941 @@
         },
         "roundTwo": {
           "participated": true,
-          "pointsFor": 146.7,
-          "pointsAgainst": 167.76,
-          "opponent": "domN"
+          "pointsFor": 107,
+          "pointsAgainst": 117,
+          "opponent": "Don Irons"
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2016": {
+      "participated": true,
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 121, "pointsAgainst": 131, "opponent": "Shawn Ballay" },
+        "weekTwo": { "pointsFor": 109, "pointsAgainst": 138, "opponent": "aaronM" },
+        "weekThree": { "pointsFor": 172, "pointsAgainst": 145, "opponent": "codyZ" },
+        "weekFour": { "pointsFor": 117, "pointsAgainst": 71, "opponent": "joeK" },
+        "weekFive": { "pointsFor": 153, "pointsAgainst": 114, "opponent": "domN" },
+        "weekSix": { "pointsFor": 126, "pointsAgainst": 133, "opponent": "ryanC" },
+        "weekSeven": { "pointsFor": 106, "pointsAgainst": 109, "opponent": "danG" },
+        "weekEight": { "pointsFor": 83, "pointsAgainst": 93, "opponent": "ericL" },
+        "weekNine": { "pointsFor": 104, "pointsAgainst": 114, "opponent": "Don Irons" },
+        "weekTen": { "pointsFor": 96, "pointsAgainst": 111, "opponent": "domF" },
+        "weekEleven": { "pointsFor": 137, "pointsAgainst": 128, "opponent": "danG" },
+        "weekTwelve": { "pointsFor": 132, "pointsAgainst": 129, "opponent": "ryanC" },
+        "weekThirteen": { "pointsFor": 163, "pointsAgainst": 119, "opponent": "Steve Smith" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2017": {
+      "participated": true,
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 95, "pointsAgainst": 115, "opponent": "danG" },
+        "weekTwo": { "pointsFor": 121, "pointsAgainst": 104, "opponent": "joeK" },
+        "weekThree": { "pointsFor": 128, "pointsAgainst": 104, "opponent": "domF" },
+        "weekFour": { "pointsFor": 132, "pointsAgainst": 162, "opponent": "aaronM" },
+        "weekFive": { "pointsFor": 135, "pointsAgainst": 100, "opponent": "Steve Smith" },
+        "weekSix": { "pointsFor": 98, "pointsAgainst": 86, "opponent": "billD" },
+        "weekSeven": { "pointsFor": 90, "pointsAgainst": 135, "opponent": "Don Irons" },
+        "weekEight": { "pointsFor": 131, "pointsAgainst": 107, "opponent": "domN" },
+        "weekNine": { "pointsFor": 88, "pointsAgainst": 107, "opponent": "codyZ" },
+        "weekTen": { "pointsFor": 108, "pointsAgainst": 131, "opponent": "danG" },
+        "weekEleven": { "pointsFor": 104, "pointsAgainst": 92, "opponent": "joeK" },
+        "weekTwelve": { "pointsFor": 125, "pointsAgainst": 122, "opponent": "domF" },
+        "weekThirteen": { "pointsFor": 84, "pointsAgainst": 136, "opponent": "aaronM" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": true,
+          "bye": false,
+          "pointsFor": 125,
+          "pointsAgainst": 158,
+          "opponent": "danG"
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2018": {
+      "participated": true,
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 95, "pointsAgainst": 53, "opponent": "Steve Smith" },
+        "weekTwo": { "pointsFor": 175, "pointsAgainst": 127, "opponent": "joeK" },
+        "weekThree": { "pointsFor": 158, "pointsAgainst": 152, "opponent": "danG" },
+        "weekFour": { "pointsFor": 179, "pointsAgainst": 128, "opponent": "domN" },
+        "weekFive": { "pointsFor": 162, "pointsAgainst": 105, "opponent": "billD" },
+        "weekSix": { "pointsFor": 162, "pointsAgainst": 177, "opponent": "Shawn Ballay" },
+        "weekSeven": { "pointsFor": 144, "pointsAgainst": 158, "opponent": "domF" },
+        "weekEight": { "pointsFor": 156, "pointsAgainst": 140, "opponent": "Don Irons" },
+        "weekNine": { "pointsFor": 153, "pointsAgainst": 103, "opponent": "danteN" },
+        "weekTen": { "pointsFor": 148, "pointsAgainst": 121, "opponent": "codyZ" },
+        "weekEleven": { "pointsFor": 136, "pointsAgainst": 137, "opponent": "aaronM" },
+        "weekTwelve": { "pointsFor": 93, "pointsAgainst": 114, "opponent": "Steve Smith" },
+        "weekThirteen": { "pointsFor": 164, "pointsAgainst": 106, "opponent": "joeK" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": true,
+          "bye": true,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": true,
+          "pointsFor": 164,
+          "pointsAgainst": 89,
+          "opponent": "domF"
+        },
+        "finalRound": {
+          "participated": true,
+          "pointsFor": 101,
+          "pointsAgainst": 125,
+          "opponent": "Shawn Ballay"
+        }
+      }
+    },
+    "2019": {
+      "participated": true,
+      "wins": 10,
+      "losses": 3,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 171, "pointsAgainst": 135, "opponent": "domN" },
+        "weekTwo": { "pointsFor": 91, "pointsAgainst": 89, "opponent": "Don Irons" },
+        "weekThree": { "pointsFor": 156, "pointsAgainst": 153, "opponent": "danteN" },
+        "weekFour": { "pointsFor": 160, "pointsAgainst": 126, "opponent": "domF" },
+        "weekFive": { "pointsFor": 180, "pointsAgainst": 145, "opponent": "codyZ" },
+        "weekSix": { "pointsFor": 144, "pointsAgainst": 106, "opponent": "jimmyW" },
+        "weekSeven": { "pointsFor": 80, "pointsAgainst": 81, "opponent": "Shawn Ballay" },
+        "weekEight": { "pointsFor": 121, "pointsAgainst": 125, "opponent": "Steve Smith" },
+        "weekNine": { "pointsFor": 116, "pointsAgainst": 139, "opponent": "Steve Smith" },
+        "weekTen": { "pointsFor": 113, "pointsAgainst": 79, "opponent": "aaronM" },
+        "weekEleven": { "pointsFor": 110, "pointsAgainst": 109, "opponent": "danG" },
+        "weekTwelve": { "pointsFor": 148, "pointsAgainst": 98, "opponent": "domN" },
+        "weekThirteen": { "pointsFor": 136, "pointsAgainst": 102, "opponent": "Don Irons" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": true,
+          "bye": true,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": true,
+          "pointsFor": 166,
+          "pointsAgainst": 106,
+          "opponent": "domF"
+        },
+        "finalRound": {
+          "participated": true,
+          "pointsFor": 108,
+          "pointsAgainst": 128,
+          "opponent": "codyZ"
+        }
+      }
+    },
+    "2020": {
+      "participated": true,
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 106, "pointsAgainst": 108, "opponent": "domN" },
+        "weekTwo": { "pointsFor": 123, "pointsAgainst": 125, "opponent": "Don Irons" },
+        "weekThree": { "pointsFor": 128, "pointsAgainst": 93, "opponent": "danteN" },
+        "weekFour": { "pointsFor": 150, "pointsAgainst": 127, "opponent": "carter" },
+        "weekFive": { "pointsFor": 122, "pointsAgainst": 115, "opponent": "codyZ" },
+        "weekSix": { "pointsFor": 122, "pointsAgainst": 109, "opponent": "jimmyW" },
+        "weekSeven": { "pointsFor": 111, "pointsAgainst": 138, "opponent": "Shawn Ballay" },
+        "weekEight": { "pointsFor": 125, "pointsAgainst": 96, "opponent": "joeK" },
+        "weekNine": { "pointsFor": 106, "pointsAgainst": 125, "opponent": "Steve Smith" },
+        "weekTen": { "pointsFor": 126, "pointsAgainst": 117, "opponent": "aaronM" },
+        "weekEleven": { "pointsFor": 149, "pointsAgainst": 120, "opponent": "steveL" },
+        "weekTwelve": { "pointsFor": 126, "pointsAgainst": 155, "opponent": "domN" },
+        "weekThirteen": { "pointsFor": 115, "pointsAgainst": 78, "opponent": "Don Irons" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": true,
+          "bye": false,
+          "pointsFor": 140,
+          "pointsAgainst": 166,
+          "opponent": "Don Irons"
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2021": {
+      "participated": true,
+      "wins": 11,
+      "losses": 3,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 138.6, "pointsAgainst": 114, "opponent": "codyZ" },
+        "weekTwo": { "pointsFor": 153.56, "pointsAgainst": 147.62, "opponent": "aaronM" },
+        "weekThree": { "pointsFor": 123.68, "pointsAgainst": 107.22, "opponent": "danteN" },
+        "weekFour": { "pointsFor": 152.94, "pointsAgainst": 91.46, "opponent": "jimmyW" },
+        "weekFive": { "pointsFor": 184.48, "pointsAgainst": 161.34, "opponent": "joeK" },
+        "weekSix": { "pointsFor": 137.28, "pointsAgainst": 158.08, "opponent": "Steve Smith" },
+        "weekSeven": { "pointsFor": 163.98, "pointsAgainst": 101.62, "opponent": "Shawn Ballay" },
+        "weekEight": { "pointsFor": 140.9, "pointsAgainst": 130.96, "opponent": "carter" },
+        "weekNine": { "pointsFor": 142.74, "pointsAgainst": 102.98, "opponent": "Don Irons" },
+        "weekTen": { "pointsFor": 134.22, "pointsAgainst": 131.76, "opponent": "domN" },
+        "weekEleven": { "pointsFor": 163.82, "pointsAgainst": 105.72, "opponent": "danG" },
+        "weekTwelve": { "pointsFor": 131.1, "pointsAgainst": 100.8, "opponent": "codyZ" },
+        "weekThirteen": { "pointsFor": 126.32, "pointsAgainst": 128.5, "opponent": "aaronM" },
+        "weekFourteen": { "pointsFor": 93.48, "pointsAgainst": 127.74, "opponent": "danteN" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": true,
+          "bye": true,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": true,
+          "pointsFor": 120.26,
+          "pointsAgainst": 132.6,
+          "opponent": "danG"
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2022": {
+      "participated": true,
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 138.82, "pointsAgainst": 92.28, "opponent": "codyZ" },
+        "weekTwo": { "pointsFor": 166.12, "pointsAgainst": 119.6, "opponent": "aaronM" },
+        "weekThree": { "pointsFor": 147.42, "pointsAgainst": 103.7, "opponent": "danteN" },
+        "weekFour": { "pointsFor": 121.36, "pointsAgainst": 76.08, "opponent": "jimmyW" },
+        "weekFive": { "pointsFor": 101.26, "pointsAgainst": 90.58, "opponent": "joeK" },
+        "weekSix": { "pointsFor": 110.5, "pointsAgainst": 135.3, "opponent": "Steve Smith" },
+        "weekSeven": { "pointsFor": 90.9, "pointsAgainst": 114.82, "opponent": "Shawn Ballay" },
+        "weekEight": { "pointsFor": 145.92, "pointsAgainst": 87.84, "opponent": "domF" },
+        "weekNine": { "pointsFor": 99.92, "pointsAgainst": 118.44, "opponent": "Don Irons" },
+        "weekTen": { "pointsFor": 90.6, "pointsAgainst": 129.84, "opponent": "domN" },
+        "weekEleven": { "pointsFor": 121.16, "pointsAgainst": 113.0, "opponent": "danG" },
+        "weekTwelve": { "pointsFor": 129.36, "pointsAgainst": 137.44, "opponent": "codyZ" },
+        "weekThirteen": { "pointsFor": 83.84, "pointsAgainst": 113.5, "opponent": "aaronM" },
+        "weekFourteen": { "pointsFor": 112.26, "pointsAgainst": 111.36, "opponent": "danteN" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": true,
+          "bye": false,
+          "pointsFor": 81.1,
+          "pointsAgainst": 107.24,
+          "opponent": "joeK"
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "ownerName": "Dante Nocito",
+    "2014": {
+      "participated": false,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "regularSeason": null,
+      "playoffs": null
+    },
+    "2015": {
+      "participated": false,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "regularSeason": null,
+      "playoffs": null
+    },
+    "2016": {
+      "participated": false,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "regularSeason": null,
+      "playoffs": null
+    },
+    "2017": {
+      "participated": false,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "regularSeason": null,
+      "playoffs": null
+    },
+    "2018": {
+      "participated": true,
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 121, "pointsAgainst": 112, "opponent": "billD" },
+        "weekTwo": { "pointsFor": 102, "pointsAgainst": 148, "opponent": "Shawn Ballay" },
+        "weekThree": { "pointsFor": 151, "pointsAgainst": 105, "opponent": "domF" },
+        "weekFour": { "pointsFor": 92, "pointsAgainst": 153, "opponent": "Don Irons" },
+        "weekFive": { "pointsFor": 147, "pointsAgainst": 111, "opponent": "joeK" },
+        "weekSix": { "pointsFor": 103, "pointsAgainst": 145, "opponent": "codyZ" },
+        "weekSeven": { "pointsFor": 116, "pointsAgainst": 124, "opponent": "aaronM" },
+        "weekEight": { "pointsFor": 90, "pointsAgainst": 110, "opponent": "Steve Smith" },
+        "weekNine": { "pointsFor": 103, "pointsAgainst": 153, "opponent": "steveL" },
+        "weekTen": { "pointsFor": 98, "pointsAgainst": 128, "opponent": "danG" },
+        "weekEleven": { "pointsFor": 90, "pointsAgainst": 95, "opponent": "domN" },
+        "weekTwelve": { "pointsFor": 103, "pointsAgainst": 68, "opponent": "billD" },
+        "weekThirteen": { "pointsFor": 90, "pointsAgainst": 105, "opponent": "Shawn Ballay" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2019": {
+      "participated": true,
+      "wins": 6,
+      "losses": 6,
+      "ties": 1,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 142, "pointsAgainst": 61, "opponent": "domF" },
+        "weekTwo": { "pointsFor": 116, "pointsAgainst": 111, "opponent": "codyZ" },
+        "weekThree": { "pointsFor": 153, "pointsAgainst": 156, "opponent": "steveL" },
+        "weekFour": { "pointsFor": 132, "pointsAgainst": 90, "opponent": "Shawn Ballay" },
+        "weekFive": { "pointsFor": 119, "pointsAgainst": 124, "opponent": "joeK" },
+        "weekSix": { "pointsFor": 139, "pointsAgainst": 161, "opponent": "Steve Smith" },
+        "weekSeven": { "pointsFor": 100, "pointsAgainst": 154, "opponent": "aaronM" },
+        "weekEight": { "pointsFor": 135, "pointsAgainst": 125, "opponent": "danG" },
+        "weekNine": { "pointsFor": 105, "pointsAgainst": 100, "opponent": "domN" },
+        "weekTen": { "pointsFor": 119, "pointsAgainst": 139, "opponent": "Don Irons" },
+        "weekEleven": { "pointsFor": 114, "pointsAgainst": 88, "opponent": "jimmyW" },
+        "weekTwelve": { "pointsFor": 70, "pointsAgainst": 82, "opponent": "domF" },
+        "weekThirteen": { "pointsFor": 108, "pointsAgainst": 108, "opponent": "codyZ" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2020": {
+      "participated": true,
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 105, "pointsAgainst": 172, "opponent": "carter" },
+        "weekTwo": { "pointsFor": 134, "pointsAgainst": 139, "opponent": "codyZ" },
+        "weekThree": { "pointsFor": 93, "pointsAgainst": 128, "opponent": "steveL" },
+        "weekFour": { "pointsFor": 77, "pointsAgainst": 124, "opponent": "Shawn Ballay" },
+        "weekFive": { "pointsFor": 111, "pointsAgainst": 107, "opponent": "joeK" },
+        "weekSix": { "pointsFor": 93, "pointsAgainst": 91, "opponent": "Steve Smith" },
+        "weekSeven": { "pointsFor": 135, "pointsAgainst": 119, "opponent": "aaronM" },
+        "weekEight": { "pointsFor": 137, "pointsAgainst": 61, "opponent": "danG" },
+        "weekNine": { "pointsFor": 132, "pointsAgainst": 116, "opponent": "domN" },
+        "weekTen": { "pointsFor": 122, "pointsAgainst": 160, "opponent": "Don Irons" },
+        "weekEleven": { "pointsFor": 128, "pointsAgainst": 79, "opponent": "jimmyW" },
+        "weekTwelve": { "pointsFor": 110, "pointsAgainst": 132, "opponent": "carter" },
+        "weekThirteen": { "pointsFor": 113, "pointsAgainst": 116, "opponent": "codyZ" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2021": {
+      "participated": true,
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 134.42, "pointsAgainst": 83.22, "opponent": "domN" },
+        "weekTwo": { "pointsFor": 100.08, "pointsAgainst": 127.06, "opponent": "codyZ" },
+        "weekThree": { "pointsFor": 107.22, "pointsAgainst": 123.68, "opponent": "steveL" },
+        "weekFour": { "pointsFor": 117.12, "pointsAgainst": 85.46, "opponent": "joeK" },
+        "weekFive": { "pointsFor": 87.08, "pointsAgainst": 127.72, "opponent": "Shawn Ballay" },
+        "weekSix": { "pointsFor": 141.6, "pointsAgainst": 150.6, "opponent": "Don Irons" },
+        "weekSeven": { "pointsFor": 80.74, "pointsAgainst": 101.84, "opponent": "danG" },
+        "weekEight": { "pointsFor": 99.74, "pointsAgainst": 100.8, "opponent": "aaronM" },
+        "weekNine": { "pointsFor": 99.48, "pointsAgainst": 98.98, "opponent": "jimmyW" },
+        "weekTen": { "pointsFor": 89.64, "pointsAgainst": 143.94, "opponent": "Steve Smith" },
+        "weekEleven": { "pointsFor": 116.24, "pointsAgainst": 109.3, "opponent": "carter" },
+        "weekTwelve": { "pointsFor": 141.2, "pointsAgainst": 117.38, "opponent": "domN" },
+        "weekThirteen": { "pointsFor": 97.42, "pointsAgainst": 111, "opponent": "codyZ" },
+        "weekFourteen": { "pointsFor": 127.74, "pointsAgainst": 93.48, "opponent": "steveL" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2022": {
+      "participated": true,
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 94.32, "pointsAgainst": 115.5, "opponent": "domN" },
+        "weekTwo": { "pointsFor": 105.16, "pointsAgainst": 139.38, "opponent": "codyZ" },
+        "weekThree": { "pointsFor": 103.7, "pointsAgainst": 147.42, "opponent": "steveL" },
+        "weekFour": { "pointsFor": 121.18, "pointsAgainst": 129.29, "opponent": "joeK" },
+        "weekFive": { "pointsFor": 96.08, "pointsAgainst": 102.96, "opponent": "Shawn Ballay" },
+        "weekSix": { "pointsFor": 125.2, "pointsAgainst": 100.44, "opponent": "Don Irons" },
+        "weekSeven": { "pointsFor": 185.04, "pointsAgainst": 112.12, "opponent": "danG" },
+        "weekEight": { "pointsFor": 97.18, "pointsAgainst": 138.18, "opponent": "aaronM" },
+        "weekNine": { "pointsFor": 148.54, "pointsAgainst": 89.1, "opponent": "jimmyW" },
+        "weekTen": { "pointsFor": 125.1, "pointsAgainst": 123.1, "opponent": "Steve Smith" },
+        "weekEleven": { "pointsFor": 138.1, "pointsAgainst": 111.78, "opponent": "domF" },
+        "weekTwelve": { "pointsFor": 94.66, "pointsAgainst": 158, "opponent": "domN" },
+        "weekThirteen": { "pointsFor": 130.14, "pointsAgainst": 172.34, "opponent": "codyZ" },
+        "weekFourteen": { "pointsFor": 111.36, "pointsAgainst": 112.26, "opponent": "steveL" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "ownerName": "Cody Zwier",
+    "2014": {
+      "participated": true,
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekTwo": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekThree": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekFour": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekFive": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekSix": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekSeven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekEight": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekNine": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekTen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekEleven": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekTwelve": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekThirteen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" },
+        "weekFourteen": { "pointsFor": 000, "pointsAgainst": 000, "opponent": "xxxx" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2015": {
+      "participated": true,
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 94.32, "pointsAgainst": 115.5, "opponent": "domN" },
+        "weekTwo": { "pointsFor": 105.16, "pointsAgainst": 139.38, "opponent": "codyZ" },
+        "weekThree": { "pointsFor": 103.7, "pointsAgainst": 147.42, "opponent": "steveL" },
+        "weekFour": { "pointsFor": 121.18, "pointsAgainst": 129.29, "opponent": "joeK" },
+        "weekFive": { "pointsFor": 96.08, "pointsAgainst": 102.96, "opponent": "Shawn Ballay" },
+        "weekSix": { "pointsFor": 125.2, "pointsAgainst": 100.44, "opponent": "Don Irons" },
+        "weekSeven": { "pointsFor": 185.04, "pointsAgainst": 112.12, "opponent": "danG" },
+        "weekEight": { "pointsFor": 97.18, "pointsAgainst": 138.18, "opponent": "aaronM" },
+        "weekNine": { "pointsFor": 148.54, "pointsAgainst": 89.1, "opponent": "jimmyW" },
+        "weekTen": { "pointsFor": 125.1, "pointsAgainst": 123.1, "opponent": "Steve Smith" },
+        "weekEleven": { "pointsFor": 138.1, "pointsAgainst": 111.78, "opponent": "domF" },
+        "weekTwelve": { "pointsFor": 94.66, "pointsAgainst": 158, "opponent": "domN" },
+        "weekThirteen": { "pointsFor": 130.14, "pointsAgainst": 172.34, "opponent": "codyZ" },
+        "weekFourteen": { "pointsFor": 111.36, "pointsAgainst": 112.26, "opponent": "steveL" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2016": {
+      "participated": true,
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 94.32, "pointsAgainst": 115.5, "opponent": "domN" },
+        "weekTwo": { "pointsFor": 105.16, "pointsAgainst": 139.38, "opponent": "codyZ" },
+        "weekThree": { "pointsFor": 103.7, "pointsAgainst": 147.42, "opponent": "steveL" },
+        "weekFour": { "pointsFor": 121.18, "pointsAgainst": 129.29, "opponent": "joeK" },
+        "weekFive": { "pointsFor": 96.08, "pointsAgainst": 102.96, "opponent": "Shawn Ballay" },
+        "weekSix": { "pointsFor": 125.2, "pointsAgainst": 100.44, "opponent": "Don Irons" },
+        "weekSeven": { "pointsFor": 185.04, "pointsAgainst": 112.12, "opponent": "danG" },
+        "weekEight": { "pointsFor": 97.18, "pointsAgainst": 138.18, "opponent": "aaronM" },
+        "weekNine": { "pointsFor": 148.54, "pointsAgainst": 89.1, "opponent": "jimmyW" },
+        "weekTen": { "pointsFor": 125.1, "pointsAgainst": 123.1, "opponent": "Steve Smith" },
+        "weekEleven": { "pointsFor": 138.1, "pointsAgainst": 111.78, "opponent": "domF" },
+        "weekTwelve": { "pointsFor": 94.66, "pointsAgainst": 158, "opponent": "domN" },
+        "weekThirteen": { "pointsFor": 130.14, "pointsAgainst": 172.34, "opponent": "codyZ" },
+        "weekFourteen": { "pointsFor": 111.36, "pointsAgainst": 112.26, "opponent": "steveL" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2017": {
+      "participated": true,
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 94.32, "pointsAgainst": 115.5, "opponent": "domN" },
+        "weekTwo": { "pointsFor": 105.16, "pointsAgainst": 139.38, "opponent": "codyZ" },
+        "weekThree": { "pointsFor": 103.7, "pointsAgainst": 147.42, "opponent": "steveL" },
+        "weekFour": { "pointsFor": 121.18, "pointsAgainst": 129.29, "opponent": "joeK" },
+        "weekFive": { "pointsFor": 96.08, "pointsAgainst": 102.96, "opponent": "Shawn Ballay" },
+        "weekSix": { "pointsFor": 125.2, "pointsAgainst": 100.44, "opponent": "Don Irons" },
+        "weekSeven": { "pointsFor": 185.04, "pointsAgainst": 112.12, "opponent": "danG" },
+        "weekEight": { "pointsFor": 97.18, "pointsAgainst": 138.18, "opponent": "aaronM" },
+        "weekNine": { "pointsFor": 148.54, "pointsAgainst": 89.1, "opponent": "jimmyW" },
+        "weekTen": { "pointsFor": 125.1, "pointsAgainst": 123.1, "opponent": "Steve Smith" },
+        "weekEleven": { "pointsFor": 138.1, "pointsAgainst": 111.78, "opponent": "domF" },
+        "weekTwelve": { "pointsFor": 94.66, "pointsAgainst": 158, "opponent": "domN" },
+        "weekThirteen": { "pointsFor": 130.14, "pointsAgainst": 172.34, "opponent": "codyZ" },
+        "weekFourteen": { "pointsFor": 111.36, "pointsAgainst": 112.26, "opponent": "steveL" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2018": {
+      "participated": true,
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 121, "pointsAgainst": 112, "opponent": "billD" },
+        "weekTwo": { "pointsFor": 102, "pointsAgainst": 148, "opponent": "Shawn Ballay" },
+        "weekThree": { "pointsFor": 151, "pointsAgainst": 105, "opponent": "domF" },
+        "weekFour": { "pointsFor": 92, "pointsAgainst": 153, "opponent": "Don Irons" },
+        "weekFive": { "pointsFor": 147, "pointsAgainst": 111, "opponent": "joeK" },
+        "weekSix": { "pointsFor": 103, "pointsAgainst": 145, "opponent": "codyZ" },
+        "weekSeven": { "pointsFor": 116, "pointsAgainst": 124, "opponent": "aaronM" },
+        "weekEight": { "pointsFor": 90, "pointsAgainst": 110, "opponent": "Steve Smith" },
+        "weekNine": { "pointsFor": 103, "pointsAgainst": 153, "opponent": "steveL" },
+        "weekTen": { "pointsFor": 98, "pointsAgainst": 128, "opponent": "danG" },
+        "weekEleven": { "pointsFor": 90, "pointsAgainst": 95, "opponent": "domN" },
+        "weekTwelve": { "pointsFor": 103, "pointsAgainst": 68, "opponent": "billD" },
+        "weekThirteen": { "pointsFor": 90, "pointsAgainst": 105, "opponent": "Shawn Ballay" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2019": {
+      "participated": true,
+      "wins": 6,
+      "losses": 6,
+      "ties": 1,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 142, "pointsAgainst": 61, "opponent": "domF" },
+        "weekTwo": { "pointsFor": 116, "pointsAgainst": 111, "opponent": "codyZ" },
+        "weekThree": { "pointsFor": 153, "pointsAgainst": 156, "opponent": "steveL" },
+        "weekFour": { "pointsFor": 132, "pointsAgainst": 90, "opponent": "Shawn Ballay" },
+        "weekFive": { "pointsFor": 119, "pointsAgainst": 124, "opponent": "joeK" },
+        "weekSix": { "pointsFor": 139, "pointsAgainst": 161, "opponent": "Steve Smith" },
+        "weekSeven": { "pointsFor": 100, "pointsAgainst": 154, "opponent": "aaronM" },
+        "weekEight": { "pointsFor": 135, "pointsAgainst": 125, "opponent": "danG" },
+        "weekNine": { "pointsFor": 105, "pointsAgainst": 100, "opponent": "domN" },
+        "weekTen": { "pointsFor": 119, "pointsAgainst": 139, "opponent": "Don Irons" },
+        "weekEleven": { "pointsFor": 114, "pointsAgainst": 88, "opponent": "jimmyW" },
+        "weekTwelve": { "pointsFor": 70, "pointsAgainst": 82, "opponent": "domF" },
+        "weekThirteen": { "pointsFor": 108, "pointsAgainst": 108, "opponent": "codyZ" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2020": {
+      "participated": true,
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 105, "pointsAgainst": 172, "opponent": "carter" },
+        "weekTwo": { "pointsFor": 134, "pointsAgainst": 139, "opponent": "codyZ" },
+        "weekThree": { "pointsFor": 93, "pointsAgainst": 128, "opponent": "steveL" },
+        "weekFour": { "pointsFor": 77, "pointsAgainst": 124, "opponent": "Shawn Ballay" },
+        "weekFive": { "pointsFor": 111, "pointsAgainst": 107, "opponent": "joeK" },
+        "weekSix": { "pointsFor": 93, "pointsAgainst": 91, "opponent": "Steve Smith" },
+        "weekSeven": { "pointsFor": 135, "pointsAgainst": 119, "opponent": "aaronM" },
+        "weekEight": { "pointsFor": 137, "pointsAgainst": 61, "opponent": "danG" },
+        "weekNine": { "pointsFor": 132, "pointsAgainst": 116, "opponent": "domN" },
+        "weekTen": { "pointsFor": 122, "pointsAgainst": 160, "opponent": "Don Irons" },
+        "weekEleven": { "pointsFor": 128, "pointsAgainst": 79, "opponent": "jimmyW" },
+        "weekTwelve": { "pointsFor": 110, "pointsAgainst": 132, "opponent": "carter" },
+        "weekThirteen": { "pointsFor": 113, "pointsAgainst": 116, "opponent": "codyZ" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2021": {
+      "participated": true,
+      "wins": 6,
+      "losses": 8,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 134.42, "pointsAgainst": 83.22, "opponent": "domN" },
+        "weekTwo": { "pointsFor": 100.08, "pointsAgainst": 127.06, "opponent": "codyZ" },
+        "weekThree": { "pointsFor": 107.22, "pointsAgainst": 123.68, "opponent": "steveL" },
+        "weekFour": { "pointsFor": 117.12, "pointsAgainst": 85.46, "opponent": "joeK" },
+        "weekFive": { "pointsFor": 87.08, "pointsAgainst": 127.72, "opponent": "Shawn Ballay" },
+        "weekSix": { "pointsFor": 141.6, "pointsAgainst": 150.6, "opponent": "Don Irons" },
+        "weekSeven": { "pointsFor": 80.74, "pointsAgainst": 101.84, "opponent": "danG" },
+        "weekEight": { "pointsFor": 99.74, "pointsAgainst": 100.8, "opponent": "aaronM" },
+        "weekNine": { "pointsFor": 99.48, "pointsAgainst": 98.98, "opponent": "jimmyW" },
+        "weekTen": { "pointsFor": 89.64, "pointsAgainst": 143.94, "opponent": "Steve Smith" },
+        "weekEleven": { "pointsFor": 116.24, "pointsAgainst": 109.3, "opponent": "carter" },
+        "weekTwelve": { "pointsFor": 141.2, "pointsAgainst": 117.38, "opponent": "domN" },
+        "weekThirteen": { "pointsFor": 97.42, "pointsAgainst": 111, "opponent": "codyZ" },
+        "weekFourteen": { "pointsFor": 127.74, "pointsAgainst": 93.48, "opponent": "steveL" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "finalRound": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        }
+      }
+    },
+    "2022": {
+      "participated": true,
+      "wins": 5,
+      "losses": 9,
+      "ties": 0,
+      "regularSeason": {
+        "weekOne": { "pointsFor": 94.32, "pointsAgainst": 115.5, "opponent": "domN" },
+        "weekTwo": { "pointsFor": 105.16, "pointsAgainst": 139.38, "opponent": "codyZ" },
+        "weekThree": { "pointsFor": 103.7, "pointsAgainst": 147.42, "opponent": "steveL" },
+        "weekFour": { "pointsFor": 121.18, "pointsAgainst": 129.29, "opponent": "joeK" },
+        "weekFive": { "pointsFor": 96.08, "pointsAgainst": 102.96, "opponent": "Shawn Ballay" },
+        "weekSix": { "pointsFor": 125.2, "pointsAgainst": 100.44, "opponent": "Don Irons" },
+        "weekSeven": { "pointsFor": 185.04, "pointsAgainst": 112.12, "opponent": "danG" },
+        "weekEight": { "pointsFor": 97.18, "pointsAgainst": 138.18, "opponent": "aaronM" },
+        "weekNine": { "pointsFor": 148.54, "pointsAgainst": 89.1, "opponent": "jimmyW" },
+        "weekTen": { "pointsFor": 125.1, "pointsAgainst": 123.1, "opponent": "Steve Smith" },
+        "weekEleven": { "pointsFor": 138.1, "pointsAgainst": 111.78, "opponent": "domF" },
+        "weekTwelve": { "pointsFor": 94.66, "pointsAgainst": 158, "opponent": "domN" },
+        "weekThirteen": { "pointsFor": 130.14, "pointsAgainst": 172.34, "opponent": "codyZ" },
+        "weekFourteen": { "pointsFor": 111.36, "pointsAgainst": 112.26, "opponent": "steveL" }
+      },
+      "playoffs": {
+        "roundOne": {
+          "participated": false,
+          "bye": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
+        },
+        "roundTwo": {
+          "participated": false,
+          "pointsFor": null,
+          "pointsAgainst": null,
+          "opponent": null
         },
         "finalRound": {
           "participated": false,
