@@ -22,7 +22,7 @@ function OwnerCard({ owner }) {
     // Card
     <div className="font-montserrat card w-[28rem] h-56 flex justify-around items-center pb-4 flex-col justify-between h-full rounded-xl bg-white overflow-hidden">
       {/* Header */}
-      <div className="flex w-full items-center justify-between py-3 px-4 text-2xl bg-blue-200">
+      <div className="flex w-full items-center justify-between py-3 px-4 text-xl bg-blue-200">
         <h1 className="font-semibold">{owner.ownerName}</h1>
         <p className="font-medium text-xs text-black bg-amber-300 py-1 rounded px-1 shadow-md">
           Seasons:{" "}
@@ -91,7 +91,7 @@ function OwnerCard({ owner }) {
             </div>
             <div>
               <p className="text-[.8rem] text-muted text-slate-600">
-                Winning Pct:
+                Winning Pct:{" "}
                 <span className="font-bold">
                   {totalStats(owner).winningPercentage}
                 </span>
