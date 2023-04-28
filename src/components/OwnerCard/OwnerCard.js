@@ -24,12 +24,12 @@ function OwnerCard({ owner }) {
       {/* Header */}
       <div className="flex w-full items-center justify-between py-3 px-4 text-2xl bg-blue-200">
         <h1 className="font-semibold">{owner.ownerName}</h1>
-        <p className="font-medium text-xs text-white bg-blue-800 py-1 rounded px-1">
+        <p className="font-medium text-xs text-black bg-amber-300 py-1 rounded px-1 shadow-md">
           Seasons:{" "}
           <span className="font-bold">{playOffStats(owner).totalYears}</span>
         </p>
         <div className="button-wrapper flex">
-          <button className="font-semibold text-base border-r-0 border-2 border-blue-900 px-2 py-[2px] hover:bg-blue-900 hover:text-white rounded-l">
+          <button className="font-semibold text-base border-r-0 border-2 border-blue-900 px-2 py-[2px] bg-blue-900 text-white hover:bg-blue-900 hover:text-white rounded-l">
             All-Time
           </button>
           <button className="font-semibold text-base border-2 border-blue-900 px-2 py-[2px] hover:bg-blue-900 hover:text-white rounded-r flex items-center gap-1">
