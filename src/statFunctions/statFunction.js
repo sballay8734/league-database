@@ -1,3 +1,5 @@
+// ************************************************************************
+// Single OWNER functions
 // returns YEARLY wins, losses, ties, and winning percentage
 export function totalStatsBySeason(year, owner) {
   const keysArray = Object.keys(owner[year].regularSeason)
@@ -211,9 +213,37 @@ export function allTimeStats(owner) {
 
   // return AVG PF and PA at end as well
 }
+
+export function averagePlacement(owner) {
+  let placements = []
+  let lastCount = 0
+
+  const keys = Object.keys(owner)
+
+  keys.forEach((key) => {
+    if (key === "id" || key === "ownerName") return
+
+    if (owner[key].finished) {
+      placements.push(owner[key].finished)
+    }
+
+    if (owner[key].last === true) {
+      lastCount++
+    }
+  })
+
+  let total = 0
+  placements.forEach((item) => {
+    total += item
+  })
+  const avgPlacement = Number((total / placements.length).toFixed(1))
+
+  return { avgPlacement, lastCount }
+}
+
+// ************************************************************************
+// ALL OWNER functions
+
 // AVERAGE MARGIN OF VICTORY/DEFEAT ??
 // 69 counter
-
-// NEED TO ADD ********************************
-// last: true/false
-// finished: 4
+// Playoff win% (bye?)

@@ -5,7 +5,8 @@ import {
   totalStats,
   playOffStats,
   finalsStats,
-  allTimeStats
+  allTimeStats,
+  averagePlacement
 } from "../../statFunctions/statFunction"
 import "../../styles.css"
 import logo from "../../images/profileImg.png"
@@ -13,10 +14,40 @@ import logo from "../../images/profileImg.png"
 // "leading" tailwind property messing with spacing in "Featured Stats"
 // Include playoffs in these stats (Most/least points in a week, highest/lowest combined total, winning streak, etc...)
 
-function OwnerCard({ owner }) {
+function OwnerCard({ owner, owners }) {
   // function luckyAndUnlucky(owner) {
   //   // for each week get average points of league
   // }
+
+  function leagueAverageStats(owners) {
+    let pointsFor = []
+    let pointsAgainst = []
+
+    owners.forEach((owner) => {
+      pointsFor.push(allTimeStats(owner).averagePointsFor)
+      pointsAgainst.push(allTimeStats(owner).averagePointsAgainst)
+    })
+
+    let totalPointsFor = 0
+    pointsFor.forEach((item) => {
+      totalPointsFor += Number(item)
+    })
+
+    let totalPointsAgainst = 0
+    pointsAgainst.forEach((item) => {
+      totalPointsAgainst += Number(item)
+    })
+
+    const leagueAveragePointsFor = (totalPointsFor / pointsFor.length).toFixed(
+      2
+    )
+
+    const leagueAveragePointsAgainst = (
+      totalPointsAgainst / pointsAgainst.length
+    ).toFixed(2)
+
+    return { leagueAveragePointsFor, leagueAveragePointsAgainst }
+  }
 
   return (
     // Card
@@ -45,7 +76,12 @@ function OwnerCard({ owner }) {
         <div className="flex gap-8">
           <div className="flex flex-col gap-2">
             <div>
-              <p className="text-base font-medium">Koth Victories: </p>
+              <p className="text-base font-medium">
+                Avg. Finish:{" "}
+                <span className="font-semibold">
+                  {averagePlacement(owner).avgPlacement}
+                </span>
+              </p>
               <div className="text-[.6rem] leading-[4px] italic flex justify-between py-[1px] w-10/12">
                 <p className="text-slate-600">
                   Lg Avg: <span className="font-semibold">115.2</span>
@@ -121,10 +157,19 @@ function OwnerCard({ owner }) {
             </div>
             <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
               <p className="text-slate-600">
-                Lg Avg: <span className="font-semibold">115.2</span>
+                Lg Avg:{" "}
+                <span className="font-semibold">
+                  {leagueAverageStats(owners).leagueAveragePointsFor}
+                </span>
               </p>
               <p className="text-green-700">
-                <span className="text-green-700 font-semibold">+9.8</span>
+                <span className="text-green-700 font-semibold">
+                  +
+                  {(
+                    allTimeStats(owner).averagePointsFor -
+                    leagueAverageStats(owners).leagueAveragePointsFor
+                  ).toFixed(2)}
+                </span>
               </p>
             </div>
           </div>
@@ -137,10 +182,18 @@ function OwnerCard({ owner }) {
             </div>
             <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
               <p className="text-slate-600">
-                Lg Avg: <span className="font-semibold">111.2</span>
+                Lg Avg:{" "}
+                <span className="font-semibold">
+                  {leagueAverageStats(owners).leagueAveragePointsAgainst}
+                </span>
               </p>
               <p>
-                <span className="text-red-700 font-semibold">-2.3</span>
+                <span className="text-red-700 font-semibold">
+                  {(
+                    allTimeStats(owner).averagePointsAgainst -
+                    leagueAverageStats(owners).leagueAveragePointsAgainst
+                  ).toFixed(2)}
+                </span>
               </p>
             </div>
           </div>
@@ -214,7 +267,10 @@ function OwnerCard({ owner }) {
           </div>
           <div>
             <div className="stat text-sm">
-              Last: <span className="font-semibold"></span>
+              Last:{" "}
+              <span className="font-semibold">
+                {averagePlacement(owner).lastCount}
+              </span>
             </div>
             <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
               <p className="text-slate-600">

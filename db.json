@@ -8,6 +8,8 @@
       "wins": 11,
       "losses": 2,
       "ties": 0,
+      "last": false,
+      "finished": 1,
       "regularSeason": {
         "weekOne": { "pointsFor": 121, "pointsAgainst": 104, "opponent": "Cody Zwier" },
         "weekTwo": { "pointsFor": 110, "pointsAgainst": 108, "opponent": "ryanR" },
@@ -50,6 +52,8 @@
       "wins": 5,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 8,
       "regularSeason": {
         "weekOne": { "pointsFor": 124, "pointsAgainst": 140, "opponent": "Dom Nocito" },
         "weekTwo": { "pointsFor": 133, "pointsAgainst": 104, "opponent": "Steve Smith" },
@@ -91,6 +95,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 6,
       "regularSeason": {
         "weekOne": { "pointsFor": 131, "pointsAgainst": 121, "opponent": "Steve Lloyd" },
         "weekTwo": { "pointsFor": 106, "pointsAgainst": 115, "opponent": "Dom Nocito" },
@@ -141,6 +147,8 @@
       "wins": 10,
       "losses": 3,
       "ties": 0,
+      "last": false,
+      "finished": 1,
       "regularSeason": {
         "weekOne": { "pointsFor": 130, "pointsAgainst": 134, "opponent": "Don Irons" },
         "weekTwo": { "pointsFor": 148, "pointsAgainst": 102, "opponent": "Dante Nocito" },
@@ -183,6 +191,8 @@
       "wins": 3,
       "losses": 10,
       "ties": 0,
+      "last": true,
+      "finished": 12,
       "regularSeason": {
         "weekOne": { "pointsFor": 101, "pointsAgainst": 148, "opponent": "Dan George" },
         "weekTwo": { "pointsFor": 134, "pointsAgainst": 101, "opponent": "Dom Nocito" },
@@ -225,6 +235,8 @@
       "wins": 9,
       "losses": 4,
       "ties": 0,
+      "last": false,
+      "finished": 3,
       "regularSeason": {
         "weekOne": { "pointsFor": 89, "pointsAgainst": 140, "opponent": "Dan George" },
         "weekTwo": { "pointsFor": 106, "pointsAgainst": 162, "opponent": "Dom Nocito" },
@@ -267,6 +279,8 @@
       "wins": 10,
       "losses": 4,
       "ties": 0,
+      "last": false,
+      "finished": 2,
       "regularSeason": {
         "weekOne": { "pointsFor": 99.92, "pointsAgainst": 142.58, "opponent": "Steve Smith" },
         "weekTwo": { "pointsFor": 112.6, "pointsAgainst": 138.3, "opponent": "carter" },
@@ -310,6 +324,8 @@
       "wins": 11,
       "losses": 3,
       "ties": 0,
+      "last": false,
+      "finished": 1,
       "regularSeason": {
         "weekOne": { "pointsFor": 140.48, "pointsAgainst": 135.32, "opponent": "Steve Smith" },
         "weekTwo": { "pointsFor": 130.68, "pointsAgainst": 101.78, "opponent": "Dom Flipp" },
@@ -357,6 +373,8 @@
       "wins": 5,
       "losses": 8,
       "ties": 0,
+      "last": false,
+      "finished": 8,
       "regularSeason": {
         "weekOne": { "pointsFor": 145, "pointsAgainst": 130, "opponent": "Dom Nocito" },
         "weekTwo": { "pointsFor": 91, "pointsAgainst": 97, "opponent": "ryanC" },
@@ -399,6 +417,8 @@
       "wins": 4,
       "losses": 8,
       "ties": 0,
+      "last": false,
+      "finished": 9,
       "regularSeason": {
         "weekOne": { "pointsFor": 109, "pointsAgainst": 136, "opponent": "chrisB" },
         "weekTwo": { "pointsFor": 104, "pointsAgainst": 133, "opponent": "Shawn Ballay" },
@@ -440,6 +460,8 @@
       "wins": 9,
       "losses": 4,
       "ties": 0,
+      "last": false,
+      "finished": 2,
       "regularSeason": {
         "weekOne": { "pointsFor": 124, "pointsAgainst": 119, "opponent": "Dom Nocito" },
         "weekTwo": { "pointsFor": 150, "pointsAgainst": 130, "opponent": "ryanC" },
@@ -482,6 +504,8 @@
       "wins": 10,
       "losses": 3,
       "ties": 0,
+      "last": false,
+      "finished": 1,
       "regularSeason": {
         "weekOne": { "pointsFor": 104, "pointsAgainst": 101, "opponent": "Joe Kane" },
         "weekTwo": { "pointsFor": 129, "pointsAgainst": 120, "opponent": "Dom Flipp" },
@@ -524,6 +548,8 @@
       "wins": 9,
       "losses": 4,
       "ties": 0,
+      "last": false,
+      "finished": 3,
       "regularSeason": {
         "weekOne": { "pointsFor": 53, "pointsAgainst": 95, "opponent": "Steve Lloyd" },
         "weekTwo": { "pointsFor": 158, "pointsAgainst": 135, "opponent": "Dan George" },
@@ -566,6 +592,8 @@
       "wins": 5,
       "losses": 8,
       "ties": 0,
+      "last": false,
+      "finished": 8,
       "regularSeason": {
         "weekOne": { "pointsFor": 118, "pointsAgainst": 97, "opponent": "Jimmy Wagner" },
         "weekTwo": { "pointsFor": 99, "pointsAgainst": 113, "opponent": "Aaron Mackenzie" },
@@ -608,6 +636,8 @@
       "wins": 5,
       "losses": 8,
       "ties": 0,
+      "last": false,
+      "finished": 10,
       "regularSeason": {
         "weekOne": { "pointsFor": 84, "pointsAgainst": 125, "opponent": "Jimmy Wagner" },
         "weekTwo": { "pointsFor": 171, "pointsAgainst": 80, "opponent": "Aaron Mackenzie" },
@@ -650,6 +680,8 @@
       "wins": 8,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 4,
       "regularSeason": {
         "weekOne": { "pointsFor": 142.58, "pointsAgainst": 99.92, "opponent": "Shawn Ballay" },
         "weekTwo": { "pointsFor": 137.52, "pointsAgainst": 135.7, "opponent": "Don Irons" },
@@ -693,6 +725,8 @@
       "wins": 8,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 2,
       "regularSeason": {
         "weekOne": { "pointsFor": 135.32, "pointsAgainst": 140.48, "opponent": "Shawn Ballay" },
         "weekTwo": { "pointsFor": 103.52, "pointsAgainst": 150.16, "opponent": "Don Irons" },
@@ -740,6 +774,8 @@
       "wins": 7,
       "losses": 5,
       "ties": 1,
+      "last": false,
+      "finished": 4,
       "regularSeason": {
         "weekOne": { "pointsFor": 124, "pointsAgainst": 119, "opponent": "Dom Flipp" },
         "weekTwo": { "pointsFor": 63, "pointsAgainst": 141, "opponent": "Aaron Mackenzie" },
@@ -782,6 +818,8 @@
       "wins": 6,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 5,
       "regularSeason": {
         "weekOne": { "pointsFor": 121, "pointsAgainst": 80, "opponent": "Aaron Mackenzie" },
         "weekTwo": { "pointsFor": 110, "pointsAgainst": 108, "opponent": "chrisB" },
@@ -823,6 +861,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 4,
       "regularSeason": {
         "weekOne": { "pointsFor": 132, "pointsAgainst": 135, "opponent": "Dan George" },
         "weekTwo": { "pointsFor": 113, "pointsAgainst": 89, "opponent": "cjD" },
@@ -865,6 +905,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 5,
       "regularSeason": {
         "weekOne": { "pointsFor": 101, "pointsAgainst": 164, "opponent": "Cody Zwier" },
         "weekTwo": { "pointsFor": 110, "pointsAgainst": 102, "opponent": "Dan George" },
@@ -907,6 +949,8 @@
       "wins": 8,
       "losses": 5,
       "ties": 0,
+      "last": false,
+      "finished": 4,
       "regularSeason": {
         "weekOne": { "pointsFor": 134, "pointsAgainst": 130, "opponent": "Shawn Ballay" },
         "weekTwo": { "pointsFor": 139, "pointsAgainst": 156, "opponent": "Dom Flipp" },
@@ -949,6 +993,8 @@
       "wins": 5,
       "losses": 8,
       "ties": 0,
+      "last": false,
+      "finished": 10,
       "regularSeason": {
         "weekOne": { "pointsFor": 134, "pointsAgainst": 141, "opponent": "Cody Zwier" },
         "weekTwo": { "pointsFor": 89, "pointsAgainst": 91, "opponent": "Steve Lloyd" },
@@ -991,6 +1037,8 @@
       "wins": 7,
       "losses": 5,
       "ties": 1,
+      "last": false,
+      "finished": 5,
       "regularSeason": {
         "weekOne": { "pointsFor": 128, "pointsAgainst": 107, "opponent": "Cody Zwier" },
         "weekTwo": { "pointsFor": 125, "pointsAgainst": 123, "opponent": "Steve Lloyd" },
@@ -1033,6 +1081,8 @@
       "wins": 5,
       "losses": 9,
       "ties": 0,
+      "last": false,
+      "finished": 11,
       "regularSeason": {
         "weekOne": { "pointsFor": 99.66, "pointsAgainst": 137.76, "opponent": "Jimmy Wagner" },
         "weekTwo": { "pointsFor": 135.7, "pointsAgainst": 137.52, "opponent": "Steve Smith" },
@@ -1076,6 +1126,8 @@
       "wins": 5,
       "losses": 9,
       "ties": 0,
+      "last": true,
+      "finished": 12,
       "regularSeason": {
         "weekOne": { "pointsFor": 117.3, "pointsAgainst": 119.92, "opponent": "Jimmy Wagner" },
         "weekTwo": { "pointsFor": 150.16, "pointsAgainst": 103.52, "opponent": "Steve Smith" },
@@ -1131,6 +1183,8 @@
       "wins": 9,
       "losses": 3,
       "ties": 0,
+      "last": false,
+      "finished": 1,
       "regularSeason": {
         "weekOne": { "pointsFor": 143, "pointsAgainst": 121, "opponent": "Cody Zwier" },
         "weekTwo": { "pointsFor": 162, "pointsAgainst": 138, "opponent": "Dom Flipp" },
@@ -1172,6 +1226,8 @@
       "wins": 6,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 7,
       "regularSeason": {
         "weekOne": { "pointsFor": 121, "pointsAgainst": 131, "opponent": "Shawn Ballay" },
         "weekTwo": { "pointsFor": 109, "pointsAgainst": 138, "opponent": "Aaron Mackenzie" },
@@ -1214,6 +1270,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 6,
       "regularSeason": {
         "weekOne": { "pointsFor": 95, "pointsAgainst": 115, "opponent": "Dan George" },
         "weekTwo": { "pointsFor": 121, "pointsAgainst": 104, "opponent": "Joe Kane" },
@@ -1256,6 +1314,8 @@
       "wins": 9,
       "losses": 4,
       "ties": 0,
+      "last": false,
+      "finished": 2,
       "regularSeason": {
         "weekOne": { "pointsFor": 95, "pointsAgainst": 53, "opponent": "Steve Smith" },
         "weekTwo": { "pointsFor": 175, "pointsAgainst": 127, "opponent": "Joe Kane" },
@@ -1298,6 +1358,8 @@
       "wins": 10,
       "losses": 3,
       "ties": 0,
+      "last": false,
+      "finished": 1,
       "regularSeason": {
         "weekOne": { "pointsFor": 171, "pointsAgainst": 135, "opponent": "Dom Nocito" },
         "weekTwo": { "pointsFor": 91, "pointsAgainst": 89, "opponent": "Don Irons" },
@@ -1340,6 +1402,8 @@
       "wins": 8,
       "losses": 5,
       "ties": 0,
+      "last": false,
+      "finished": 4,
       "regularSeason": {
         "weekOne": { "pointsFor": 106, "pointsAgainst": 108, "opponent": "Dom Nocito" },
         "weekTwo": { "pointsFor": 123, "pointsAgainst": 125, "opponent": "Don Irons" },
@@ -1382,6 +1446,8 @@
       "wins": 11,
       "losses": 3,
       "ties": 0,
+      "last": false,
+      "finished": 1,
       "regularSeason": {
         "weekOne": { "pointsFor": 138.6, "pointsAgainst": 114, "opponent": "Cody Zwier" },
         "weekTwo": { "pointsFor": 153.56, "pointsAgainst": 147.62, "opponent": "Aaron Mackenzie" },
@@ -1425,6 +1491,8 @@
       "wins": 8,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 4,
       "regularSeason": {
         "weekOne": { "pointsFor": 138.82, "pointsAgainst": 92.28, "opponent": "Cody Zwier" },
         "weekTwo": { "pointsFor": 166.12, "pointsAgainst": 119.6, "opponent": "Aaron Mackenzie" },
@@ -1504,6 +1572,8 @@
       "wins": 4,
       "losses": 9,
       "ties": 0,
+      "last": false,
+      "finished": 10,
       "regularSeason": {
         "weekOne": { "pointsFor": 121, "pointsAgainst": 112, "opponent": "billD" },
         "weekTwo": { "pointsFor": 102, "pointsAgainst": 148, "opponent": "Shawn Ballay" },
@@ -1546,6 +1616,8 @@
       "wins": 6,
       "losses": 6,
       "ties": 1,
+      "last": false,
+      "finished": 7,
       "regularSeason": {
         "weekOne": { "pointsFor": 142, "pointsAgainst": 61, "opponent": "Dom Flipp" },
         "weekTwo": { "pointsFor": 116, "pointsAgainst": 111, "opponent": "Cody Zwier" },
@@ -1588,6 +1660,8 @@
       "wins": 6,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 9,
       "regularSeason": {
         "weekOne": { "pointsFor": 105, "pointsAgainst": 172, "opponent": "carter" },
         "weekTwo": { "pointsFor": 134, "pointsAgainst": 139, "opponent": "Cody Zwier" },
@@ -1630,6 +1704,8 @@
       "wins": 6,
       "losses": 8,
       "ties": 0,
+      "last": false,
+      "finished": 7,
       "regularSeason": {
         "weekOne": { "pointsFor": 134.42, "pointsAgainst": 83.22, "opponent": "Dom Nocito" },
         "weekTwo": { "pointsFor": 100.08, "pointsAgainst": 127.06, "opponent": "Cody Zwier" },
@@ -1673,6 +1749,8 @@
       "wins": 5,
       "losses": 9,
       "ties": 0,
+      "last": false,
+      "finished": 11,
       "regularSeason": {
         "weekOne": { "pointsFor": 94.32, "pointsAgainst": 115.5, "opponent": "Dom Nocito" },
         "weekTwo": { "pointsFor": 105.16, "pointsAgainst": 139.38, "opponent": "Cody Zwier" },
@@ -1720,6 +1798,8 @@
       "wins": 8,
       "losses": 5,
       "ties": 0,
+      "last": false,
+      "finished": 3,
       "regularSeason": {
         "weekOne": { "pointsFor": 104, "pointsAgainst": 121, "opponent": "Shawn Ballay" },
         "weekTwo": { "pointsFor": 168, "pointsAgainst": 120, "opponent": "Dom Flipp" },
@@ -1762,6 +1842,8 @@
       "wins": 6,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 4,
       "regularSeason": {
         "weekOne": { "pointsFor": 121, "pointsAgainst": 143, "opponent": "Steve Lloyd" },
         "weekTwo": { "pointsFor": 106, "pointsAgainst": 71, "opponent": "Dom Nocito" },
@@ -1803,6 +1885,8 @@
       "wins": 6,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 8,
       "regularSeason": {
         "weekOne": { "pointsFor": 107, "pointsAgainst": 166, "opponent": "Aaron Mackenzie" },
         "weekTwo": { "pointsFor": 121, "pointsAgainst": 108, "opponent": "Joe Kane" },
@@ -1845,6 +1929,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 4,
       "regularSeason": {
         "weekOne": { "pointsFor": 164, "pointsAgainst": 101, "opponent": "Don Irons" },
         "weekTwo": { "pointsFor": 97, "pointsAgainst": 110, "opponent": "Dom Nocito" },
@@ -1887,6 +1973,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 5,
       "regularSeason": {
         "weekOne": { "pointsFor": 130, "pointsAgainst": 157, "opponent": "Dom Nocito" },
         "weekTwo": { "pointsFor": 100, "pointsAgainst": 96, "opponent": "billD" },
@@ -1929,6 +2017,8 @@
       "wins": 8,
       "losses": 4,
       "ties": 1,
+      "last": false,
+      "finished": 3,
       "regularSeason": {
         "weekOne": { "pointsFor": 141, "pointsAgainst": 134, "opponent": "Don Irons" },
         "weekTwo": { "pointsFor": 111, "pointsAgainst": 116, "opponent": "Dante Nocito" },
@@ -1971,6 +2061,8 @@
       "wins": 6,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 8,
       "regularSeason": {
         "weekOne": { "pointsFor": 107, "pointsAgainst": 128, "opponent": "Don Irons" },
         "weekTwo": { "pointsFor": 139, "pointsAgainst": 134, "opponent": "Dante Nocito" },
@@ -2013,6 +2105,8 @@
       "wins": 7,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 6,
       "regularSeason": {
         "weekOne": { "pointsFor": 114, "pointsAgainst": 138.6, "opponent": "Steve Lloyd" },
         "weekTwo": { "pointsFor": 127.06, "pointsAgainst": 100.08, "opponent": "Dante Nocito" },
@@ -2056,6 +2150,8 @@
       "wins": 7,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 6,
       "regularSeason": {
         "weekOne": { "pointsFor": 92.28, "pointsAgainst": 138.82, "opponent": "Steve Lloyd" },
         "weekTwo": { "pointsFor": 139.38, "pointsAgainst": 105.16, "opponent": "Dan George" },
@@ -2143,6 +2239,8 @@
       "wins": 5,
       "losses": 8,
       "ties": 0,
+      "last": false,
+      "finished": 9,
       "regularSeason": {
         "weekOne": { "pointsFor": 97, "pointsAgainst": 118, "opponent": "Steve Smith" },
         "weekTwo": { "pointsFor": 133, "pointsAgainst": 88, "opponent": "Dom Flipp" },
@@ -2185,6 +2283,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 6,
       "regularSeason": {
         "weekOne": { "pointsFor": 125, "pointsAgainst": 84, "opponent": "Steve Smith" },
         "weekTwo": { "pointsFor": 128, "pointsAgainst": 141, "opponent": "carter" },
@@ -2227,6 +2327,8 @@
       "wins": 4,
       "losses": 10,
       "ties": 0,
+      "last": true,
+      "finished": 12,
       "regularSeason": {
         "weekOne": { "pointsFor": 137.76, "pointsAgainst": 99.66, "opponent": "Don Irons" },
         "weekTwo": { "pointsFor": 99.32, "pointsAgainst": 101.6, "opponent": "Dan George" },
@@ -2270,6 +2372,8 @@
       "wins": 6,
       "losses": 8,
       "ties": 0,
+      "last": false,
+      "finished": 10,
       "regularSeason": {
         "weekOne": { "pointsFor": 119.92, "pointsAgainst": 117.3, "opponent": "Don Irons" },
         "weekTwo": { "pointsFor": 128.88, "pointsAgainst": 132.86, "opponent": "Dan George" },
@@ -2333,6 +2437,8 @@
       "wins": 9,
       "losses": 4,
       "ties": 0,
+      "last": false,
+      "finished": 1,
       "regularSeason": {
         "weekOne": { "pointsFor": 135, "pointsAgainst": 132, "opponent": "Don Irons" },
         "weekTwo": { "pointsFor": 121, "pointsAgainst": 125, "opponent": "Dom Flipp" },
@@ -2375,6 +2481,8 @@
       "wins": 9,
       "losses": 4,
       "ties": 0,
+      "last": false,
+      "finished": 3,
       "regularSeason": {
         "weekOne": { "pointsFor": 115, "pointsAgainst": 95, "opponent": "Steve Lloyd" },
         "weekTwo": { "pointsFor": 102, "pointsAgainst": 110, "opponent": "Don Irons" },
@@ -2417,6 +2525,8 @@
       "wins": 6,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 8,
       "regularSeason": {
         "weekOne": { "pointsFor": 96, "pointsAgainst": 121, "opponent": "Aaron Mackenzie" },
         "weekTwo": { "pointsFor": 135, "pointsAgainst": 158, "opponent": "Steve Smith" },
@@ -2459,6 +2569,8 @@
       "wins": 8,
       "losses": 4,
       "ties": 1,
+      "last": false,
+      "finished": 4,
       "regularSeason": {
         "weekOne": { "pointsFor": 148, "pointsAgainst": 101, "opponent": "Shawn Ballay" },
         "weekTwo": { "pointsFor": 157, "pointsAgainst": 86, "opponent": "Joe Kane" },
@@ -2501,6 +2613,8 @@
       "wins": 6,
       "losses": 6,
       "ties": 1,
+      "last": false,
+      "finished": 7,
       "regularSeason": {
         "weekOne": { "pointsFor": 140, "pointsAgainst": 89, "opponent": "Shawn Ballay" },
         "weekTwo": { "pointsFor": 116, "pointsAgainst": 111, "opponent": "Joe Kane" },
@@ -2543,6 +2657,8 @@
       "wins": 8,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 5,
       "regularSeason": {
         "weekOne": { "pointsFor": 173.56, "pointsAgainst": 127.94, "opponent": "Aaron Mackenzie" },
         "weekTwo": { "pointsFor": 101.6, "pointsAgainst": 99.32, "opponent": "Jimmy Wagner" },
@@ -2586,6 +2702,8 @@
       "wins": 6,
       "losses": 8,
       "ties": 0,
+      "last": false,
+      "finished": 8,
       "regularSeason": {
         "weekOne": { "pointsFor": 119.66, "pointsAgainst": 117.26, "opponent": "Aaron Mackenzie" },
         "weekTwo": { "pointsFor": 132.86, "pointsAgainst": 128.88, "opponent": "Jimmy Wagner" },
@@ -2633,6 +2751,8 @@
       "wins": 5,
       "losses": 8,
       "ties": 0,
+      "last": false,
+      "finished": 7,
       "regularSeason": {
         "weekOne": { "pointsFor": 130, "pointsAgainst": 145, "opponent": "Steve Smith" },
         "weekTwo": { "pointsFor": 128, "pointsAgainst": 100, "opponent": "ericL" },
@@ -2675,6 +2795,8 @@
       "wins": 6,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 6,
       "regularSeason": {
         "weekOne": { "pointsFor": 140, "pointsAgainst": 124, "opponent": "Shawn Ballay" },
         "weekTwo": { "pointsFor": 71, "pointsAgainst": 106, "opponent": "Cody Zwier" },
@@ -2716,6 +2838,8 @@
       "wins": 6,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 9,
       "regularSeason": {
         "weekOne": { "pointsFor": 119, "pointsAgainst": 124, "opponent": "Steve Smith" },
         "weekTwo": { "pointsFor": 115, "pointsAgainst": 106, "opponent": "Shawn Ballay" },
@@ -2758,6 +2882,8 @@
       "wins": 9,
       "losses": 4,
       "ties": 0,
+      "last": false,
+      "finished": 2,
       "regularSeason": {
         "weekOne": { "pointsFor": 102, "pointsAgainst": 79, "opponent": "billD" },
         "weekTwo": { "pointsFor": 110, "pointsAgainst": 97, "opponent": "Cody Zwier" },
@@ -2800,6 +2926,8 @@
       "wins": 6,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 9,
       "regularSeason": {
         "weekOne": { "pointsFor": 157, "pointsAgainst": 130, "opponent": "Cody Zwier" },
         "weekTwo": { "pointsFor": 92, "pointsAgainst": 111, "opponent": "Aaron Mackenzie" },
@@ -2842,6 +2970,8 @@
       "wins": 3,
       "losses": 10,
       "ties": 0,
+      "last": false,
+      "finished": 11,
       "regularSeason": {
         "weekOne": { "pointsFor": 135, "pointsAgainst": 171, "opponent": "Steve Lloyd" },
         "weekTwo": { "pointsFor": 101, "pointsAgainst": 134, "opponent": "Shawn Ballay" },
@@ -2884,6 +3014,8 @@
       "wins": 9,
       "losses": 4,
       "ties": 0,
+      "last": false,
+      "finished": 2,
       "regularSeason": {
         "weekOne": { "pointsFor": 108, "pointsAgainst": 106, "opponent": "Steve Lloyd" },
         "weekTwo": { "pointsFor": 162, "pointsAgainst": 106, "opponent": "Shawn Ballay" },
@@ -2926,6 +3058,8 @@
       "wins": 9,
       "losses": 5,
       "ties": 0,
+      "last": false,
+      "finished": 3,
       "regularSeason": {
         "weekOne": { "pointsFor": 83.22, "pointsAgainst": 134.42, "opponent": "Dante Nocito" },
         "weekTwo": { "pointsFor": 129.92, "pointsAgainst": 104.44, "opponent": "Joe Kane" },
@@ -2969,6 +3103,8 @@
       "wins": 8,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 3,
       "regularSeason": {
         "weekOne": { "pointsFor": 115.5, "pointsAgainst": 94.32, "opponent": "Dante Nocito" },
         "weekTwo": { "pointsFor": 129.56, "pointsAgainst": 142, "opponent": "Joe Kane" },
@@ -3016,6 +3152,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 5,
       "regularSeason": {
         "weekOne": { "pointsFor": 119, "pointsAgainst": 124, "opponent": "Don Irons" },
         "weekTwo": { "pointsFor": 120, "pointsAgainst": 168, "opponent": "Cody Zwier" },
@@ -3058,6 +3196,8 @@
       "wins": 8,
       "losses": 4,
       "ties": 0,
+      "last": false,
+      "finished": 3,
       "regularSeason": {
         "weekOne": { "pointsFor": 116, "pointsAgainst": 179, "opponent": "ericL" },
         "weekTwo": { "pointsFor": 138, "pointsAgainst": 162, "opponent": "Steve Lloyd" },
@@ -3099,6 +3239,8 @@
       "wins": 4,
       "losses": 9,
       "ties": 0,
+      "last": true,
+      "finished": 12,
       "regularSeason": {
         "weekOne": { "pointsFor": 99, "pointsAgainst": 107, "opponent": "ryanC" },
         "weekTwo": { "pointsFor": 125, "pointsAgainst": 121, "opponent": "Dan George" },
@@ -3141,6 +3283,8 @@
       "wins": 4,
       "losses": 9,
       "ties": 0,
+      "last": false,
+      "finished": 9,
       "regularSeason": {
         "weekOne": { "pointsFor": 118, "pointsAgainst": 78, "opponent": "Aaron Mackenzie" },
         "weekTwo": { "pointsFor": 120, "pointsAgainst": 129, "opponent": "Steve Smith" },
@@ -3183,6 +3327,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 6,
       "regularSeason": {
         "weekOne": { "pointsFor": 125, "pointsAgainst": 125.01, "opponent": "Joe Kane" },
         "weekTwo": { "pointsFor": 156, "pointsAgainst": 139, "opponent": "Don Irons" },
@@ -3225,6 +3371,8 @@
       "wins": 8,
       "losses": 5,
       "ties": 0,
+      "last": false,
+      "finished": 5,
       "regularSeason": {
         "weekOne": { "pointsFor": 61, "pointsAgainst": 142, "opponent": "Dante Nocito" },
         "weekTwo": { "pointsFor": 88, "pointsAgainst": 133, "opponent": "Jimmy Wagner" },
@@ -3283,6 +3431,8 @@
       "wins": 7,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 7,
       "regularSeason": {
         "weekOne": { "pointsFor": 106.6, "pointsAgainst": 165.3, "opponent": "Joe Kane" },
         "weekTwo": { "pointsFor": 101.78, "pointsAgainst": 130.68, "opponent": "Shawn Ballay" },
@@ -3330,6 +3480,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 6,
       "regularSeason": {
         "weekOne": { "pointsFor": 94, "pointsAgainst": 136, "opponent": "ericL" },
         "weekTwo": { "pointsFor": 141, "pointsAgainst": 63, "opponent": "Don Irons" },
@@ -3372,6 +3524,8 @@
       "wins": 5,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 7,
       "regularSeason": {
         "weekOne": { "pointsFor": 80, "pointsAgainst": 121, "opponent": "Don Irons" },
         "weekTwo": { "pointsFor": 95, "pointsAgainst": 119, "opponent": "ericL" },
@@ -3413,6 +3567,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 3,
       "regularSeason": {
         "weekOne": { "pointsFor": 166, "pointsAgainst": 107, "opponent": "Cody Zwier" },
         "weekTwo": { "pointsFor": 138, "pointsAgainst": 109, "opponent": "Steve Lloyd" },
@@ -3455,6 +3611,8 @@
       "wins": 6,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 7,
       "regularSeason": {
         "weekOne": { "pointsFor": 78, "pointsAgainst": 118, "opponent": "Dom Flipp" },
         "weekTwo": { "pointsFor": 137, "pointsAgainst": 142, "opponent": "billD" },
@@ -3497,6 +3655,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 7,
       "regularSeason": {
         "weekOne": { "pointsFor": 121, "pointsAgainst": 96, "opponent": "Dan George" },
         "weekTwo": { "pointsFor": 111, "pointsAgainst": 92, "opponent": "Dom Nocito" },
@@ -3539,6 +3699,8 @@
       "wins": 9,
       "losses": 4,
       "ties": 0,
+      "last": false,
+      "finished": 2,
       "regularSeason": {
         "weekOne": { "pointsFor": 122, "pointsAgainst": 120, "opponent": "Joe Kane" },
         "weekTwo": { "pointsFor": 113, "pointsAgainst": 99, "opponent": "Steve Smith" },
@@ -3581,6 +3743,8 @@
       "wins": 3,
       "losses": 10,
       "ties": 0,
+      "last": false,
+      "finished": 11,
       "regularSeason": {
         "weekOne": { "pointsFor": 171, "pointsAgainst": 115, "opponent": "Joe Kane" },
         "weekTwo": { "pointsFor": 80, "pointsAgainst": 171, "opponent": "Steve Smith" },
@@ -3623,6 +3787,8 @@
       "wins": 5,
       "losses": 9,
       "ties": 0,
+      "last": false,
+      "finished": 10,
       "regularSeason": {
         "weekOne": { "pointsFor": 127.94, "pointsAgainst": 173.56, "opponent": "Dan George" },
         "weekTwo": { "pointsFor": 147.62, "pointsAgainst": 153.56, "opponent": "Steve Lloyd" },
@@ -3666,6 +3832,8 @@
       "wins": 6,
       "losses": 8,
       "ties": 0,
+      "last": false,
+      "finished": 9,
       "regularSeason": {
         "weekOne": { "pointsFor": 117.26, "pointsAgainst": 119.66, "opponent": "Dan George" },
         "weekTwo": { "pointsFor": 119.6, "pointsAgainst": 166.12, "opponent": "Steve Lloyd" },
@@ -3729,6 +3897,8 @@
       "wins": 7,
       "losses": 6,
       "ties": 0,
+      "last": false,
+      "finished": 5,
       "regularSeason": {
         "weekOne": { "pointsFor": 147, "pointsAgainst": 96, "opponent": "ericL" },
         "weekTwo": { "pointsFor": 108, "pointsAgainst": 121, "opponent": "Cody Zwier" },
@@ -3771,6 +3941,8 @@
       "wins": 2,
       "losses": 11,
       "ties": 0,
+      "last": true,
+      "finished": 10,
       "regularSeason": {
         "weekOne": { "pointsFor": 101, "pointsAgainst": 104, "opponent": "Steve Smith" },
         "weekTwo": { "pointsFor": 104, "pointsAgainst": 121, "opponent": "Steve Lloyd" },
@@ -3813,6 +3985,8 @@
       "wins": 4,
       "losses": 9,
       "ties": 0,
+      "last": false,
+      "finished": 11,
       "regularSeason": {
         "weekOne": { "pointsFor": 125.01, "pointsAgainst": 125, "opponent": "Dom Flipp" },
         "weekTwo": { "pointsFor": 127, "pointsAgainst": 175, "opponent": "Steve Lloyd" },
@@ -3855,6 +4029,8 @@
       "wins": 6,
       "losses": 6,
       "ties": 1,
+      "last": false,
+      "finished": 6,
       "regularSeason": {
         "weekOne": { "pointsFor": 120, "pointsAgainst": 122, "opponent": "Aaron Mackenzie" },
         "weekTwo": { "pointsFor": 86, "pointsAgainst": 157, "opponent": "Dan George" },
@@ -3897,6 +4073,8 @@
       "wins": 1,
       "losses": 12,
       "ties": 0,
+      "last": true,
+      "finished": 12,
       "regularSeason": {
         "weekOne": { "pointsFor": 115, "pointsAgainst": 171, "opponent": "Aaron Mackenzie" },
         "weekTwo": { "pointsFor": 111, "pointsAgainst": 116, "opponent": "Dan George" },
@@ -3939,6 +4117,8 @@
       "wins": 5,
       "losses": 9,
       "ties": 0,
+      "last": false,
+      "finished": 9,
       "regularSeason": {
         "weekOne": { "pointsFor": 138.76, "pointsAgainst": 87.42, "opponent": "carter" },
         "weekTwo": { "pointsFor": 104.44, "pointsAgainst": 129.92, "opponent": "Dom Nocito" },
@@ -3982,6 +4162,8 @@
       "wins": 7,
       "losses": 7,
       "ties": 0,
+      "last": false,
+      "finished": 5,
       "regularSeason": {
         "weekOne": { "pointsFor": 165.3, "pointsAgainst": 106.6, "opponent": "Dom Flipp" },
         "weekTwo": { "pointsFor": 142, "pointsAgainst": 129.56, "opponent": "Dom Nocito" },

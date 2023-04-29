@@ -1,5 +1,6 @@
 import "./styles.css"
 import { useEffect, useState } from "react"
+import { allTimeStats } from "./statFunctions/statFunction"
 import OwnerCard from "./components/OwnerCard/OwnerCard"
 
 const API_URL = "http://127.0.0.1:3001/teamOwners"
@@ -57,39 +58,12 @@ function App() {
   }
   // kingOfTheHillLogic("2014")
 
-  function leagueAvgPointsPerWeek(owner, year, weekKey) {
-    let ownerTotal = 0
-    let weekTotalPoints = 0
-
-    owners.forEach((item) => {
-      // console.log(item[year].regularSeason[weekKey].pointsFor)
-      ownerTotal += 1
-      weekTotalPoints += item[year].regularSeason[weekKey].pointsFor
-    })
-
-    return { ownerTotal, weekTotalPoints }
-  }
-  // console.log(leagueAvgPointsPerWeek("Shawn Ballay", "2014", "weekOne"))
-
-  // MISSING TIE BREAKER LOGIC
-  function lastPlaceFinishes(year) {
-    let currentLast = null
-    owners.forEach((owner) => {
-      if (currentLast === null || owner[year].wins < currentLast.wins) {
-        currentLast = { owner: owner.ownerName, wins: owner[year].wins }
-      } else if (currentLast.wins === owner[year].wins) {
-        // this is where you need to put tiebreaker logic
-      }
-    })
-    console.log(currentLast)
-  }
-  // lastPlaceFinishes("2019")
-
   // WORKING ON THESE **********************************************************
+
   return (
     <div className="App flex flex-wrap gap-4 bg-[#0B2447]">
       {owners.map((owner) => {
-        return <OwnerCard key={owner.id} owner={owner} />
+        return <OwnerCard key={owner.id} owner={owner} owners={owners} />
       })}
     </div>
   )
