@@ -212,3 +212,8 @@ export function allTimeStats(owner) {
   // return AVG PF and PA at end as well
 }
 // AVERAGE MARGIN OF VICTORY/DEFEAT ??
+// 69 counter
+
+// NEED TO ADD ********************************
+// last: true/false
+// finished: 4
