@@ -56,9 +56,6 @@ function App() {
     // for each week, determine who gets strikes
     // how to determine who gets strikes?
   }
-  // kingOfTheHillLogic("2014")
-
-  // WORKING ON THESE **********************************************************
 
   return (
     <div className="App flex flex-wrap gap-4 bg-[#0B2447]">

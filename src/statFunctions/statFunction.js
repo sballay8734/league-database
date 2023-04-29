@@ -241,6 +241,22 @@ export function averagePlacement(owner) {
   return { avgPlacement, lastCount }
 }
 
+export function luckyWinsLosses(owner) {
+  let luckyWins = 0
+  let unluckyLosses = 0
+
+  // find average points for each week
+
+  // find owner wins/losses
+  // find points scored in win
+  // find league avg points for that week
+
+  // if win && points < leagueAvg
+  // luckyWins++
+  // if loss && points > leagueAvg
+  // unluckyLosses++
+}
+
 // ************************************************************************
 // ALL OWNER functions
 
