@@ -525,7 +525,7 @@ function OwnerCard({ owner, owners }) {
                 {totalStats(owner).totalWins}
               </span>
             </div>
-            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-12/12">
               <p className="text-slate-600">
                 Lg Avg:{" "}
                 <span className="font-semibold">
@@ -533,7 +533,23 @@ function OwnerCard({ owner, owners }) {
                 </span>
               </p>
               <p>
-                <span className="text-red-700 font-semibold">-2.3</span>
+                {totalStats(owner).totalWins >
+                leagueAverageStats3(owners).leagueAvgWins ? (
+                  <span className="font-semibold text-green-700">
+                    +
+                    {(
+                      totalStats(owner).totalWins -
+                      leagueAverageStats3(owners).leagueAvgWins
+                    ).toFixed(1)}
+                  </span>
+                ) : (
+                  <span className="font-semibold text-red-700">
+                    {(
+                      totalStats(owner).totalWins -
+                      leagueAverageStats3(owners).leagueAvgWins
+                    ).toFixed(1)}
+                  </span>
+                )}
               </p>
             </div>
           </div>
@@ -544,7 +560,7 @@ function OwnerCard({ owner, owners }) {
                 {totalStats(owner).totalLosses}
               </span>
             </div>
-            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-12/12">
               <p className="text-slate-600">
                 Lg Avg:{" "}
                 <span className="font-semibold">
@@ -552,7 +568,23 @@ function OwnerCard({ owner, owners }) {
                 </span>
               </p>
               <p>
-                <span className="text-red-700 font-semibold">-2.3</span>
+                {totalStats(owner).totalLosses >
+                leagueAverageStats3(owners).leagueAvgLosses ? (
+                  <span className="font-semibold text-red-700">
+                    +
+                    {(
+                      totalStats(owner).totalLosses -
+                      leagueAverageStats3(owners).leagueAvgLosses
+                    ).toFixed(1)}
+                  </span>
+                ) : (
+                  <span className="font-semibold text-green-700">
+                    {(
+                      totalStats(owner).totalLosses -
+                      leagueAverageStats3(owners).leagueAvgLosses
+                    ).toFixed(1)}
+                  </span>
+                )}
               </p>
             </div>
           </div>
@@ -563,7 +595,7 @@ function OwnerCard({ owner, owners }) {
                 {averagePlacement(owner).lastCount}
               </span>
             </div>
-            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-12/12">
               <p className="text-slate-600">
                 Lg Avg:{" "}
                 <span className="font-semibold">
@@ -571,7 +603,23 @@ function OwnerCard({ owner, owners }) {
                 </span>
               </p>
               <p>
-                <span className="text-red-700 font-semibold">-2.3</span>
+                {averagePlacement(owner).lastCount >
+                leagueAverageStats2(owners).leagueAvgLast ? (
+                  <span className="font-semibold text-red-700">
+                    +
+                    {(
+                      averagePlacement(owner).lastCount -
+                      leagueAverageStats2(owners).leagueAvgLast
+                    ).toFixed(1)}
+                  </span>
+                ) : (
+                  <span className="font-semibold text-green-700">
+                    {(
+                      averagePlacement(owner).lastCount -
+                      leagueAverageStats2(owners).leagueAvgLast
+                    ).toFixed(1)}
+                  </span>
+                )}
               </p>
             </div>
           </div>
@@ -582,7 +630,7 @@ function OwnerCard({ owner, owners }) {
                 {finalsStats(owner).finalsAppearances}
               </span>
             </div>
-            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-10/12">
+            <div className="text-[.6rem] leading-[8px] italic flex justify-between bg-slate-100 py-[1px] w-12/12">
               <p className="text-slate-600">
                 Lg Avg:{" "}
                 <span className="font-semibold">
@@ -590,7 +638,23 @@ function OwnerCard({ owner, owners }) {
                 </span>
               </p>
               <p>
-                <span className="text-red-700 font-semibold">-2.3</span>
+                {finalsStats(owner).finalsAppearances >
+                leagueAverageStats2(owners).leagueAvgFinalsApps ? (
+                  <span className="font-semibold text-green-700">
+                    +
+                    {(
+                      finalsStats(owner).finalsAppearances -
+                      leagueAverageStats2(owners).leagueAvgFinalsApps
+                    ).toFixed(1)}
+                  </span>
+                ) : (
+                  <span className="font-semibold text-red-700">
+                    {(
+                      finalsStats(owner).finalsAppearances -
+                      leagueAverageStats2(owners).leagueAvgFinalsApps
+                    ).toFixed(1)}
+                  </span>
+                )}
               </p>
             </div>
           </div>
@@ -613,7 +677,23 @@ function OwnerCard({ owner, owners }) {
                 </span>
               </p>
               <p>
-                <span className="text-red-700 font-semibold">-2.3</span>
+                {allTimeStats(owner).closeWins >
+                leagueAverageStats3(owners).leagueAvgCloseWins ? (
+                  <span className="font-semibold text-green-700">
+                    +
+                    {(
+                      allTimeStats(owner).closeWins -
+                      leagueAverageStats3(owners).leagueAvgCloseWins
+                    ).toFixed(1)}
+                  </span>
+                ) : (
+                  <span className="font-semibold text-red-700">
+                    {(
+                      allTimeStats(owner).closeWins -
+                      leagueAverageStats3(owners).leagueAvgCloseWins
+                    ).toFixed(1)}
+                  </span>
+                )}
               </p>
             </div>
           </div>
@@ -632,7 +712,23 @@ function OwnerCard({ owner, owners }) {
                 </span>
               </p>
               <p>
-                <span className="text-red-700 font-semibold">-2.3</span>
+                {allTimeStats(owner).closeLosses >
+                leagueAverageStats3(owners).leagueAvgCloseLosses ? (
+                  <span className="font-semibold text-green-700">
+                    +
+                    {(
+                      allTimeStats(owner).closeLosses -
+                      leagueAverageStats3(owners).leagueAvgCloseLosses
+                    ).toFixed(1)}
+                  </span>
+                ) : (
+                  <span className="font-semibold text-red-700">
+                    {(
+                      allTimeStats(owner).closeLosses -
+                      leagueAverageStats3(owners).leagueAvgCloseLosses
+                    ).toFixed(1)}
+                  </span>
+                )}
               </p>
             </div>
           </div>
@@ -651,7 +747,23 @@ function OwnerCard({ owner, owners }) {
                 </span>
               </p>
               <p>
-                <span className="text-red-700 font-semibold">-2.3</span>
+                {luckyAndUnlucky(owner).luckyWins >
+                leagueAverageStats3(owners).leagueAvgLuckyWins ? (
+                  <span className="font-semibold text-green-700">
+                    +
+                    {(
+                      luckyAndUnlucky(owner).luckyWins -
+                      leagueAverageStats3(owners).leagueAvgLuckyWins
+                    ).toFixed(1)}
+                  </span>
+                ) : (
+                  <span className="font-semibold text-red-700">
+                    {(
+                      luckyAndUnlucky(owner).luckyWins -
+                      leagueAverageStats3(owners).leagueAvgLuckyWins
+                    ).toFixed(1)}
+                  </span>
+                )}
               </p>
             </div>
           </div>
@@ -670,7 +782,23 @@ function OwnerCard({ owner, owners }) {
                 </span>
               </p>
               <p>
-                <span className="text-red-700 font-semibold">-2.3</span>
+                {luckyAndUnlucky(owner).unluckyLosses >
+                leagueAverageStats3(owners).leagueAvgUnluckyLosses ? (
+                  <span className="font-semibold text-green-700">
+                    +
+                    {(
+                      luckyAndUnlucky(owner).unluckyLosses -
+                      leagueAverageStats3(owners).leagueAvgUnluckyLosses
+                    ).toFixed(1)}
+                  </span>
+                ) : (
+                  <span className="font-semibold text-red-700">
+                    {(
+                      luckyAndUnlucky(owner).unluckyLosses -
+                      leagueAverageStats3(owners).leagueAvgUnluckyLosses
+                    ).toFixed(1)}
+                  </span>
+                )}
               </p>
             </div>
           </div>
