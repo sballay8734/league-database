@@ -6,7 +6,6 @@ import CompareView from "./pages/CompareView"
 import RecordsView from "./pages/RecordsView"
 import KingOfTheHillView from "./pages/KingOfTheHillView"
 import Route from "./components/Route"
-import Link from "./components/Link"
 import Navbar from "./components/Navbar/Navbar"
 
 const API_URL = "http://127.0.0.1:3001/teamOwners"
@@ -53,7 +52,7 @@ function App() {
   // }
 
   return (
-    <div className="home flex flex-col gap-4 bg-[#0B2447] items-center h-screen">
+    <div className="home">
       {/* Links */}
       <Navbar />
       {/* Routes */}

@@ -3,8 +3,8 @@ import links from "./links"
 
 function Navbar() {
   return (
-    <nav className="w-screen h-16 fixed top-0 left-0 bg-blue-500 flex items-center justify-center">
-      <ul className="flex gap-6">
+    <nav className="navbar w-screen h-16 fixed top-0 left-0 flex items-center justify-center">
+      <ul className="flex gap-12">
         {links.map((link) => {
           return (
             <li key={link.path}>

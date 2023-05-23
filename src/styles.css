@@ -3,6 +3,15 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+:root {
+  --primary-hue: 270;
+  --primary-color: rgba(0, 76, 84);
+  --secondary-color: rgba(165, 172, 175);
+  --tertiary-color: rgba(186, 202, 211);
+  --black: rgba(0, 0, 0);
+  --white: rgb(255, 255, 255);
+}
+
 * {
   font-family: 'Quicksand', sans-serif;
 }
@@ -12,27 +21,48 @@ button {
 }
 
 #root {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
+
+/* body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+} */
 
 .home {
-  min-height: 100vh;
-  padding: 0 1rem;
+  height: 100vh;
+  width: 100vw;
+  /* padding: 0 1rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 
 .card {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-@media (width <= 400px) {
+nav {
+  background-color: var(--primary-color);
+}
+
+nav a {
+  font-weight: 500;
+  color: var(--tertiary-color);
+}
+
+/* @media (width <= 400px) {
   html {
     font-size: .8rem;
   }
@@ -41,5 +71,14 @@ button {
 @media (width <= 315px) {
   html {
     font-size: .75rem;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .home-view__wrapper {
+    height: 100vh;
   }
 }
