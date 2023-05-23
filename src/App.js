@@ -7,6 +7,7 @@ import RecordsView from "./pages/RecordsView"
 import KingOfTheHillView from "./pages/KingOfTheHillView"
 import Route from "./components/Route"
 import Link from "./components/Link"
+import Navbar from "./components/Navbar/Navbar"
 
 const API_URL = "http://127.0.0.1:3001/teamOwners"
 
@@ -54,13 +55,7 @@ function App() {
   return (
     <div className="home flex flex-col gap-4 bg-[#0B2447] items-center h-screen">
       {/* Links */}
-      <div className="flex gap-4 justify-start">
-        <Link to="/">Home View</Link>
-        <Link to="/owners">Owner View</Link>
-        <Link to="/compare">Compare View</Link>
-        <Link to="/records">League Records</Link>
-        <Link to="/kingofthehill">King Of The Hill</Link>
-      </div>
+      <Navbar />
       {/* Routes */}
       <div className="routes">
         <Route path="/">

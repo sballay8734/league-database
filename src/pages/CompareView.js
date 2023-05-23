@@ -1,5 +1,5 @@
 function CompareView() {
-  return <div>CompareView</div>
+  return <div className="mt-[64px] text-white">Compare View</div>
 }
 
 export default CompareView
