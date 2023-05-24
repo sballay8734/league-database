@@ -53,7 +53,14 @@ function App() {
 
   return (
     <div className="home">
-      {/* Links */}
+      {/* <div class="fixed-items">
+        <button className="league-logo">LLEA</button>
+        <button className="theme-changer">
+          {" "}
+          <BsDroplet />
+        </button>
+        <h1 className="established">EST. 2014</h1>
+      </div> */}
       <Navbar />
       {/* Routes */}
       <div className="routes">

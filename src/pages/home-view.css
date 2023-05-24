@@ -21,7 +21,49 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  z-index: -1;
+}
+
+.fixed-items {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 2rem;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+
+.league-logo,
+.theme-changer {
+  color: var(--tertiary-color);
+}
+
+.league-logo {
+  font-family: 'Rampart One', cursive;
+  font-size: 1.4rem;
+  padding: 0.2rem 0.2rem;
+  transition: var(--transition);
+}
+
+.league-logo:hover {
+  cursor: pointer;
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.theme-changer {
+  font-size: 1.6rem;
+  padding-top: .2rem;
+  transition: var(--transition);
+}
+
+.theme-changer:hover {
+  cursor: pointer;
+  color: var(--white);
+  transition: var(--transition);
 }
 
 .icon {
@@ -40,7 +82,6 @@
   text-align: center;
   transform: rotate(-10deg);
   color: var(--tertiary-color);
-  z-index: 99;
 }
 
 .ex {
@@ -420,5 +461,11 @@
   .hero__text {
     font-size: 1.3rem;
     max-width: 10rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fixed-items {
+    display: flex;
   }
 }

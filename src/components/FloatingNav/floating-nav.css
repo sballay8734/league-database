@@ -1,0 +1,128 @@
+.floating-nav__container {
+  border: 1px solid var(--primary-color);
+  height: 120px;
+  width: 80%;
+  position: absolute;
+  bottom: 40px;
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: .1rem;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.league-logo:active,
+.theme-changer:active {
+  color: var(--secondary-color);
+}
+
+.nav-link-floating {
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.nav-link-floating:nth-child(1) {
+  background-color: var(--primary-color-trans);
+  transition: var(--transition);
+  border-right: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.nav-link-floating:nth-child(1):hover {
+  background-color: var(--primary-color-trans-hover);
+  transition: var(--transition);
+}
+
+.nav-link-floating:nth-child(2) {
+  background-color: var(--primary-color-trans);
+  transition: var(--transition);
+  border-left: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color)
+}
+
+.nav-link-floating:nth-child(2):hover {
+  background-color: var(--primary-color-trans-hover);
+  transition: var(--transition);
+}
+
+.nav-link-floating:nth-child(3) {
+  background-color: var(--primary-color-trans);
+  transition: var(--transition);
+  border-right: 1px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color)
+}
+
+.nav-link-floating:nth-child(3):hover {
+  background-color: var(--primary-color-trans-hover);
+  transition: var(--transition);
+}
+
+.nav-link-floating:nth-child(4) {
+  background-color: var(--primary-color-trans);
+  transition: var(--transition);
+  border-left: 1px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color)
+}
+
+.nav-link-floating:nth-child(4):hover {
+  background-color: var(--primary-color-trans-hover);
+  transition: var(--transition);
+}
+
+.nav-link-floating:nth-child(1):active {
+  background-color: var(--primary-color-trans-active);
+  transition: var(--transition);
+}
+.nav-link-floating:nth-child(2):active {
+  background-color: var(--primary-color-trans-active);
+  transition: var(--transition);
+}
+.nav-link-floating:nth-child(3):active {
+  background-color: var(--primary-color-trans-active);
+  transition: var(--transition);
+}
+.nav-link-floating:nth-child(4):active {
+  background-color: var(--primary-color-trans-active);
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 600px) {
+  .floating-nav__container {
+    display: grid;
+  }
+  .league-logo:hover {
+    color: var(--white);
+  }
+  .theme-changer:hover {
+    color: var(--white)
+  }
+  .league-logo:active {
+    color: var(--primary-color);
+  }
+  .theme-changer:active {
+    color: var(--primary-color)
+  }
+}
+
+@media screen and (max-height: 630px) {
+  .floating-nav__container {
+    bottom: 20px;
+    height: 100px;
+  }
+
+  .nav-link {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav-link {
+    gap: .7rem;
+    font-size: 0.8rem;
+  }
+}
