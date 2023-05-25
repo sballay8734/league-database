@@ -1,0 +1,33 @@
+1. Re-write all functions to do ONE thing
+    a. One set should take in an owner and a year to calculate yearly stats
+
+    b. Other set should use the above functions to find the totals by looping   through the years and running the function once "forEach" year.
+        i. But use a regular "for" loop if possible for performance
+
+        For Example: To find totalPointsRegSzn, you could run...
+
+          let totalPointsRegSzn = 0
+          const years = Object.Keys(owner.regSzn)
+          years.forEach((year) => {
+            totalPoints += totalPoints(owner, year)
+          })
+        
+          // Find owner in static data
+          // Overwrite totalPointsRegSzn in staticData
+
+        For Example: To find totalPointsPlayoffsOnly, you could run...
+
+          let totalPlayoffPoints = 0
+          const years = Object.Keys(owner.playoffs)
+          years.forEach((year) => {
+            totalPoints += totalPoints(owner, year)
+          })
+
+          // Find owner in static data
+          // Overwrite totalPlayoffPoints in staticData
+
+2. Re-design owners page to show one at a time on both mobile and pc
+
+3. Re-write app to read data from static data rather than performing ALL calculations on ever render.
+
+4. Migrate data to MongoDB

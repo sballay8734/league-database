@@ -9,6 +9,20 @@ import Route from "./components/Route"
 import Navbar from "./components/Navbar/Navbar"
 
 const API_URL = "http://127.0.0.1:3001/teamOwners"
+const STATIC_DATA_API = "http://127.0.0.1:3001/staticData"
+
+// THIS WORKS!!! You can use this file for both operations for now. Migrate to MongoDB afterwards
+async function staticDataFetch() {
+  const response = await fetch(STATIC_DATA_API, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+  const data = await response.json()
+  console.log(data)
+}
+// staticDataFetch()
 
 function App() {
   const [owners, setOwners] = useState([])
@@ -53,14 +67,6 @@ function App() {
 
   return (
     <div className="home">
-      {/* <div class="fixed-items">
-        <button className="league-logo">LLEA</button>
-        <button className="theme-changer">
-          {" "}
-          <BsDroplet />
-        </button>
-        <h1 className="established">EST. 2014</h1>
-      </div> */}
       <Navbar />
       {/* Routes */}
       <div className="routes">

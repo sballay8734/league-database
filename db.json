@@ -4203,5 +4203,10 @@
       }
     }
   }
-]
+],
+  "staticData": [
+    {"owner": "test1"},
+    {"owner": "test2"},
+    {"owner": "test3"}
+  ]
 }
