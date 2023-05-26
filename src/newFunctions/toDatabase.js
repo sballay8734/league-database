@@ -1,7 +1,7 @@
 const API_URL = "http://127.0.0.1:3001/teamOwners"
 const STATIC_DATA_API = "http://127.0.0.1:3001/staticData"
 
-// POINTS FOR @@@@@@@@@@@@@@@@@@@@@ POINTS FOR @@@@@@@@@@@@@@@@@@@@@@ POINTS FOR
+// POINTS FOR ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽ POINTS FOR ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽ POINTS FOR
 
 // Total Games Played RegSzn (yearly)
 // function totalGamesRegSzn(owner, year) {
@@ -194,6 +194,14 @@ function combinedAvgPointsForAllTime(owner) {
   }
 }
 
+// POINTS FOR △△△△△△△△△△△△△△△△△△△△△ POINTS FOR △△△△△△△△△△△△△△△△△△△△△△ POINTS FOR
+
+// POINTS AGAINST ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽ POINTS AGAINST ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽ POINTS AGAINST
+
+// NEW FUNCTIONS HERE
+
+// POINTS AGAINST △△△△△△△△△△△△△△△ POINTS AGAINST △△△△△△△△△△△△△△△△ POINTS AGAINST
+
 // DATA FETCH
 async function dataFetch() {
   const response = await fetch(API_URL, {
@@ -217,5 +225,3 @@ async function fetchTest() {
 }
 
 fetchTest()
-
-// POINTS FOR @@@@@@@@@@@@@@@@@@@@@ POINTS FOR @@@@@@@@@@@@@@@@@@@@@@ POINTS FOR
