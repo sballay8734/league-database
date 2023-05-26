@@ -30,7 +30,9 @@ function avgPointsForRegSzn(owner, year) {
     totalRegSznPoints += owner[year].regularSeason[week].pointsFor
   }
 
-  const avgRegSznPointsFor = (totalRegSznPoints / totalRegSznGames).toFixed(2)
+  const avgRegSznPointsFor = Number(
+    (totalRegSznPoints / totalRegSznGames).toFixed(2)
+  )
 
   return {
     totalRegSznPoints,
@@ -65,8 +67,8 @@ function avgPointsForPlayoffs(owner, year) {
     totalPlayoffPoints += owner[year].playoffs[round].pointsFor
   }
 
-  const avgPlayoffPointsFor = (totalPlayoffPoints / totalPlayoffGames).toFixed(
-    2
+  const avgPlayoffPointsFor = Number(
+    (totalPlayoffPoints / totalPlayoffGames).toFixed(2)
   )
 
   return {
@@ -90,9 +92,9 @@ function combinedAvgPointsFor(owner, year) {
     avgPointsForRegSzn(owner, year).totalRegSznGames +
     avgPointsForPlayoffs(owner, year).totalPlayoffGames
 
-  const combinedAvgPointsFor = (
-    combinedTotalPoints / combinedTotalGames
-  ).toFixed(2)
+  const combinedAvgPointsFor = Number(
+    (combinedTotalPoints / combinedTotalGames).toFixed(2)
+  )
 
   return {
     combinedTotalPoints,
@@ -118,9 +120,9 @@ function avgPointsForRegSznAllTime(owner) {
     totalGamesRegSzn += avgPointsForRegSzn(owner, year).totalRegSznGames
   }
 
-  const avgPointsForRegSznAllTime = (
-    totalPointsRegSzn / totalGamesRegSzn
-  ).toFixed(2)
+  const avgPointsForRegSznAllTime = Number(
+    (totalPointsRegSzn / totalGamesRegSzn).toFixed(2)
+  )
 
   return {
     totalPointsRegSzn,
@@ -150,9 +152,9 @@ function avgPointsForPlayoffsAllTime(owner) {
     totalByes += avgPointsForPlayoffs(owner, year).totalPlayoffByes
   }
 
-  const avgPlayoffPointsAllTime = (
-    totalPointsPlayoffs / totalGamesPlayoffs
-  ).toFixed(2)
+  const avgPlayoffPointsAllTime = Number(
+    (totalPointsPlayoffs / totalGamesPlayoffs).toFixed(2)
+  )
 
   return {
     totalPointsPlayoffs,
@@ -183,8 +185,8 @@ function combinedAvgPointsForAllTime(owner) {
     totalPointsAllTime += avgPointsForPlayoffs(owner, year).totalPlayoffPoints
     totalGamesAllTime += avgPointsForPlayoffs(owner, year).totalPlayoffGames
   }
-  const combinedAvgPointsFor = (totalPointsAllTime / totalGamesAllTime).toFixed(
-    2
+  const combinedAvgPointsFor = Number(
+    (totalPointsAllTime / totalGamesAllTime).toFixed(2)
   )
 
   return {
