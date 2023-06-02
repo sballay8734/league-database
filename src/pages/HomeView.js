@@ -1,20 +1,12 @@
 import "./home-view.css"
 import logo from "../images/profileImg.png"
 import FloatingNav from "../components/FloatingNav/FloatingNav"
-import { BsDroplet } from "react-icons/bs"
 
 function HomeView() {
   return (
     <div className="hero__image">
+      <div className="overlay"></div>
       <h1 className="established-large">EST. 2014</h1>
-      <div className="fixed-items">
-        <button className="league-logo">LLEA</button>
-        <button className="theme-changer">
-          {" "}
-          <BsDroplet />
-        </button>
-        <h1 className="established">EST. 2014</h1>
-      </div>
       <h1 className="hero__text absolute">
         Welcome to the Legendary League of <span className="ex">Ex</span>
         -Athletes

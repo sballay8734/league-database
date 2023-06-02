@@ -6,11 +6,13 @@
 :root {
   --primary-hue: 270;
   --primary-color: rgba(0, 76, 84);
+  --primary-color-background: rgba(0, 76, 84, 0.1);
   --primary-color-trans: rgba(0, 76, 84, 0.3);
   --primary-color-trans-hover: rgba(0, 76, 84, 0.5);
   --primary-color-trans-active: rgba(0, 76, 84, 0.7);
   --secondary-color: rgba(165, 172, 175);
   --tertiary-color: rgba(186, 202, 211);
+  --tertiary-color-trans: rgba(0, 76, 84, 0.1);
   --black: rgba(0, 0, 0);
   --white: rgb(255, 255, 255);
   --transition: all 200ms ease;
@@ -37,12 +39,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* body {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-} */
-
 .home {
   height: 100vh;
   width: 100vw;
@@ -59,6 +55,7 @@ html, body {
 
 nav {
   background-color: var(--primary-color);
+  z-index: 99;
 }
 
 nav a {
@@ -109,6 +106,82 @@ nav a {
   z-index: 999;
 }
 
+/* THEME change using react */
+
+main.color-eagles {
+  --primary-color: rgba(0, 76, 84);
+  --primary-color-background: rgba(0, 76, 84, 0.1);
+  --primary-color-trans: rgba(0, 76, 84, 0.3);
+  --primary-color-trans-hover: rgba(0, 76, 84, 0.5);
+  --primary-color-trans-active: rgba(0, 76, 84, 0.7);
+
+  --secondary-color: rgba(165, 172, 175);
+  --tertiary-color: rgba(186, 202, 211);
+  --tertiary-color-trans: rgba(0, 76, 84, 0.1);
+}
+
+main.color-union {
+  --primary-color: rgba(7, 27, 44);
+  --primary-color-background: rgba(7, 27, 44, 0.1);
+  --primary-color-trans: rgba(7, 27, 44, 0.3);
+  --primary-color-trans-hover: rgba(7, 27, 44, 0.5);
+  --primary-color-trans-active: rgba(7, 27, 44, 0.7);
+
+  --secondary-color: rgba(62, 142, 222);
+  --tertiary-color: rgba(177, 155, 105);
+  --tertiary-color-trans: rgba(177, 155, 105, .03);
+}
+
+main.color-liverpool {
+  --primary-color: rgb(150, 0, 0);
+  --primary-color-background: rgba(150, 0, 0, 0.05);
+  --primary-color-trans: rgba(150, 0, 0, 0.3);
+  --primary-color-trans-hover: rgba(150, 0, 0, 0.5);
+  --primary-color-trans-active: rgba(150, 0, 0, 0.7);
+
+  --secondary-color: rgba(94, 18, 8);
+  --tertiary-color: rgba(94, 18, 8);
+  --tertiary-color-trans: rgba(150, 0, 0, .05);
+}
+
+main.color-chelsea,
+main.color-yankees,
+main.color-giants {
+  --primary-color: rgb(55, 39, 2);
+  --primary-color-background: rgb(55, 39, 2);
+  --primary-color-trans: rgba(55, 39, 2, 0.3);
+  --primary-color-trans-hover: rgba(55, 39, 2, 0.5);
+  --primary-color-trans-active: rgba(55, 39, 2, 0.7);
+
+  --secondary-color: rgba(135, 171, 8);
+  --tertiary-color: rgba(135, 171, 8);
+  --tertiary-color-trans: rgba(135, 171, 8, .03);
+}
+
+.poop-prank img {
+  height: 500px;
+  width: 500px;
+}
+
+.poop-prank {
+  position: absolute;
+  background-color: rgba(0, 0, 0);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  width: 80%;
+  height: 80%;
+  color: white;
+  font-size: 50px;
+}
+
 @media screen and (max-width: 900px) {
   .navbar-list {
     gap: 3rem;
@@ -128,14 +201,22 @@ nav a {
 }
 
 @media screen and (max-width: 600px) {
-  .navbar {
+  .navbar .navbar-list {
     display: none;
+  }
+  .navbar {
+    background-color: transparent;
   }
   .home-view__wrapper {
     height: 100vh;
   }
   .established-large {
-    display: none;
+    font-size: 1.6rem;
+    top: calc((100vh) / 6);
+  }
+  .poop-prank img {
+    height: 300px;
+    width: 300px;
   }
 }
 

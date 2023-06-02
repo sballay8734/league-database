@@ -3,21 +3,7 @@ const STATIC_DATA_API = "http://127.0.0.1:3001/staticData"
 
 // POINTS FOR ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽ POINTS FOR ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽ POINTS FOR
 
-// Total Games Played RegSzn (yearly)
-// function totalGamesRegSzn(owner, year) {
-//   if (!owner[year].participated) return false // return false for combined func
-
-//   const totalRegSznGames = Object.keys(owner[year].regularSeason).length
-
-//   return totalRegSznGames
-// }
-
-// // Total Games Played Playoffs (yearly)
-// function totalGamesPlayoffs(owner, year) {
-
-// }
-
-// Average PointsFor RegSzn (yearly) **************************** @@@@ DONE @@@@
+// Average PF RegSzn (yearly) @@@@ DONE @@@@
 function avgPointsForRegSzn(owner, year) {
   if (!owner[year].participated) return false // return false for combined func
 
@@ -34,6 +20,23 @@ function avgPointsForRegSzn(owner, year) {
     (totalRegSznPoints / totalRegSznGames).toFixed(2)
   )
 
+  // Fetch and replace
+  async function findAndUpdate(owner, year) {
+    const response = await fetch(
+      `${STATIC_DATA_API}/${owner.id}?_embed=yearly`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
+    )
+    const result = await response.json()
+    console.log(result)
+  }
+
+  findAndUpdate(owner, year)
+
   return {
     totalRegSznPoints,
     totalRegSznGames,
@@ -41,7 +44,7 @@ function avgPointsForRegSzn(owner, year) {
   }
 }
 
-// Average PointsFor Playoffs (yearly) ************************** @@@@ DONE @@@@
+// Average PF Playoffs (yearly) @@@@ DONE @@@@
 function avgPointsForPlayoffs(owner, year) {
   if (!owner[year].participated) return false // return false for combined func
 
@@ -79,7 +82,7 @@ function avgPointsForPlayoffs(owner, year) {
   }
 }
 
-// Combined Average PointsFor (RegSzn AND Playoffs) (yearly) **** @@@@ DONE @@@@
+// Combined Average PF (RegSzn AND Playoffs) (yearly) @@@@ DONE @@@@
 function combinedAvgPointsFor(owner, year) {
   if (!avgPointsForRegSzn(owner, year)) return false
   if (!avgPointsForPlayoffs(owner, year)) return avgPointsForRegSzn(owner, year)
@@ -103,7 +106,7 @@ function combinedAvgPointsFor(owner, year) {
   }
 }
 
-// Average PointsFor RegSzn (All Time) ************************** @@@@ DONE @@@@
+// Average PF RegSzn (All Time) @@@@ DONE @@@@
 function avgPointsForRegSznAllTime(owner) {
   let totalPointsRegSzn = 0
   let totalGamesRegSzn = 0
@@ -131,7 +134,7 @@ function avgPointsForRegSznAllTime(owner) {
   }
 }
 
-// Average PointsFor Playoffs (All Time) ************************ @@@@ DONE @@@@
+// Average PF Playoffs (All Time) @@@@ DONE @@@@
 function avgPointsForPlayoffsAllTime(owner) {
   let totalPointsPlayoffs = 0
   let totalGamesPlayoffs = 0
@@ -164,7 +167,7 @@ function avgPointsForPlayoffsAllTime(owner) {
   }
 }
 
-// Combined Average PointsFor (RegSzn AND Playoffs) (All Time) ** @@@@ DONE @@@@
+// Combined Average PF (RegSzn AND Playoffs) (All Time) @@@@ DONE @@@@
 function combinedAvgPointsForAllTime(owner) {
   let totalPointsAllTime = 0
   let totalGamesAllTime = 0
@@ -214,16 +217,14 @@ async function dataFetch() {
   })
 
   const data = await response.json()
-  return data[3]
+  return data[0]
 }
 // FETCH TEST
 async function fetchTest() {
   let testOwner = await dataFetch()
 
   // just replace this function with whatever one you want to test
-  console.log(testOwner.ownerName, avgPointsForRegSznAllTime(testOwner))
-  console.log(testOwner.ownerName, avgPointsForPlayoffsAllTime(testOwner))
-  console.log(testOwner.ownerName, combinedAvgPointsForAllTime(testOwner))
+  console.log(testOwner.ownerName, avgPointsForRegSzn(testOwner, "2015"))
 }
 
 fetchTest()

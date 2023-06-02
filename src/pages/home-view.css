@@ -12,7 +12,6 @@
 .hero__image {
   background-image: url(../images/simple_dashed.png);
   background-size: 20px;
-  box-shadow: 0 0 100px 100px black inset;
   margin-top: 64px;
   height: calc(100vh - 4rem);
   width: 100vw;
@@ -21,6 +20,15 @@
   position: relative;
   align-items: center;
   justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-color-background);
 }
 
 .fixed-items {
@@ -357,7 +365,8 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px),
+        screen and (max-height: 800px) {
   .circle__center {
     height: 20rem;
     width: 20rem;
@@ -382,14 +391,16 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px),
+        screen and (max-height: 600px) {
   .hero__image {
     margin-top: 0;
     height: 100vh;
   }
 }
 
-@media screen and (max-width: 505px) {
+@media screen and (max-width: 505px),
+        screen and (max-height: 600px) {
   .circle__center {
     height: 18rem;
     width: 18rem;
@@ -412,9 +423,13 @@
     font-size: 1.8rem;
     max-width: 13rem;
   }
+  .established-large {
+    font-size: 1.4rem;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px),
+        screen and (max-height: 550px ) {
   .circle__center {
     height: 16rem;
     width: 16rem;
@@ -461,6 +476,9 @@
   .hero__text {
     font-size: 1.3rem;
     max-width: 10rem;
+  }
+  .established {
+    
   }
 }
 
