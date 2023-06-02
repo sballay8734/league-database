@@ -15,8 +15,6 @@ function ThemeProvider({ children }) {
     dispatchTheme({ type: buttonClassName })
   }
 
-  console.log(themeState)
-
   return (
     <ThemeContext.Provider value={{ themeState, themeHandler }}>
       {children}
