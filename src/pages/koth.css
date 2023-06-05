@@ -2,15 +2,33 @@
   margin-top: 64px;
   background-image: url(../images/simple_dashed.png);
   background-size: 20px;
-  height: 100vh;
+  height: calc(100vh - 64px);
   width: 100vw;
   display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
+}
+
+.koth-header,
+.koth-chart {
+  background-color: rgb(97, 0, 0, 0.5);
+  width: 100%;
+}
+
+.koth-header {
+  flex-grow: 1;
+}
+
+.koth-chart {
+  flex-grow: 2;
 }
 
 @media screen and (max-width: 600px) {
   .koth__container {
     margin-top: 0;
+    height: 100vh;
   }
 }

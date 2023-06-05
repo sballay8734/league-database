@@ -2,15 +2,55 @@
   margin-top: 64px;
   background-image: url(../images/simple_dashed.png);
   background-size: 20px;
-  height: 100vh;
+  height: calc(100vh - 64px);
   width: 100vw;
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
   align-items: center;
   justify-content: center;
+}
+
+.combined-chart {
+  display: none;
+}
+
+.section {
+  background-color: rgb(107, 0, 0, 0.5);
+  width: 100%;
+}
+.record-cards {
+  flex-grow: 1;
+}
+.record-overview {
+  flex-grow: 1.8;
+  display: flex;
+  gap: 1rem;
+  background-color: transparent;
+}
+
+.chart {
+  background-color: rgb(0, 91, 0, 0.5);
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
   .records__container {
     margin-top: 0;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .combined-chart {
+    display: block;
+  }
+  .good-records {
+    display: none;
+  }
+  .bad-records {
+    display: none;
   }
 }

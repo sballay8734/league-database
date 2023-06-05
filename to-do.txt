@@ -31,3 +31,5 @@
 3. Re-write app to read data from static data rather than performing ALL calculations on ever render.
 
 4. Migrate data to MongoDB
+
+5. LOGO and THEME CHANGE are in the way on small screens. Re-work

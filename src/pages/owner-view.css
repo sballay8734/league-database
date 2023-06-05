@@ -1,4 +1,4 @@
-.compare__container {
+.owners__container {
   margin-top: 64px;
   background-image: url(../images/simple_dashed.png);
   background-size: 20px;
@@ -8,6 +8,10 @@
   grid-template-columns: 1fr 2fr 1fr;
   gap: 1rem;
   padding: 1rem;
+}
+
+.column {
+  background-color: rgb(126, 0, 0, 0.5);;
 }
 
 .middle-row {
@@ -22,39 +26,15 @@
   height: 100%;
 }
 
-.grid-left,
-.grid-right {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  gap: 1rem;
-}
-
-.owner-one,
-.owner-one-stats,
-.owner-two,
-.owner-two-stats {
-  background-color: rgba(15, 126, 0);
-}
-
-/* GRID DOES NOT LINE UP PERFECTLY */
-
-.owner-one,
-.owner-two {
-  flex-grow: 1;
-}
-
-.owner-one-stats,
-.owner-two-stats {
-  flex-grow: 1.5;
-}
-
-
-
-
 @media screen and (max-width: 600px) {
-  .compare__container {
+  .owners__container {
     margin-top: 0;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
+  .column {
+    display: none;
+  }
+
 }
