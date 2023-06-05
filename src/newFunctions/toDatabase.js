@@ -1,5 +1,25 @@
+// const db = require("mongodb")
 const API_URL = "http://127.0.0.1:3001/teamOwners"
 const STATIC_DATA_API = "http://127.0.0.1:3001/staticData"
+
+// Connect to DB
+// let dbConnection
+
+// async function connectToDB(callback) {
+//   try {
+//     const response = await db.connect(process.env.DB_URI)
+//     dbConnection = response.db()
+//     console.log("Connected")
+//     return callback()
+//   } catch (error) {
+//     console.log(error)
+//     return callback(error)
+//   }
+// }
+
+// function getDB() {
+//   return dbConnection
+// }
 
 // POINTS FOR ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽ POINTS FOR ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽ POINTS FOR
 
@@ -32,7 +52,6 @@ function avgPointsForRegSzn(owner, year) {
       }
     )
     const result = await response.json()
-    console.log(result)
   }
 
   findAndUpdate(owner, year)
@@ -228,3 +247,6 @@ async function fetchTest() {
 }
 
 fetchTest()
+
+// export { connectToDB }
+// export { getDB }

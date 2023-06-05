@@ -4429,18 +4429,21 @@
         "regSzn": {},
         "playoffs": {},
         "combined": {}
-      },
-      "h2h": {},
-      "koth": {}
+      }
     },
-    {
-      "id": 2,
-      "ownerName": "test2"
-    },
-    {
-      "id": 3,
-      "ownerName": "test3"
-    }
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
   ],
-  "leagueAvgStats": []
+  "leagueAvgStats": [],
+  "kingOfTheHill": [],
+  "headToHead": []
 }

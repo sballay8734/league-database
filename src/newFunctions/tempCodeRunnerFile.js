@@ -1,5 +1,25 @@
+const db = require("mongodb")
 const API_URL = "http://127.0.0.1:3001/teamOwners"
 const STATIC_DATA_API = "http://127.0.0.1:3001/staticData"
+
+// Connect to DB
+let dbConnection
+
+async function connectToDB(callback) {
+  try {
+    const response = await db.connect(process.env.DB_URI)
+    dbConnection = response.db()
+    console.log("Connected")
+    return callback()
+  } catch (error) {
+    console.log(error)
+    return callback(error)
+  }
+}
+
+function getDB() {
+  return dbConnection
+}
 
 // POINTS FOR ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽ POINTS FOR ▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽▽ POINTS FOR
 
@@ -21,18 +41,21 @@ function avgPointsForRegSzn(owner, year) {
   )
 
   // Fetch and replace
-  async function findAndUpdate() {
-    const response = await fetch(STATIC_DATA_API, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json"
+  async function findAndUpdate(owner, year) {
+    const response = await fetch(
+      `${STATIC_DATA_API}/${owner.id}?_embed=yearly`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json"
+        }
       }
-    })
-    const data = await response.json()
-    console.log(data)
+    )
+    const result = await response.json()
+    console.log(result)
   }
 
-  findAndUpdate()
+  findAndUpdate(owner, year)
 
   return {
     totalRegSznPoints,
@@ -214,16 +237,14 @@ async function dataFetch() {
   })
 
   const data = await response.json()
-  return data[3]
+  return data[0]
 }
 // FETCH TEST
 async function fetchTest() {
   let testOwner = await dataFetch()
 
   // just replace this function with whatever one you want to test
-  console.log(testOwner.ownerName, avgPointsForRegSzn(testOwner, "2014"))
-  console.log(testOwner.ownerName, avgPointsForPlayoffsAllTime(testOwner))
-  console.log(testOwner.ownerName, combinedAvgPointsForAllTime(testOwner))
+  console.log(testOwner.ownerName, avgPointsForRegSzn(testOwner, "2015"))
 }
 
 fetchTest()

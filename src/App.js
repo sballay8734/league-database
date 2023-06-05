@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Theme from "./theme/Theme"
 import useTheme from "./hooks/useTheme"
 import PoopPrank from "./components/PoopPrank"
+import { connectToDB, getDB } from "./newFunctions/toDatabase"
 
 const API_URL = "http://127.0.0.1:3001/teamOwners"
 const STATIC_DATA_API = "http://127.0.0.1:3001/staticData"
@@ -34,6 +35,7 @@ function App() {
   const { themeState } = useTheme()
 
   useEffect(() => {
+    // connectToDB()  // can't do this from front-end
     dataFetch()
   }, [])
 
