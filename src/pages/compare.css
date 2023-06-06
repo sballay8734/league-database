@@ -24,9 +24,8 @@
 
 .grid-left,
 .grid-right {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   gap: 1rem;
 }
 
@@ -36,21 +35,6 @@
 .owner-two-stats {
   background-color: rgba(15, 126, 0);
 }
-
-/* GRID DOES NOT LINE UP PERFECTLY */
-
-.owner-one,
-.owner-two {
-  flex-grow: 1;
-}
-
-.owner-one-stats,
-.owner-two-stats {
-  flex-grow: 1.5;
-}
-
-
-
 
 @media screen and (max-width: 600px) {
   .compare__container {
