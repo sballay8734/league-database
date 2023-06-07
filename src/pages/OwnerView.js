@@ -25,8 +25,28 @@ function OwnerView({ owners, dataFetch }) {
   }
 
   function handleDropdownSelection(index) {
-    setCurrentIndex(index)
+    slideThrough(index)
     setDropdownIsOpen(false)
+  }
+
+  async function slideThrough(indexToGoTo) {
+    if (currentIndex < indexToGoTo - 3) {
+      for (let i = currentIndex; i < indexToGoTo; i++) {
+        await delay(110)
+        setCurrentIndex((currentIndex) => currentIndex + 1)
+      }
+    } else if (currentIndex > indexToGoTo + 3) {
+      for (let i = currentIndex; i > indexToGoTo; i--) {
+        await delay(110)
+        setCurrentIndex((currentIndex) => currentIndex - 1)
+      }
+    } else {
+      setCurrentIndex(indexToGoTo)
+    }
+  }
+
+  function delay(ms) {
+    return new Promise((resolve, reject) => setTimeout(resolve, ms))
   }
 
   return (
