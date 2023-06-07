@@ -59,7 +59,7 @@ function App() {
           <HomeView />
         </Route>
         <Route path="/owners">
-          <OwnerView owners={owners} />
+          <OwnerView owners={owners} dataFetch={dataFetch} />
         </Route>
         <Route path="/compare">
           <CompareView />

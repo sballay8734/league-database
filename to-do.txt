@@ -33,3 +33,7 @@
 4. Migrate data to MongoDB
 
 5. LOGO and THEME CHANGE are in the way on small screens. Re-work
+
+6. Move Carousel to its own component
+
+7. Need to smooth Carousel transition when using dropdown and clicking pagination

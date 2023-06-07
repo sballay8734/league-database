@@ -4,9 +4,11 @@ import { useState } from "react"
 import { BsArrowLeftCircle } from "react-icons/bs"
 import { BsArrowRightCircle } from "react-icons/bs"
 import { BsCircleFill } from "react-icons/bs"
+import { RxTriangleDown, RxTriangleUp, RxTriangleLeft } from "react-icons/rx"
 
-function OwnerView({ owners }) {
+function OwnerView({ owners, dataFetch }) {
   const [currentIndex, setCurrentIndex] = useState(5)
+  const [dropdownIsOpen, setDropdownIsOpen] = useState(false)
 
   function handleBackArrowClick() {
     if (currentIndex === 0) return
@@ -18,12 +20,21 @@ function OwnerView({ owners }) {
     setCurrentIndex((currentIndex) => currentIndex + 1)
   }
 
+  function handleDropdownClick() {
+    setDropdownIsOpen(!dropdownIsOpen)
+  }
+
+  function handleDropdownSelection(index) {
+    setCurrentIndex(index)
+    setDropdownIsOpen(false)
+  }
+
   return (
     <div className="owners__container">
       <div className="column grid-left-owner-view"></div>
       <div className="grid-middle-owner-view">
         <div className="middle-row-owner-view owner">
-          {owners[currentIndex][2014].wins}
+          {owners[currentIndex].ownerName}
         </div>
         <div className="by-year-owner-view">
           <div className="middle-row owner-wrapper-test">
@@ -69,6 +80,37 @@ function OwnerView({ owners }) {
                 )
               })}
             </div>
+          </div>
+          <div className="dropdown-wrapper">
+            <div className="owner-name" onClick={handleDropdownClick}>
+              {owners[currentIndex].ownerName}
+            </div>
+            <div className="dropdown-arrow" onClick={handleDropdownClick}>
+              {dropdownIsOpen ? <RxTriangleUp /> : <RxTriangleDown />}
+            </div>
+            {dropdownIsOpen ? (
+              <div className="dropdown-owners-wrapper">
+                {owners.map((owner, index) => {
+                  return (
+                    <div
+                      onClick={() => handleDropdownSelection(index)}
+                      className="owner-name-dropdown"
+                      key={owner.id}
+                    >
+                      {index === currentIndex ? (
+                        <div className="current-owner">
+                          {owner.ownerName} <RxTriangleLeft />
+                        </div>
+                      ) : (
+                        <div>{owner.ownerName}</div>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
         <div className="middle-row all-time"></div>
