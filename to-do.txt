@@ -41,3 +41,5 @@
 9. Default Owner Selection
 
 10. Maybe put stat choice and "all-time || by season" choice next to name dropdown in OwnerView
+
+11. Add active class to highlight currently selected year in dropdown

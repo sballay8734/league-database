@@ -8,18 +8,31 @@ import { RxTriangleDown, RxTriangleUp, RxTriangleLeft } from "react-icons/rx"
 import {
   LineChart,
   Line,
-  CartesianGrid,
+  BarChart,
   XAxis,
   YAxis,
   Legend,
   ResponsiveContainer,
-  Tooltip
+  Tooltip,
+  Bar
 } from "recharts"
-import { lineChartData } from "./data/line-chart-data"
+import {
+  lineChartDataRS,
+  lineChartDataP,
+  lineChartDataC,
+  barChartData2023,
+  barChartData2014,
+  barChartData2015
+} from "./data/line-chart-data"
 
 function OwnerView({ owners, dataFetch }) {
+  let currentYear = new Date().getFullYear()
+
   const [currentIndex, setCurrentIndex] = useState(5)
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false)
+  const [yearDropdownIsOpen, setYearDropdownIsOpen] = useState(false)
+  const [activeCategory, setActiveCategory] = useState("RS") // P // C
+  const [activeYear, setActiveYear] = useState(currentYear)
 
   function handleBackArrowClick() {
     if (currentIndex === 0) return
@@ -40,6 +53,14 @@ function OwnerView({ owners, dataFetch }) {
     setDropdownIsOpen(false)
   }
 
+  function handleYearClick() {
+    setYearDropdownIsOpen(!yearDropdownIsOpen)
+  }
+
+  function handleYearSelect(year) {
+    setActiveYear(year)
+  }
+
   async function slideThrough(indexToGoTo) {
     if (currentIndex < indexToGoTo - 3) {
       for (let i = currentIndex; i < indexToGoTo; i++) {
@@ -58,6 +79,22 @@ function OwnerView({ owners, dataFetch }) {
 
   function delay(ms) {
     return new Promise((resolve, reject) => setTimeout(resolve, ms))
+  }
+
+  function allTimeDataToFeed() {
+    if (activeCategory === "RS") return lineChartDataRS
+    if (activeCategory === "P") return lineChartDataP
+    if (activeCategory === "C") return lineChartDataC
+
+    return lineChartDataRS
+  }
+
+  function yearlyDataToFeed() {
+    if (activeYear === 2014) return barChartData2014
+    if (activeYear === 2015) return barChartData2015
+    if (activeYear === 2023) return barChartData2023
+
+    return barChartData2023
   }
 
   return (
@@ -157,11 +194,31 @@ function OwnerView({ owners, dataFetch }) {
               ""
             )}
           </div>
+          <div className="category-select-wrapper">
+            <button
+              onClick={() => setActiveCategory("RS")}
+              className={`${activeCategory === "RS" ? "active" : ""}`}
+            >
+              Reg Szn
+            </button>
+            <button
+              onClick={() => setActiveCategory("P")}
+              className={`${activeCategory === "P" ? "active" : ""}`}
+            >
+              Playoffs
+            </button>
+            <button
+              onClick={() => setActiveCategory("C")}
+              className={`${activeCategory === "C" ? "active" : ""}`}
+            >
+              Combined
+            </button>
+          </div>
         </div>
         <div className="by-year-chart">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart
-              data={lineChartData}
+              data={allTimeDataToFeed()}
               margin={{ right: 0, left: -30, top: 0, bottom: 0 }}
               width={500}
               height={300}
@@ -182,11 +239,12 @@ function OwnerView({ owners, dataFetch }) {
               />
               <YAxis
                 tickSize="0"
+                type="number"
+                domain={[0, 240]}
                 axisLine={true}
                 padding={{ right: 2, top: 20 }}
               />
               <Tooltip
-                position={{ x: 450, y: 150 }}
                 separator="-"
                 itemStyle={{
                   height: 20,
@@ -232,8 +290,73 @@ function OwnerView({ owners, dataFetch }) {
             </LineChart>
           </ResponsiveContainer>
         </div>
-        <div className="middle-row-owner-view owner">
-          {owners[currentIndex].ownerName}
+        <div className="middle-row-owner-view bar-chart">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={yearlyDataToFeed()}
+              margin={{ left: -30 }}
+              barSize={12}
+            >
+              <XAxis dataKey="stat" tickLine={false} />
+              <YAxis scale="sqrt" tickLine={false} tickSize="0" />
+              <Legend align="right" verticalAlign="top" />
+              <Tooltip
+                itemStyle={{
+                  height: 20,
+                  width: 90,
+                  fontSize: 10,
+                  backgroundColor: "black",
+                  margin: 0,
+                  padding: "2px 0 0 4px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  overflow: "hidden"
+                }}
+                wrapperStyle={{
+                  padding: 0,
+                  margin: 0
+                }}
+                contentStyle={{
+                  padding: 0,
+                  margin: 0,
+                  width: "100%",
+                  border: "1px solid #004c54",
+                  borderRadius: "5px",
+                  overflow: "hidden",
+                  display: "flex"
+                }}
+                labelStyle={{ display: "none" }}
+              />
+              <Bar dataKey="owner1" fill="#004c54" />
+              <Bar dataKey="owner2" fill="#dddddd" />
+            </BarChart>
+          </ResponsiveContainer>
+          <div className="year-select-wrapper" onClick={handleYearClick}>
+            <div className="year-select-wrapper-year">{activeYear}</div>
+            <div class="year-select-wrapper-arrow">
+              <RxTriangleDown />
+            </div>
+            <div
+              className={`year-dropdown ${yearDropdownIsOpen ? "open" : ""}`}
+            >
+              {/* should be years.map() -- hardcoded for now */}
+              <div onClick={() => handleYearSelect(2014)} className="year">
+                2014
+              </div>
+              <div onClick={() => handleYearSelect(2015)} className="year">
+                2015
+              </div>
+              <div className="year">2016</div>
+              <div className="year">2017</div>
+              <div className="year">2019</div>
+              <div className="year">2020</div>
+              <div className="year">2021</div>
+              <div className="year">2022</div>
+              <div onClick={() => handleYearSelect(2023)} className="year">
+                2023
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="column grid-right-owner-view"></div>
