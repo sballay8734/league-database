@@ -32,12 +32,12 @@ function OwnerView({ owners, dataFetch }) {
   async function slideThrough(indexToGoTo) {
     if (currentIndex < indexToGoTo - 3) {
       for (let i = currentIndex; i < indexToGoTo; i++) {
-        await delay(110)
+        await delay(50)
         setCurrentIndex((currentIndex) => currentIndex + 1)
       }
     } else if (currentIndex > indexToGoTo + 3) {
       for (let i = currentIndex; i > indexToGoTo; i--) {
-        await delay(110)
+        await delay(50)
         setCurrentIndex((currentIndex) => currentIndex - 1)
       }
     } else {
@@ -66,9 +66,25 @@ function OwnerView({ owners, dataFetch }) {
                     ${index === currentIndex + 1 ? "next" : ""}
                     ${index === currentIndex + 2 ? "next-next" : ""}
                     ${index === currentIndex + 3 ? "next-next-next" : ""}
+                    ${index === currentIndex + 4 ? "next-x4" : ""}
+                    ${index === currentIndex + 5 ? "next-x5" : ""}
+                    ${index === currentIndex + 6 ? "next-x6" : ""}
+                    ${index === currentIndex + 7 ? "next-x7" : ""}
+                    ${index === currentIndex + 8 ? "next-x8" : ""}
+                    ${index === currentIndex + 9 ? "next-x9" : ""}
+                    ${index === currentIndex + 10 ? "next-x10" : ""}
+                    ${index === currentIndex + 11 ? "next-x11" : ""}
                     ${index === currentIndex - 1 ? "prev" : ""}
                     ${index === currentIndex - 2 ? "prev-prev" : ""}
                     ${index === currentIndex - 3 ? "prev-prev-prev" : ""}
+                    ${index === currentIndex - 4 ? "prev-x4" : ""}
+                    ${index === currentIndex - 5 ? "prev-x5" : ""}
+                    ${index === currentIndex - 6 ? "prev-x6" : ""}
+                    ${index === currentIndex - 7 ? "prev-x7" : ""}
+                    ${index === currentIndex - 8 ? "prev-x8" : ""}
+                    ${index === currentIndex - 9 ? "prev-x9" : ""}
+                    ${index === currentIndex - 10 ? "prev-x10" : ""}
+                    ${index === currentIndex - 11 ? "prev-x11" : ""}
 
                   `}
                   key={owner.id}
@@ -94,6 +110,7 @@ function OwnerView({ owners, dataFetch }) {
                       index === currentIndex ? "active" : ""
                     }`}
                     key={owner.id}
+                    onClick={() => handleDropdownSelection(index)}
                   >
                     <BsCircleFill />
                   </div>

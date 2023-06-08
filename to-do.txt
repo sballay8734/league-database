@@ -26,8 +26,6 @@
           // Find owner in static data
           // Overwrite totalPlayoffPoints in staticData
 
-2. Re-design owners page to show one at a time on both mobile and pc
-
 3. Re-write app to read data from static data rather than performing ALL calculations on ever render.
 
 4. Migrate data to MongoDB
@@ -37,3 +35,7 @@
 6. Move Carousel to its own component
 
 7. Need to smooth Carousel transition when using dropdown and clicking pagination
+
+8. Theme Persistence
+
+9. Default Owner Selection
