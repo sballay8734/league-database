@@ -57,6 +57,7 @@ html, body {
 nav {
   background-color: var(--primary-color);
   z-index: 99;
+  display: flex;
 }
 
 nav a {
@@ -213,6 +214,9 @@ main.color-giants {
   }
   .navbar {
     background-color: transparent;
+  }
+  nav {
+    display: none;
   }
   .home-view__wrapper {
     height: 100vh;

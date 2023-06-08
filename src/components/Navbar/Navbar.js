@@ -11,7 +11,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="navbar w-screen h-16 fixed top-0 left-0 flex items-center justify-between px-8">
+    <nav className="navbar w-screen h-16 fixed top-0 left-0 items-center justify-between px-8">
       <Link to="/" className="league-logo">
         LLEA
       </Link>

@@ -29,7 +29,7 @@
 .middle-row-owner-view {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .grid-middle-owner-view {
@@ -411,12 +411,24 @@
   transition: var(--transition);
 }
 
+.arrow-left:active,
+.arrow-right:active {
+  color: var(--primary-color-trans-active);
+}
+
 .page-icon {
   color: var(--primary-color);
   opacity: 0.4;
   transition: var(--swiper-transition);
   cursor: pointer;
 }
+.page-icon:hover {
+  color: white;
+}
+.page-icon:active {
+  color: var(--primary-color-trans-active);
+}
+
 .page-icon.active {
   opacity: 1;
   transition: var(--swiper-transition);
@@ -495,6 +507,37 @@
   top: 0;
   left: 0;
   overflow-y: scroll;
+}
+
+.by-year-chart,
+.by-year-owner-view {
+  /* background-color: white; */
+  border: 1px solid var(--primary-color);
+  background-color: black;
+  border-radius: 10px;
+}
+
+.recharts-default-tooltip {
+  padding: 0;
+}
+
+.recharts-legend-item-text {
+  font-size: 0.8rem;
+}
+
+.recharts-text tspan {
+  font-size: 0.8rem;
+}
+
+.recharts-responsive-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-container {
+  width: 100%;
+  height: 100%;
 }
  
 @media screen and (max-width: 600px) {
