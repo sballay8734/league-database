@@ -516,10 +516,14 @@
   cursor: pointer;
 }
 
+.owner {
+  padding: 0.2rem 0.3rem 0.2rem 0.6rem;
+}
+
 .owner-name-dropdown {
   font-size: 0.8rem;
   cursor: pointer;
-  padding: 0.2rem 0.3rem 0.2rem 0.6rem;
+  /* padding: 0.2rem 0.3rem 0.2rem 0.6rem; */
 }
 
 .current-owner {
@@ -527,7 +531,7 @@
   align-items: center;
   justify-content: space-between;
   font-weight: bold;
-  color: var(--primary-color)
+  background-color: var(--primary-color)
 }
 
 .dropdown-owners-wrapper {
@@ -624,6 +628,13 @@
 .year {
   cursor: pointer;
   padding-left: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.year.active {
+  background-color: var(--primary-color-trans-active);
+  font-weight: bold;
 }
 
 .year:hover {

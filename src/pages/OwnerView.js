@@ -180,11 +180,11 @@ function OwnerView({ owners, dataFetch }) {
                       key={owner.id}
                     >
                       {index === currentIndex ? (
-                        <div className="current-owner">
+                        <div className="owner current-owner">
                           {owner.ownerName} <RxTriangleLeft />
                         </div>
                       ) : (
-                        <div>{owner.ownerName}</div>
+                        <div className="owner">{owner.ownerName}</div>
                       )}
                     </div>
                   )
@@ -340,20 +340,65 @@ function OwnerView({ owners, dataFetch }) {
               className={`year-dropdown ${yearDropdownIsOpen ? "open" : ""}`}
             >
               {/* should be years.map() -- hardcoded for now */}
-              <div onClick={() => handleYearSelect(2014)} className="year">
-                2014
+              <div
+                onClick={() => handleYearSelect(2014)}
+                className={`year ${activeYear === 2014 ? "active" : ""}`}
+              >
+                2014 {activeYear === 2014 ? <RxTriangleLeft /> : ""}
               </div>
-              <div onClick={() => handleYearSelect(2015)} className="year">
-                2015
+              <div
+                onClick={() => handleYearSelect(2015)}
+                className={`year ${activeYear === 2015 ? "active" : ""}`}
+              >
+                2015 {activeYear === 2015 ? <RxTriangleLeft /> : ""}
               </div>
-              <div className="year">2016</div>
-              <div className="year">2017</div>
-              <div className="year">2019</div>
-              <div className="year">2020</div>
-              <div className="year">2021</div>
-              <div className="year">2022</div>
-              <div onClick={() => handleYearSelect(2023)} className="year">
-                2023
+              <div
+                onClick={() => handleYearSelect(2016)}
+                className={`year ${activeYear === 2016 ? "active" : ""}`}
+              >
+                2016 {activeYear === 2016 ? <RxTriangleLeft /> : ""}
+              </div>
+              <div
+                onClick={() => handleYearSelect(2017)}
+                className={`year ${activeYear === 2017 ? "active" : ""}`}
+              >
+                2017 {activeYear === 2017 ? <RxTriangleLeft /> : ""}
+              </div>
+              <div
+                onClick={() => handleYearSelect(2018)}
+                className={`year ${activeYear === 2018 ? "active" : ""}`}
+              >
+                2018 {activeYear === 2018 ? <RxTriangleLeft /> : ""}
+              </div>
+              <div
+                onClick={() => handleYearSelect(2019)}
+                className={`year ${activeYear === 2019 ? "active" : ""}`}
+              >
+                2019 {activeYear === 2019 ? <RxTriangleLeft /> : ""}
+              </div>
+              <div
+                onClick={() => handleYearSelect(2020)}
+                className={`year ${activeYear === 2020 ? "active" : ""}`}
+              >
+                2020 {activeYear === 2020 ? <RxTriangleLeft /> : ""}
+              </div>
+              <div
+                onClick={() => handleYearSelect(2021)}
+                className={`year ${activeYear === 2021 ? "active" : ""}`}
+              >
+                2021 {activeYear === 2021 ? <RxTriangleLeft /> : ""}
+              </div>
+              <div
+                onClick={() => handleYearSelect(2022)}
+                className={`year ${activeYear === 2022 ? "active" : ""}`}
+              >
+                2022 {activeYear === 2022 ? <RxTriangleLeft /> : ""}
+              </div>
+              <div
+                onClick={() => handleYearSelect(2023)}
+                className={`year ${activeYear === 2023 ? "active" : ""}`}
+              >
+                2023 {activeYear === 2023 ? <RxTriangleLeft /> : ""}
               </div>
             </div>
           </div>
@@ -361,12 +406,6 @@ function OwnerView({ owners, dataFetch }) {
       </div>
       <div className="column grid-right-owner-view"></div>
     </div>
-    // OLD PAGE
-    // <div className="App flex flex-wrap gap-4 bg-[#0B2447]">
-    //   {owners.map((owner) => {
-    //     return <OwnerCard key={owner.id} owner={owner} owners={owners} />
-    //   })}
-    // </div>
   )
 }
 

@@ -42,4 +42,6 @@
 
 10. Maybe put stat choice and "all-time || by season" choice next to name dropdown in OwnerView
 
-11. Add active class to highlight currently selected year in dropdown
+11. Sidebar nav needs to hide when nav-link is clicked
+
+12. Entire div should be able to be clicked, not just link to optimize for mobile
