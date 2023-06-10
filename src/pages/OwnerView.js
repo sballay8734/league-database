@@ -265,7 +265,7 @@ function OwnerView({ owners, dataFetch }) {
                   padding: 0,
                   margin: 0,
                   width: "100%",
-                  border: "1px solid #004c54",
+                  border: "1px solid var(--primary-color)",
                   borderRadius: "5px",
                   overflow: "hidden",
                   display: "flex"
@@ -283,8 +283,8 @@ function OwnerView({ owners, dataFetch }) {
               <Line
                 type="monotone"
                 dataKey="owner1"
-                stroke="#004c54"
-                fill="#004c54"
+                stroke="var(--primary-color)"
+                fill="var(--primary-color)"
                 activeDot={{ r: 4 }}
               />
             </LineChart>
@@ -320,20 +320,20 @@ function OwnerView({ owners, dataFetch }) {
                   padding: 0,
                   margin: 0,
                   width: "100%",
-                  border: "1px solid #004c54",
+                  border: "1px solid var(--primary-color)",
                   borderRadius: "5px",
                   overflow: "hidden",
                   display: "flex"
                 }}
                 labelStyle={{ display: "none" }}
               />
-              <Bar dataKey="owner1" fill="#004c54" />
+              <Bar dataKey="owner1" fill="var(--primary-color)" />
               <Bar dataKey="owner2" fill="#dddddd" />
             </BarChart>
           </ResponsiveContainer>
           <div className="year-select-wrapper" onClick={handleYearClick}>
             <div className="year-select-wrapper-year">{activeYear}</div>
-            <div class="year-select-wrapper-arrow">
+            <div className="year-select-wrapper-arrow">
               <RxTriangleDown />
             </div>
             <div

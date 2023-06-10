@@ -1,9 +1,10 @@
-import { useContext, createContext, useState, useEffect } from "react"
+import { createContext, useState, useEffect } from "react"
 
 const NavigationContext = createContext()
 
 function NavigationProvider({ children }) {
   const [currentPath, setCurrentPath] = useState(window.location.pathname)
+  const [navIsShown, setNavIsShown] = useState(false)
 
   useEffect(() => {
     function handler() {
@@ -21,8 +22,30 @@ function NavigationProvider({ children }) {
     setCurrentPath(to)
   }
 
+  function handleNavClose() {
+    setNavIsShown(false)
+  }
+
+  function handleNavClick() {
+    setNavIsShown(!navIsShown)
+  }
+
+  function handleLinkClick(to) {
+    navigate(to)
+    setNavIsShown(false)
+  }
+
   return (
-    <NavigationContext.Provider value={{ navigate, currentPath }}>
+    <NavigationContext.Provider
+      value={{
+        navigate,
+        currentPath,
+        navIsShown,
+        handleNavClose,
+        handleLinkClick,
+        handleNavClick
+      }}
+    >
       {children}
     </NavigationContext.Provider>
   )

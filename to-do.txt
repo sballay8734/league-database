@@ -42,6 +42,10 @@
 
 10. Maybe put stat choice and "all-time || by season" choice next to name dropdown in OwnerView
 
-11. Sidebar nav needs to hide when nav-link is clicked
+11. "Stat Choice" option needs to be added to ownerView somewhere
 
-12. Entire div should be able to be clicked, not just link to optimize for mobile
+12. Reg Szn, Playoff, Combined faded text on chart
+
+13. Barchart hover is weird
+
+14. Union Theme is too dark
