@@ -43,7 +43,7 @@ function SidebarNav() {
         </div>
       </div>
       <div onClick={handleNavClick} className="sidebar-nav">
-        NAV
+        <div className="nav-text">NAV</div>
         <div className="nav-arrow">
           {navIsShown ? <RxTriangleLeft /> : <RxTriangleRight />}
         </div>

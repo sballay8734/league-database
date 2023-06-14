@@ -24,12 +24,14 @@ import {
   barChartData2014,
   barChartData2015
 } from "./data/line-chart-data"
+import categoryData from "./data/owner-view-category-data"
 
 function OwnerView({ owners, dataFetch }) {
   let currentYear = new Date().getFullYear()
 
   const [currentIndex, setCurrentIndex] = useState(5)
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false)
+  const [categoryDropdownIsOpen, setCategoryDropdownIsOpen] = useState(false)
   const [yearDropdownIsOpen, setYearDropdownIsOpen] = useState(false)
   const [activeCategory, setActiveCategory] = useState("RS") // P // C
   const [activeYear, setActiveYear] = useState(currentYear)
@@ -75,6 +77,13 @@ function OwnerView({ owners, dataFetch }) {
     } else {
       setCurrentIndex(indexToGoTo)
     }
+  }
+
+  function handleCategorySelect(item) {
+    categoryData.filter((item) => {
+      return item.Abbr !== activeCategory
+    })
+    setActiveCategory(item.Abbr)
   }
 
   function delay(ms) {
@@ -213,6 +222,32 @@ function OwnerView({ owners, dataFetch }) {
             >
               Combined
             </button>
+          </div>
+          <div
+            onClick={() => setCategoryDropdownIsOpen(!categoryDropdownIsOpen)}
+            className="category-select-dropdown"
+          >
+            <div className="category-name">{activeCategory}</div>
+            <div className="category-dropdown-arrow">
+              {categoryDropdownIsOpen ? <RxTriangleUp /> : <RxTriangleDown />}
+            </div>
+            {categoryDropdownIsOpen ? (
+              <div className="category-owners-wrapper">
+                {categoryData.map((item) => {
+                  return (
+                    <div
+                      onClick={() => handleCategorySelect(item)}
+                      className="category-name-dropdown"
+                      key={item.Abbr}
+                    >
+                      {item.Abbr}
+                    </div>
+                  )
+                })}
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
         <div className="by-year-chart">

@@ -49,3 +49,5 @@
 13. Barchart hover is weird
 
 14. Union Theme is too dark
+
+15. Sidebar Nav Li's bottom border color
