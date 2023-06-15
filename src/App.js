@@ -9,6 +9,8 @@ import KingOfTheHillView from "./pages/KingOfTheHillView"
 import Route from "./components/Route"
 import Navbar from "./components/Navbar/Navbar"
 import Theme from "./theme/Theme"
+import SidebarNav from "./components/SidebarNav/SidebarNav"
+
 import useTheme from "./hooks/useTheme"
 import PoopPrank from "./components/PoopPrank"
 import { connectToDB, getDB } from "./newFunctions/toDatabase"
@@ -53,6 +55,7 @@ function App() {
   return (
     <main className={`home ${themeState.primary}`}>
       <Navbar />
+      <SidebarNav />
       {/* Routes */}
       <div className="routes">
         <Route path="/">

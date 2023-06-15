@@ -39,3 +39,13 @@
 9. Default Owner Selection
 
 10. Maybe put stat choice and "all-time || by season" choice next to name dropdown in OwnerView
+
+11. "Stat Choice" option needs to be added to ownerView somewhere
+
+12. Reg Szn, Playoff, Combined faded text on chart
+
+13. Barchart hover is weird
+
+14. Union Theme is too dark
+
+15. Sidebar Nav Li's bottom border color

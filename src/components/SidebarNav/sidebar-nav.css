@@ -1,0 +1,109 @@
+.sidebar-wrapper {
+  position: fixed;
+  z-index: 1001;
+}
+
+.sidebar-nav {
+  position: fixed;
+  z-index: 111;
+  background-color: rgb(34, 205, 0);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0.4rem 0.2rem 0.4rem 0.2rem;
+  font-weight: bold;
+  top: 75px;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.nav-text {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.nav-arrow {
+  animation: bounce 1000ms ease infinite;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-link {
+  padding: 0.7rem;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  background-color: rgb(0, 45, 50);
+}
+
+.sidebar-nav-links {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  z-index: 111;
+  overflow: hidden;
+  transition: var(--transition);
+} 
+
+.sidebar-nav-links li {
+  border-bottom: 1px solid rgb(0, 47, 29);
+}
+
+.sidebar-nav-links.open {
+  transform: translateX(100%);
+  display: flex;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: var(--transition);
+}
+
+.sidebar-nav:hover {
+  background-color: rgb(20, 119, 0);
+  transition: var(--transition);
+}
+.sidebar-nav-links .small {
+  background-color: white;
+  border-bottom: 0px solid transparent;
+}
+.sidebar-nav-links h3 {
+  background-color: white;
+}
+.theme__primary-wrapper {
+  background-color: white;
+}
+
+@keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateX(0);} 
+   40% {transform: translateX(-6px);} 
+   60% {transform: translateX(-3px);} 
+} 
+
+@media screen and (max-width: 600px) {
+  .sidebar-nav-links {
+    display: block;
+  }
+  .theme__primary-wrapper {
+  padding-bottom: 1rem;
+  background-color: white;
+  }
+  .sidebar-nav-links h3 {
+    padding-top: 0.5rem;
+    background-color: white;
+  }
+  .sidebar-nav-links .small {
+    background-color: white;
+  }
+}
