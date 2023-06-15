@@ -7,6 +7,7 @@ function PrimaryColorButton({ className, logo }) {
 
   function handleClick() {
     hideModal()
+    localStorage.setItem("theme", className)
     themeHandler(className)
   }
 
