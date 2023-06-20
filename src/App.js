@@ -78,7 +78,9 @@ function App() {
       {themeState.primary === "color-chelsea" ||
       themeState.primary === "color-yankees" ||
       themeState.primary === "color-giants" ? (
-        <PoopPrank />
+        <div class="prank-wrapper">
+          <PoopPrank />
+        </div>
       ) : (
         ""
       )}

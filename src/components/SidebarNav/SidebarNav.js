@@ -5,12 +5,7 @@ import { NavigationContext } from "../../context/navigation"
 import { useContext } from "react"
 import PrimaryColorButton from "../PrimaryColorButton"
 import { primaryColors } from "../../theme/themeData"
-import {
-  RxTriangleDown,
-  RxTriangleLeft,
-  RxTriangleRight,
-  RxTriangleUp
-} from "react-icons/rx"
+import { RxTriangleDown, RxTriangleUp } from "react-icons/rx"
 
 function SidebarNav() {
   const { navIsShown, handleNavClick, handleLinkClick } =
@@ -49,10 +44,12 @@ function SidebarNav() {
           </div>
         </div>
       </div>
-      <div onClick={handleNavClick} className="sidebar-nav">
-        <div className="nav-text"></div>
+      <div
+        onClick={handleNavClick}
+        className={`sidebar-nav ${navIsShown ? "open" : "closed"}`}
+      >
         <div className="nav-arrow">
-          {navIsShown ? <RxTriangleUp /> : <RxTriangleDown />}
+          {navIsShown ? <RxTriangleDown /> : <RxTriangleUp />}
         </div>
       </div>
     </div>

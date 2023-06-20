@@ -24,19 +24,27 @@
   position: fixed;
   z-index: 111;
   background-color: rgb(199, 199, 199);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 0.8rem 2rem 0.8rem 2rem;
   font-weight: bold;
-  top: 0;
+  bottom: -100px;
   left: 50%;
   transform: translate(-50%, 0);
   cursor: pointer;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: var(--transition);
-  display: none;
+  transition: var(--sidebar-button-transition);
+}
+
+.sidebar-nav.open {
+  bottom: 598.59px;
+  left: 50%;
+  transition: var(--sidebar-button-transition);
+}
+
+.sidebar-nav:hover.open {
+  transition: var(--sidebar-button-transition);
 }
 
 .nav-arrow {
@@ -79,7 +87,7 @@ li {
 .sidebar-nav-links {
   position: fixed;
   height: fit-content;
-  top: -100%;
+  bottom: -100%;
   width: 100%;
   text-align: center;
   background-color: var(--primary-color);
@@ -98,35 +106,32 @@ li {
   /* transform: translateY(100%); */
   height: fit-content;
   width: 100%;
-  top: 0;
+  bottom: 0;
   display: flex;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   transition: var(--sidebar-transition);
-}
-
-.sidebar-theme-wrapper {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
 }
 
 .sidebar-nav:hover {
   background-color: gray;
-  transition: var(--transition);
+  transition: background-color var(--transition);
 }
 .sidebar-nav:active {
   background-color: rgb(53, 53, 53);
 }
 .sidebar-nav-links .small {
   background-color: white;
-  border-bottom: 0px solid transparent;
 }
 .sidebar-nav-links h3 {
   background-color: white;
 }
 .theme__primary-wrapper {
   background-color: white;
+}
+.sidebar-nav.closed {
+  bottom: 0;
+  transition: var(--close-transition);
 }
 
 @keyframes bounce {
@@ -146,6 +151,10 @@ li {
 }
 
 @media screen and (max-width: 600px) {
+  .sidebar-nav {
+    display: flex;
+    bottom: 0px;
+  }
   .sidebar-nav-links {
     display: block;
   }
@@ -162,11 +171,5 @@ li {
   }
   .sidebar-nav-links .small {
     background-color: white;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .sidebar-nav {
-    display: flex;
   }
 }

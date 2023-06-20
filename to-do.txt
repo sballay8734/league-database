@@ -15,5 +15,3 @@
 12. Reg Szn, Playoff, Combined faded text on chart
 
 13. Barchart hover is weird
-
-17. FIX LIVERPOOL THEME

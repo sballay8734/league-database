@@ -3,10 +3,18 @@
   top: 0;
   left: 0;
   background-color: black;
-  opacity: 0.7;
   height: 100vh;
   width: 100vw;
+  opacity: 0;
   transition: var(--transition);
+  animation: animateModalBackground 300ms ease-in forwards;
+}
+
+.theme-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .theme__modal {
@@ -24,6 +32,8 @@
   transform: translate(-50%, -50%);
   border-radius: 0.5rem;
   transition: var(--transition);
+  opacity: 0;
+  animation: animateModal 300ms ease-in forwards;
 }
 
 .theme__primary-wrapper {
@@ -69,12 +79,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid transparent;
+  border: 1px solid black;
   transition: var(--transition);
 }
 
+.theme__primary-colors button.selected {
+  border: 2px solid rgb(255, 51, 51);
+}
+
 .theme__primary-colors button:hover {
-  border: 2px solid rgb(172, 172, 172);
+  border: 2px solid rgb(0, 0, 0);
   transition: var(--transition);
 }
 
@@ -83,31 +97,50 @@
   width: 75%;
 }
 
-.theme__primary-colors button:nth-child(1) {
+.theme-icon:nth-child(1) button {
   background-color: rgba(0, 76, 84);
 }
 
-.theme__primary-colors button:nth-child(2) {
+.theme-icon:nth-child(2) button {
   background-color: rgba(7, 27, 44);
 }
 
-.theme__primary-colors button:nth-child(3) {
+.theme-icon:nth-child(3) button {
   background-color: rgba(200, 16, 46);
 }
 
-.theme__primary-colors button:nth-child(4) {
+.theme-icon:nth-child(4) button {
   background-color: rgba(3, 70, 148);
 }
 
-.theme__primary-colors button:nth-child(5) {
+.theme-icon:nth-child(5) button {
   background-color: rgba(12, 35, 64);
 }
 
-.theme__primary-colors button:nth-child(5) img {
+.theme-icon:nth-child(5) button img {
   height: 85%;
   width: 85%;
 }
 
-.theme__primary-colors button:nth-child(6) {
+.theme-icon:nth-child(6) button {
   background-color: rgba(1, 35, 82);
+}
+
+.theme-triangle {
+  opacity: 0;
+}
+
+.theme-triangle.show {
+  opacity: 1;
+}
+
+@keyframes animateModal {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animateModalBackground {
+  to {
+    opacity: 0.8;
+  }
 }

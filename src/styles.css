@@ -17,10 +17,12 @@
   --tertiary-color-trans: rgba(0, 76, 84, 0.1);
   --black: rgba(0, 0, 0);
   --white: rgb(255, 255, 255);
-  /* change back to 200ms */
+
   --transition: all 200ms ease;
-  --sidebar-transition: all 400ms ease;
+  --close-transition: all 300ms ease;
   --swiper-transition: all 300ms ease;
+  --sidebar-transition: all 500ms ease;
+  --sidebar-button-transition: all 500ms ease;
 }
 
 * {
@@ -60,7 +62,7 @@ html, body {
 
 nav {
   background-color: var(--primary-color);
-  z-index: 99;
+  z-index: 1001;
   display: flex;
 }
 
@@ -207,6 +209,16 @@ main.color-giants {
   font-size: 50px;
   text-align: center;
   padding: 0 1rem;
+}
+
+.prank-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: black;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 900px) {
