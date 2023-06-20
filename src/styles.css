@@ -6,6 +6,8 @@
 :root {
   --primary-hue: 270;
   --primary-color: rgba(0, 76, 84);
+  --primary-color-light: rgba(0, 76, 84);
+  --primary-color-dark: rgb(0, 31, 35);
   --primary-color-background: rgba(0, 76, 84, 0.1);
   --primary-color-trans: rgba(0, 76, 84, 0.3);
   --primary-color-trans-hover: rgba(0, 76, 84, 0.5);
@@ -15,7 +17,9 @@
   --tertiary-color-trans: rgba(0, 76, 84, 0.1);
   --black: rgba(0, 0, 0);
   --white: rgb(255, 255, 255);
+  /* change back to 200ms */
   --transition: all 200ms ease;
+  --sidebar-transition: all 400ms ease;
   --swiper-transition: all 300ms ease;
 }
 
@@ -76,31 +80,20 @@ nav a {
 }
 
 .nav-link:hover a {
-  color: var(--white);
+  color: var(--primary-color-dark);
   transition: var(--transition);
 }
 
 .nav-link:active a {
-  color: var(--secondary-color);
+  color: black;
   transition: var(--transition);
-}
-
-.established {
-  position: absolute;
-  font-family: 'Tilt Prism', cursive;
-  color: white;
-  top: 200%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  color: var(--primary-color)
 }
 
 .established-large {
   position: absolute;
   font-family: 'Tilt Prism', cursive;
   color: white;
-  top: calc((100vh) / 11);
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
@@ -112,10 +105,20 @@ nav a {
 
 main.color-eagles {
   --primary-color: rgba(0, 76, 84);
+  --primary-color-dark: rgb(0, 39, 44);
+  --primary-color-light: rgba(0, 76, 84);
   --primary-color-background: rgba(0, 76, 84, 0.1);
   --primary-color-trans: rgba(0, 76, 84, 0.3);
   --primary-color-trans-hover: rgba(0, 76, 84, 0.5);
   --primary-color-trans-active: rgba(0, 76, 84, 0.7);
+
+  --sidebar-link-background: rgba(0, 76, 84);
+  --sidebar-link-background-hover: rgb(0, 40, 45);
+  --sidebar-link-background-active: rgb(0, 25, 28);
+  --sidebar-text-color: white;
+  --sidebar-text-color-hover: white;
+  --sidebar-text-color-active: rgb(255, 255, 255);
+  --sidebar-border-color: rgb(0, 39, 44);
 
   --secondary-color: rgba(165, 172, 175);
   --tertiary-color: rgba(186, 202, 211);
@@ -124,10 +127,20 @@ main.color-eagles {
 
 main.color-union {
   --primary-color: rgba(7, 27, 44);
+  --primary-color-dark: rgb(82, 72, 48);
+  --primary-color-light: rgba(177, 155, 105);
   --primary-color-background: rgba(7, 27, 44, 0.1);
   --primary-color-trans: rgba(7, 27, 44, 0.3);
   --primary-color-trans-hover: rgba(7, 27, 44, 0.5);
   --primary-color-trans-active: rgba(7, 27, 44, 0.7);
+
+  --sidebar-link-background: rgba(7, 27, 44);
+  --sidebar-link-background-hover: rgb(82, 72, 48);
+  --sidebar-link-background-active: rgb(34, 29, 20);
+  --sidebar-text-color: rgba(177, 155, 105);
+  --sidebar-text-color-hover: rgba(7, 27, 44);
+  --sidebar-text-color-active: rgba(177, 155, 105);
+  --sidebar-border-color: rgba(177, 155, 105);
 
   --secondary-color: rgba(62, 142, 222);
   --tertiary-color: rgba(177, 155, 105);
@@ -138,11 +151,21 @@ main.color-liverpool {
   --primary-color: rgb(150, 0, 0);
   --primary-color-background: rgba(150, 0, 0, 0.05);
   --primary-color-trans: rgba(150, 0, 0, 0.3);
+  --primary-color-light: rgb(166, 13, 13);
+  --primary-color-dark: rgb(255, 255, 255);
   --primary-color-trans-hover: rgba(150, 0, 0, 0.5);
   --primary-color-trans-active: rgba(150, 0, 0, 0.7);
 
+  --sidebar-link-background: rgb(150, 0, 0);
+  --sidebar-link-background-hover: rgb(90, 0, 0);
+  --sidebar-link-background-active: rgb(59, 0, 0);
+  --sidebar-text-color: rgb(255, 255, 255);
+  --sidebar-text-color-hover: rgb(255, 255, 255);
+  --sidebar-text-color-active: rgb(255, 255, 255);
+  --sidebar-border-color: rgb(90, 0, 0);
+
   --secondary-color: rgba(94, 18, 8);
-  --tertiary-color: rgba(94, 18, 8);
+  --tertiary-color: rgb(68, 0, 0);
   --tertiary-color-trans: rgba(150, 0, 0, .05);
 }
 
@@ -192,19 +215,28 @@ main.color-giants {
   }
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 750px) {
   .navbar-list {
-    gap: 2rem;
+    gap: 2.5rem;
   }
 }
 
 @media screen and (max-width: 700px) {
   .navbar-list li a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+  .navbar-list {
+    gap: 2rem;
   }
   .poop-prank img {
     height: 300px;
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar-list {
+    gap: 1.5rem;
   }
 }
 
@@ -223,7 +255,6 @@ main.color-giants {
   }
   .established-large {
     font-size: 1.6rem;
-    top: calc((100vh) / 6);
   }
   .poop-prank img {
     height: 300px;

@@ -13,7 +13,7 @@
 
 .league-logo:active,
 .theme-changer:active {
-  color: var(--secondary-color);
+  color: black;
 }
 
 .nav-link-floating {
@@ -92,9 +92,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  .floating-nav__container {
+  /* .floating-nav__container {
     display: grid;
-  }
+  } */
   .league-logo:hover {
     color: var(--white);
   }

@@ -1,29 +1,42 @@
 .sidebar-wrapper {
   position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
   z-index: 1001;
+  animation: animateAway 200ms ease;
+  transition: var(--transition);
+}
+
+.sidebar-wrapper.show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: black;
+  transition: var(--transition);
 }
 
 .sidebar-nav {
   position: fixed;
   z-index: 111;
-  background-color: rgb(34, 205, 0);
-  border-top-right-radius: 5px;
+  background-color: rgb(199, 199, 199);
+  border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding: 0.4rem 0.2rem 0.4rem 0.2rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
   font-weight: bold;
-  top: 75px;
-  left: 0;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   cursor: pointer;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: var(--transition);
-}
-
-.nav-text {
-  writing-mode: vertical-lr;
-  text-orientation: upright;
+  display: none;
 }
 
 .nav-arrow {
@@ -34,20 +47,39 @@ li {
   list-style-type: none;
 }
 
-.nav-link {
-  padding: 0.7rem;
+.sidebar-nav-link a {
+  color: var(--tertiary-color)
 }
 
-.nav-link:hover {
+.sidebar-nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--sidebar-link-background);
+}
+
+.sidebar-nav-link:hover {
   cursor: pointer;
-  background-color: rgb(0, 45, 50);
+  background-color: var(--sidebar-link-background-hover);
+}
+
+.sidebar-nav-link:hover a {
+  color: var(--sidebar-text-color-hover);
+}
+
+.sidebar-nav-link:active {
+  background-color: var(--sidebar-link-background-active);
+}
+
+.sidebar-nav-link:active a {
+  color: var(--sidebar-text-color-active);
 }
 
 .sidebar-nav-links {
-  display: none;
   position: fixed;
-  top: 0;
-  left: -100%;
+  height: fit-content;
+  top: -100%;
   width: 100%;
   text-align: center;
   background-color: var(--primary-color);
@@ -55,24 +87,36 @@ li {
   flex-direction: column;
   z-index: 111;
   overflow: hidden;
-  transition: var(--transition);
+  transition: var(--sidebar-transition);
 } 
 
 .sidebar-nav-links li {
-  border-bottom: 1px solid rgb(0, 47, 29);
+  border-bottom: 1px solid var(--sidebar-border-color);
 }
 
 .sidebar-nav-links.open {
-  transform: translateX(100%);
+  /* transform: translateY(100%); */
+  height: fit-content;
+  width: 100%;
+  top: 0;
   display: flex;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  transition: var(--transition);
+  transition: var(--sidebar-transition);
+}
+
+.sidebar-theme-wrapper {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
 }
 
 .sidebar-nav:hover {
-  background-color: rgb(20, 119, 0);
+  background-color: gray;
   transition: var(--transition);
+}
+.sidebar-nav:active {
+  background-color: rgb(53, 53, 53);
 }
 .sidebar-nav-links .small {
   background-color: white;
@@ -86,14 +130,27 @@ li {
 }
 
 @keyframes bounce {
-   0%, 20%, 50%, 80%, 100% {transform: translateX(0);} 
-   40% {transform: translateX(-6px);} 
-   60% {transform: translateX(-3px);} 
-} 
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+   40% {transform: translateY(-6px);} 
+   60% {transform: translateY(-3px);} 
+}
+
+@keyframes animateAway {
+  from {
+    background-color: black;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .sidebar-nav-links {
     display: block;
+  }
+  .sidebar-wrapper {
+    display: flex;
   }
   .theme__primary-wrapper {
   padding-bottom: 1rem;
@@ -105,5 +162,11 @@ li {
   }
   .sidebar-nav-links .small {
     background-color: white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar-nav {
+    display: flex;
   }
 }

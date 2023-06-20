@@ -31,6 +31,10 @@
   background-color: var(--primary-color-background);
 }
 
+.established-large {
+  color: var(--primary-color-light)
+}
+
 .fixed-items {
   position: fixed;
   top: 0;
@@ -58,7 +62,7 @@
 
 .league-logo:hover {
   cursor: pointer;
-  color: var(--white);
+  color: var(--primary-color-dark);
   transition: var(--transition);
 }
 
@@ -70,7 +74,7 @@
 
 .theme-changer:hover {
   cursor: pointer;
-  color: var(--white);
+  color: var(--primary-color-dark);
   transition: var(--transition);
 }
 
@@ -476,9 +480,6 @@
   .hero__text {
     font-size: 1.3rem;
     max-width: 10rem;
-  }
-  .established {
-    
   }
 }
 

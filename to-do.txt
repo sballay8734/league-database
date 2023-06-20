@@ -1,40 +1,10 @@
-1. Re-write all functions to do ONE thing
-    a. One set should take in an owner and a year to calculate yearly stats
-
-    b. Other set should use the above functions to find the totals by looping   through the years and running the function once "forEach" year.
-        i. But use a regular "for" loop if possible for performance
-
-        For Example: To find totalPointsRegSzn, you could run...
-
-          let totalPointsRegSzn = 0
-          const years = Object.Keys(owner.regSzn)
-          years.forEach((year) => {
-            totalPoints += totalPoints(owner, year)
-          })
-        
-          // Find owner in static data
-          // Overwrite totalPointsRegSzn in staticData
-
-        For Example: To find totalPointsPlayoffsOnly, you could run...
-
-          let totalPlayoffPoints = 0
-          const years = Object.Keys(owner.playoffs)
-          years.forEach((year) => {
-            totalPoints += totalPoints(owner, year)
-          })
-
-          // Find owner in static data
-          // Overwrite totalPlayoffPoints in staticData
+1. Re-write all functions to do one thing
 
 3. Re-write app to read data from static data rather than performing ALL calculations on ever render.
 
 4. Migrate data to MongoDB
 
-5. LOGO and THEME CHANGE are in the way on small screens. Re-work
-
 6. Move Carousel to its own component
-
-7. Need to smooth Carousel transition when using dropdown and clicking pagination
 
 9. Default Owner Selection
 
@@ -46,6 +16,4 @@
 
 13. Barchart hover is weird
 
-14. Union Theme is too dark
-
-15. Sidebar Nav Li's bottom border color
+17. FIX LIVERPOOL THEME
