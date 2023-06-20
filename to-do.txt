@@ -15,3 +15,5 @@
 12. Reg Szn, Playoff, Combined faded text on chart
 
 13. Barchart hover is weird
+
+14. Table rank is too much. Make colors less obvious.

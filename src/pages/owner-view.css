@@ -22,10 +22,6 @@
   padding: 1rem;
 }
 
-.column {
-  background-color: rgb(126, 0, 0, 0.5);
-}
-
 .middle-row-owner-view {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -36,7 +32,166 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1rem;
+  margin: auto 0;
   height: 100%;
+  max-height: 900px;
+  max-width: 1000px;
+}
+
+.grid-left-owner-view {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 1rem;
+}
+
+.grid-right-owner-view {
+  display: grid;
+  grid-template-rows: 1fr;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color);
+  overflow: scroll;
+  /* padding: 0.5rem; */
+}
+
+.rankings {
+  background-color: green;
+}
+
+.records {
+  background-color: purple;
+}
+
+.spreadsheet {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 300px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.spreadsheet thead tr {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.spreadsheet td {
+  padding: 10px 10px;
+}
+
+.spreadsheet tbody td:not(.table-stat) {
+  text-align: center;
+}
+
+.spreadsheet th {
+ padding: 15px 10px;
+ position: sticky;
+ top: 0;
+ background-color: var(--primary-color);
+}
+
+.spreadsheet tbody tr {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.spreadsheet tbody tr:nth-of-type(even) {
+  background-color: var(--even-table-background);
+  color: white;
+}
+
+.spreadsheet tbody tr:nth-of-type(odd) {
+  background-color: var(--odd-table-background);
+  color: white;
+}
+
+.spreadsheet tbody tr:last-of-type {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.table-stat {
+  font-weight: bold;
+  white-space: nowrap;
+  position: sticky;
+  left: 0;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.plus-minus {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.table-rank {
+  background-color: rgb(0, 0, 0);
+  padding: 0;
+  font-weight: bold;
+  color: white;
+}
+
+/* TESTING */
+.red {
+  color: rgb(211, 0, 0);
+}
+
+.green {
+  color: rgb(0, 216, 0);
+}
+
+.rank-one {
+  background-color: rgb(66, 255, 0);
+  color: black;
+}
+.rank-two {
+  background-color: rgb(118, 241, 0);
+  color: black;
+}
+.rank-three {
+  background-color: rgb(150, 225, 0);
+  color: black;
+}
+.rank-four {
+  background-color: rgb(174, 210, 0);
+  color: black;
+}
+.rank-five {
+  background-color: rgb(194, 193, 0);
+  color: black;
+}
+.rank-six {
+  background-color: rgb(211, 175, 0);
+  color: black;
+}
+.rank-seven {
+  background-color: rgb(225, 157, 0);
+  color: black;
+}
+.rank-eight {
+  background-color: rgb(236, 137, 0);
+  color: black;
+}
+.rank-nine {
+  background-color: rgb(245, 115, 0);
+  color: black;
+}
+.rank-ten {
+  background-color: rgb(251, 90, 0);
+  color: black;
+}
+.rank-eleven {
+  background-color: rgb(254, 61, 0);
+  color: black;
+}
+.rank-twelve {
+  background-color: rgb(255, 0, 0);
+  color: black;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .owner-wrapper {
@@ -723,6 +878,12 @@
 .category-name-dropdown:hover {
   background-color: var(--primary-color);
   cursor: pointer;
+}
+
+@media screen and (min-width: 1160px) {
+  .owners__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
  
 @media screen and (max-width: 600px) {

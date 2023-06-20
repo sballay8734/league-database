@@ -122,6 +122,10 @@ main.color-eagles {
   --sidebar-text-color-active: rgb(255, 255, 255);
   --sidebar-border-color: rgb(0, 39, 44);
 
+  --even-table-background: rgb(0, 25, 28);
+  --odd-table-background: rgb(0, 39, 44);
+  --table-stat-color: white;
+
   --secondary-color: rgba(165, 172, 175);
   --tertiary-color: rgba(186, 202, 211);
   --tertiary-color-trans: rgba(0, 76, 84, 0.1);

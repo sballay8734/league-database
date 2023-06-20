@@ -1,5 +1,5 @@
 import "./styles.css"
-import { useEffect, useState, useContext } from "react"
+import { useEffect, useState } from "react"
 import useModal from "./hooks/useModal"
 import HomeView from "./pages/HomeView"
 import OwnerView from "./pages/OwnerView"
@@ -13,22 +13,22 @@ import SidebarNav from "./components/SidebarNav/SidebarNav"
 
 import useTheme from "./hooks/useTheme"
 import PoopPrank from "./components/PoopPrank"
-import { connectToDB, getDB } from "./newFunctions/toDatabase"
+// import { connectToDB, getDB } from "./newFunctions/toDatabase"
 
 const API_URL = "http://127.0.0.1:3001/teamOwners"
 const STATIC_DATA_API = "http://127.0.0.1:3001/staticData"
 
 // THIS WORKS!!! You can use this file for both operations for now. Migrate to MongoDB afterwards
-async function staticDataFetch() {
-  const response = await fetch(STATIC_DATA_API, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json"
-    }
-  })
-  const data = await response.json()
-  console.log(data)
-}
+// async function staticDataFetch() {
+//   const response = await fetch(STATIC_DATA_API, {
+//     method: "GET",
+//     headers: {
+//       "Content-Type": "application/json"
+//     }
+//   })
+//   const data = await response.json()
+//   console.log(data)
+// }
 // staticDataFetch()
 
 function App() {

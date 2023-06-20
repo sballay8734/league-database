@@ -108,7 +108,13 @@ function OwnerView({ owners, dataFetch }) {
 
   return (
     <div className="owners__container">
-      <div className="column grid-left-owner-view"></div>
+      <div className="grid-left-owner-view">
+        <div className="rankings"></div>
+        <div className="records">
+          <div className="records-good"></div>
+          <div className="records-bad"></div>
+        </div>
+      </div>
       <div className="grid-middle-owner-view">
         <div className="by-year-owner-view">
           <div className="middle-row owner-wrapper-test">
@@ -439,7 +445,190 @@ function OwnerView({ owners, dataFetch }) {
           </div>
         </div>
       </div>
-      <div className="column grid-right-owner-view"></div>
+      <div className="grid-right-owner-view">
+        {/* Need to make 2 tables - one per year, one all time */}
+        <table className="spreadsheet">
+          <thead>
+            <tr>
+              <th>Stat</th>
+              <th className="text-center">Value</th>
+              <th className="text-center">+/-</th>
+              <th className="text-center">Lg. Avg.</th>
+              <th className="text-center">Rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="table-stat">Avg. PF</td>
+              <td>123.5</td>
+              <td className="plus-minus green">+8</td>
+              <td>115.5</td>
+              <td className="table-rank rank-three">3</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Avg. PA</td>
+              <td>115.22</td>
+              <td className="plus-minus red">-5.2</td>
+              <td>110.02</td>
+              <td className="table-rank rank-five">5</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Total PF</td>
+              <td>1487.3</td>
+              <td className="plus-minus green">+110</td>
+              <td>1377.3</td>
+              <td className="table-rank rank-two">2</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Total PA</td>
+              <td>1322</td>
+              <td className="plus-minus red">-50.8</td>
+              <td>1372.8</td>
+              <td className="table-rank rank-eight">8</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Avg. PPW</td>
+              <td>133.5</td>
+              <td className="plus-minus green">+7.2</td>
+              <td>125.3</td>
+              <td className="table-rank rank-three">3</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Avg. PPL</td>
+              <td>115.2</td>
+              <td className="plus-minus green">+12</td>
+              <td>103.2</td>
+              <td className="table-rank rank-one">1</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Wins</td>
+              <td>11</td>
+              <td className="plus-minus green">+3</td>
+              <td>8</td>
+              <td className="table-rank rank-two">2</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Losses</td>
+              <td>3</td>
+              <td className="plus-minus red">-3</td>
+              <td>6</td>
+              <td className="table-rank rank-two">2</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Win %</td>
+              <td>60.3%</td>
+              <td className="plus-minus green">+14%</td>
+              <td>46.3%</td>
+              <td className="table-rank rank-two">2</td>
+            </tr>
+            {/* All time stats */}
+            {/* <tr>
+              <td>Avg. WPS</td>
+            </tr>
+            <tr>
+              <td>Avg. LPS</td>
+            </tr> */}
+            <tr>
+              <td className="table-stat">Last</td>
+              <td>False</td>
+              <td className="plus-minus">N/A</td>
+              <td>N/A</td>
+              <td className="table-rank">N/A</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Playoffs</td>
+              <td>True</td>
+              <td className="plus-minus">N/A</td>
+              <td>N/A</td>
+              <td className="table-rank">N/A</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Champ</td>
+              <td>False</td>
+              <td className="plus-minus">N/A</td>
+              <td>N/A</td>
+              <td className="table-rank">N/A</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Koth Place</td>
+              <td>N/A</td>
+              <td className="plus-minus">N/A</td>
+              <td>N/A</td>
+              <td className="table-rank rank-three">3</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Best Week</td>
+              <td>172</td>
+              <td className="plus-minus green">+17</td>
+              <td>155</td>
+              <td className="table-rank rank-three">3</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Worst Week</td>
+              <td>97</td>
+              <td className="plus-minus green">+10</td>
+              <td>87</td>
+              <td className="table-rank rank-four">4</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Close Ws</td>
+              <td>3</td>
+              <td className="plus-minus green">+1</td>
+              <td>2</td>
+              <td className="table-rank rank-five">5</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Close Ls</td>
+              <td>2</td>
+              <td className="plus-minus red">-1</td>
+              <td>3</td>
+              <td className="table-rank rank-eight">8</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Lucky Ws</td>
+              <td>1</td>
+              <td className="plus-minus red">-3</td>
+              <td>4</td>
+              <td className="table-rank rank-one">1</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Unlucky Ls</td>
+              <td>3</td>
+              <td className="plus-minus green">+1</td>
+              <td>2</td>
+              <td className="table-rank rank-six">6</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Best Streak</td>
+              <td>5</td>
+              <td className="plus-minus green">+3</td>
+              <td>2</td>
+              <td className="table-rank rank-two">2</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Worst Streak</td>
+              <td>2</td>
+              <td className="plus-minus red">-1</td>
+              <td>3</td>
+              <td className="table-rank rank-two">2</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Biggest W</td>
+              <td>100</td>
+              <td className="plus-minus green">+29</td>
+              <td>71</td>
+              <td className="table-rank rank-ten">10</td>
+            </tr>
+            <tr>
+              <td className="table-stat">Biggest L</td>
+              <td>12</td>
+              <td className="plus-minus red">-25</td>
+              <td>37</td>
+              <td className="table-rank rank-twelve">12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }
